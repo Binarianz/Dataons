@@ -7,6 +7,9 @@ int main()
     bool IsMarried, IsNew;
     int NoofChildren;
     float BasicSalary, TotalTax;
+    cout<<"==============================================================================\n"
+    <<"                             Tax-Calculator                                "
+    <<"=============================================================================";
     cout << " Is the person is married(true/false) : ";
     cin >> IsMarried;
     cout << " Is the person is new to the province(true/false) : ";
