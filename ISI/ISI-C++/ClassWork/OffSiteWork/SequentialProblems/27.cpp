@@ -8,8 +8,8 @@ int main()
     int NoofChildren;
     float BasicSalary, TotalTax;
     cout<<"==============================================================================\n"
-    <<"                             Tax-Calculator                                "
-    <<"=============================================================================";
+    <<"                             Tax-Calculator                                 \n"
+    <<"==============================================================================\n";
     cout << " Is the person is married(true/false) : ";
     cin >> IsMarried;
     cout << " Is the person is new to the province(true/false) : ";
