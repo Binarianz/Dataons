@@ -1,0 +1,49 @@
+// Joseph Emmanuel
+
+
+1)
+Input: Two Integers.
+
+Output: Sum
+
+Constants: Nill
+
+Procedures: 1)Read two integers
+			2)Add integers
+			3)Display Sum
+
+
+2)
+Input: height,depth,length
+
+Output: Product
+
+Constants: Nill
+
+Procedures: 1)Read three values height,depth and length
+			2)mutiply height,depth and length
+			3)display the product
+			
+
+3)
+Input: Two Integers a & b
+
+Output: Large Integer
+
+Constants: Nill
+
+Procedures: 1)Read two integers
+			2)Check a<b, then Large integer=b and goto step 4
+			3)check a>b, then Large integer=a
+			4)Display Large integer
+			
+
+4)
+Input: Two Integers min and max
+Output: Sum
+
+Constants: Nill
+
+Procedures: 1)Read two integers
+			2)calculate ((max-min+1)*(min+max))/2
+			4)Display Sum

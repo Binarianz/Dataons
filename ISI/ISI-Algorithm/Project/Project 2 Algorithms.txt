@@ -1,0 +1,277 @@
+1
+	VARIABLES
+		Integer : minLimit, maxLimit, i, temp
+	START
+		WRITE "Enter the Minimum Limit"
+		READ minLimit
+		
+		WRITE "Enter the Maximum Limit"
+		READ maxLimit
+		
+		FOR ( i = 1 ; i < (maxLimit - minLimit) - 1 ; i++ )
+			minLimit = minLimit + 1
+			temp = temp + minLimit
+		ENDFOR
+		
+		WRITE "The sum of all the numbers is:-", temp
+	END	
+
+2
+(A)
+
+	VARIABLES 
+		Integer : i
+		
+	START
+		WRITE "The sequence is as follows: "
+		
+		FOR ( i = 5 ; i <= 40 ; i += 5  )
+			WRITE  i, " "
+		ENDFOR
+	END
+	
+(B)
+	VARIABLES
+		Integer : i
+		
+	START
+		WRITE "The sequence is as follows: "
+		
+		FOR ( i = 1 ; i <= 15 ; i+= 2 )
+			WRITE i, " "
+		ENDFOR
+	END
+	
+(C)
+	VARIABLES 
+		Integer : num, i
+		
+	START
+		WRITE "The sequence is as follows: "
+		
+		FOR ( i = 80 ; i >= 20 ; i-= 10)
+			WRITE i, " "
+		ENDFOR
+	END
+
+(D)
+
+	VARIABLES
+		Integer : fact, i
+		
+	START
+		fact = 1
+		
+		WRITE "The sequence is as follows: "
+		
+		FOR ( i = 1; i <= 6; i++ )
+			fact = fact * n
+			WRITE fact, " "
+		ENDFOR
+	END
+
+3
+
+	VARIABLES
+		Integer : number, i
+		
+	START
+		WRITE "Enter a number to check for prime number"
+		READ number
+		
+		FOR ( i = 2 ; i < (number / 2) ; i++)
+			IF ( number % i == 0) THEN
+				WRITE "It is not  prime number"
+			ELSE
+				WRITE "It is a prime number"
+			ENDIF
+		ENDFOR
+	END
+
+4
+	VARIABLES
+		Real : cels
+		
+	START 
+		WRITE "Celcius, Fahrenheit"
+		
+		FOR (cels = -40; cels <= 40; cels += 5)
+			WRITE cels, ", ", (cels*9/5 + 32)
+		ENDFOR
+	END
+	
+11
+	VARIABLES
+		Real : litres, totalLitres, gasRate
+		Integer : distance, totalDistance, terminate
+		
+	START
+		totalLitres = 0.0
+		terminate = false
+		totalRefills = 0
+		
+		REPEAT
+			WRITE "Enter the number of litres used (-1 to terminate)"
+			READ litres
+			
+			IF (litres == -1.0) THEN
+				terminate = true
+			ENDIF
+			
+			WRITE "Enter the number of kilometers traveled:"
+			READ distance
+			
+			WRITE "The rate of gas consumption in litres per kilometersfor this gas refill is ", litres/distance*100
+			
+			totalLitres += litres
+			totalDistance += distance
+		WHILE (!terminate)
+		
+		IF (totalGasRate <> 0) THEN
+			WRITE "The total rate of gas consumption in litres per 100 kilometers is ", totalLitres/totalDistance*100
+		ENDIF
+		
+	END
+	
+13
+Analysis
+	Input : 
+		An integer (binaryNumber)
+		
+	Output :
+		An integer (decimalNumber)
+		
+	Procedure :
+		First, read the binary number from the user.
+		Assign, 0 to exponent and decimalNumber.
+		Use a repeat loop, to divide the binanyNumber by 10 again and again till we get 0.
+		Inside the loop, take the first digit every time, multiple it by the exponent 2 with the existing exponent number.
+		Add the above with the decimalNumber again and again and store it in decimalNumber only.
+		Increment the exponent.
+		Write the result.
+		
+PseudoCode
+	VARIABLES
+		Integer : binanyNumber, decimalNumber, exponent
+	
+	START
+		WRITE "Enter a binary number (0's and 1's)"
+		READ binanyNumber
+		
+		exponent = 0
+		decimalNumber = 0
+		
+		REPEAT
+			decimalNumber += (binanyNumber % 10)*2^exponent
+			exponent++
+			
+			binanyNumber = binaryNumber / 10 
+			
+		WHILE (binanyNumber /10 == 0)
+		
+		WRITE "Decimal equivalent of the entered binary number is : ", decimalNumber
+	END
+	
+14
+Analysis
+	Input : 
+		An integer (number)
+		
+	Output :
+		An integer (factorial)
+		
+	Procedure :
+		First, assign 1 to factorial.
+		Use a for loop for repeated multiplication, starting from n to 1.
+		Multiply the factorial with the loop counter, to get a series such that n*(n-1)*(n-2).....
+		Write the result in the given format.
+
+PseudoCode
+	VARIABLES
+		Integer : number, i, factorial
+	
+	START 
+		WRITE "Enter a number for factorial calculation"
+		READ number
+		
+		factorial = 1
+		
+		WRITE number, "! = "
+		
+		FOR (i = number; i > 0; i--)
+			IF (i == 1)
+				WRITE i
+			ELSE
+				factorial = factorial * i
+				WRITE number, "*"
+			ENDIF
+		ENDFOR
+		
+		WRITE " = ", factorial 
+	END
+	
+15
+Analysis
+	Input : 
+		An integer (number)
+		
+	Output :
+		An integer (sum)
+		
+	Procedure :
+		First, assign 0 to sum.
+		Write a for loop, starting from 1 to number, with increment of 2
+		Add (sum + i) and store it the sum, inside the loop.
+		When the loops terminates, the sum that we obtain is the final result.
+		
+PseudoCode
+
+	VARIABLES
+		Integer : number, sum
+		
+	START
+		WRITE "Enter a number for calculating sum of all natural odd numbers till the same number"
+		READ number
+		
+		sum = 0 ;
+		
+		FOR (i = 1 ; i < number; i += 2)
+			sum += i
+		ENDFOR
+		
+		WRITE "The sum of all odd numbers between 1 and ", number, " : ", sum
+	END
+	
+16
+Analysis
+	Input : 
+		Three integer numbers (b, e, n)
+		
+	Output :
+		An integer number (result) such that ( = b^e(mod n))
+		
+	Procedure :
+		First take the 3 numbers as input from the user.
+		Assing result to 1.
+		Find result such that, result is equal to b(mod n).
+		Multiply above (b(mod n)) with result 'e' times, using a for loop, and keep storing it in the result.
+		Finally, compute result(mod n) as the final answer.
+		
+PseudoCode
+	VARIABLES
+		Integer : b, e, n, i, result
+
+	START
+		WRITE "Enter 3 numbers, b, e and n respectively, such that, (b^e)mod n"
+		READ b, e, n
+		
+		result = 1
+		
+		FOR (i = 0 ; i < e; i++)
+			result = result * ( b % n )
+		ENDFOR
+		
+		result = result%n
+		WRITE "the answer is : ", result
+	END
+	

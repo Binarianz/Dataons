@@ -1,0 +1,99 @@
+//Joseph Emmanuel
+
+
+1) 231
+2)
+VARIABLES
+	Real : unitprice,quatity,gst,qst,finalprice
+START 
+	WRITE "Enter the unit price and quatity"
+	READ unitprice,quatity
+	finalprice <-- ((unitprice*quatity)*1.07)*1.075
+	WRITE "The final price is " ,finalprice
+END 
+3)
+VARIABLES
+	Real : grosssalary,hrate,noofhours
+START 
+	WRITE "Enter the hourly rate and total hours worked"
+	READ hrate,noofhours
+	grosssalary <-- hrate*noofhours
+	WRITE "The final salary is " ,grosssalary
+END 
+4)
+VARIABLES
+	Real : tempf,tempc
+START
+	WRITE "Enter the temperature in degrees Fahrenheit"
+	READ tempf
+	tempc <-- ((tempf-32)/9)*5
+	WRITE "The temperature in degrees is " ,tempc
+END 
+5)
+VARIABLES
+	Real : length,width,height,volume
+START
+	WRITE "Enter length,width and height of the rectangular prism"
+	READ length,width,height
+	volume <-- length*width*height
+	WRITE "The volume of a rectangular prism is " ,volume
+END 
+6)
+CONSTANTS
+	Real : basesalary <-- 400 , commission <-- 200 
+VARIABLES
+	Real : totalAmount, totalVehicles , totalCommission ,totalSales
+START
+	WRITE "Enter total vehicles the person is sold and totalSales"
+	READ totalVehicles , totalSales
+	totalCommission <-- commission*totalVehicles
+	totalAmount <-- 400+totalCommission+(totalSales*.05)
+	WRITE "The compensation for one salesperson is " ,totalAmount
+END 
+7)
+VARIABLES
+	Integer : totalHeight, numberOfFloors
+START
+	WRITE "Enter the totalnumber of floors"
+	READ numberOfFloors
+	totalHeight=(numberOfFloors*4)+2
+	WRITE "The height of a building is " ,totalHeight
+END 
+
+8)
+VARIABLES
+	Real : pressureATM,pressurePascal
+START
+	WRITE "Enter pressure data in kilopascal units"
+	READ pressurePascal
+	pressureATM=(pressurePascal/101.325)
+	WRITE "The atmospheric pressure iin ATM is " ,pressureATM
+END 
+
+9)
+VARIABLES
+	Real : labWork,midExam,finExam,finGrade
+START
+	WRITE "Enter marks in Laboratory work, midterm exam and final exam"
+	READ labWork,midExam,finExam
+	finGrade=(.4*labWork)+(.25*midterm)+(.35*finExam)
+	WRITE "The final grade of a student is " ,finGrade 
+END
+
+10)
+VARIABLES
+	Real : fPayCheque,sPayCheque,totalIncome,totalExpenses,difference,weeklyExpences,monthlyExpenses
+START
+	WRITE "Enter the amount of first paycheque and second paycheque"
+	READ fPayCheque,sPayCheque
+	totalIncome=fPayCheque+sPayCheque
+	WRITE "Enter the weekly expenses"
+	READ weeklyExpences
+	WRITE "Enter the monthly expenses"
+	READ monthlyExpenses
+	totalExpenses <-- (4*weeklyExpences)+monthlyExpenses
+	WRITE "The total expense is " ,totalExpenses
+	WRITE "The total income is " ,totalIncome
+	difference=totalIncome-totalExpenses
+	WRITE "The toatl difference between income and expense is ",difference
+END

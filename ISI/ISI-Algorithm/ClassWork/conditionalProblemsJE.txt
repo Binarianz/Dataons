@@ -1,0 +1,78 @@
+10)
+READ a, b, c
+IF (a < b AND c < 5) THEN
+	WRITE “Hello”
+ENDIF
+11)
+IF ((number > 1) AND (number < 3)) THEN
+	WRITE “The number is between 1 and 3.”
+ENDIF
+12)
+READ number
+IF ((number < 1) OR (number > 5)) THEN
+	WRITE “The number is outside the limits.”
+ELSE
+	WRITE “The number is inside or equal to the limits.”
+ENDIF
+
+13)
+VARIABLES:
+Real : number1, number2, number3
+START
+READ number1, number2, number3
+IF (number1 == number2 AND number1 == number3) THEN
+	WRITE “The three numbers are identical.”
+ELSE
+	WRITE “Two of the numbers are identical.”
+ENDIF
+ELSE IF
+IF (number2 == number3) THEN
+	WRITE “Two of the numbers are identical.”
+ELSE
+	IF (number1 == number3) THEN
+WRITE “Two of the numbers are identical.”
+ENDIF
+ENDIF
+ENDIF
+END
+
+14)
+START 
+VARIABLES : 
+	String  : fCoin,sCoin
+WRITE "Enter the values of first and second coin"
+READ fCoin,sCoin
+IF (fCoin=="heads" AND sCoin=="heads") THEN
+	WRITE " you won $10"
+ENDIF ((fCoin=="heads" AND sCoin=="tails") OR (fCoin=="tails" AND sCoin=="heads")) THEN
+	WRITE "you won $5" 
+ELSE 
+	WRITE "you lose" 
+ENDIF
+END
+
+15)
+START
+VARIABLES :
+		
+		
+		
+		
+		
+		
+
+
+
+17)
+
+VARIABLES
+	Real : salary, tax, tax1 
+	Boolean : isMarried,isNew
+	Integer : noOfChildren
+START
+	WRITE "Enter the salary"
+	READ salary
+	WRITE "Enter the Marital status and arrival information"
+	READ isMarried,isNew
+	IF (
+END 

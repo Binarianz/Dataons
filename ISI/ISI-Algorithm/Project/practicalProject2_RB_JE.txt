@@ -1,0 +1,368 @@
+/*============================================================================================
+                                            1
+============================================================================================*/
+Analysis
+	Input:
+		The Lower Limit and Upper Limit
+	Output:
+		The sum of the integers between Lower Limi and Upper Limit
+	Procedure:
+		Add up the integers that between Lower Limi and Upper Limit
+
+Pseudo code
+	VARIABLES 
+		Integer : lowerLimit,upperLimit,i	// (Input) The Lower Limi and Upper Limit
+		Integer : sum	// (Output) Accumulator for the sum
+	START
+		sum = 0		// Initialization of the accumulator
+		i = 0
+		WRITE "Plaese Enter the Lower Limi and Upper Limit"
+		READ lowerLimit,upperLimit
+		FOR (i <-- lowerLimit; i <= upperLimit; i++)
+			sum=sum+i
+			WRITE "The sum of the integers between Lower Limi and Upper Limit is "
+		ENDFOR
+	END
+	
+	
+/*============================================================================================
+                                            2
+============================================================================================*/
+
+
+(A)
+Analysis
+	Output:
+		Number of series
+	Procedure:
+		Add integer starting from 5 with 5 till 40
+Pseudo code
+	VARIABLES
+		Integer : i //for loop counter
+	START
+		WRITE "The sequence is as follows: "
+		
+		FOR ( i= 5 ; i <= 40 ; i+= 5  ) //Adding each time with five till 40
+			WRITE  i, " "
+		ENDFOR
+	END
+(B)	
+Analysis
+	Output:
+		Number of series
+	Procedure:
+		Add integer starting from 3 with 2 till 15
+Pseudo code
+	VARIABLES
+		Integer : i //for loop counter
+	START
+		WRITE "The sequence is as follows: "
+
+		FOR ( i = 3 ; i <= 15 ; i+= 2 ) //Adding each time two with previous number till 15
+			WRITE i, " "
+		ENDFOR
+	END
+
+(C)	
+Analysis
+	Output:
+		Number of series
+	Procedure:
+		Subtract integer starting from 80 with 10 till 20
+Pseudo code
+	VARIABLES
+		Integer : i //for loop counter
+	START
+		WRITE "The sequence is as follows: "
+
+		FOR ( i = 80 ; i >= 20 ; i-= 10 ) //Subtract each time 10 with previous number till 20
+			WRITE i, " "
+		ENDFOR
+	END	
+(D)
+Analysis
+	Output:
+		Number of series
+	Procedure:
+		Multiplying integer starting from 1 with next upcomig numer six times and printing it
+Pseudo code
+	VARIABLES
+	Integer : fact, i //for loop counter and an integer to hold multiplication value
+	START
+		fact = 1
+		WRITE "The sequence is as follows: "
+		FOR ( i = 1; i <= 6; i++ )
+			fact = fact * i //multiply each time with i and store in the same veriable			
+			WRITE fact, " "
+		ENDFOR
+	END
+
+
+/*============================================================================================
+                                            4
+============================================================================================*/
+Analysis
+	
+	Output:
+		Table of values in Fahrenheit
+	Procedure:
+		COnvert Celcius value to Fahrenheit according to the Equation Provided
+
+Pseudo code
+	VARIABLES
+		Real : cels
+
+	START
+		WRITE "Celcius, Fahrenheit"
+		FOR (cels = -40; cels <= 40; cels += 5)
+			WRITE cels, ", ", (cels*9/5 + 32) //printing each time Celcius value and Fahrenheit value
+		ENDFOR
+	END
+	
+	
+/*============================================================================================
+                                            5
+============================================================================================*/
+Analysis
+	Input:
+		1000 real grade value
+	Output:
+		Average of 1000 real grade values
+	Procedure:
+		Ask to input 1000 Values by the user 
+		add all grades together 
+		take the average and display the answer
+
+Pseudo code
+	VARIABLES
+		Real : averageOfNumbers,i,num,sum
+
+	START
+		sum <-- 0
+		FOR (i=1;i<=1000;i++)
+			WRITE "Enter the ",i,"th Grade" // For reading the nth grade value
+			READ num //reading the nth grade value
+			sum <-- sum + num //Adding all the grades
+		ENDFOR
+		averageOfNumbers = sum/1000 //Finding average of 1000 grades
+		WRITE "The average Grade of 1000 grades are ",averageOfNumbers
+	END
+
+	
+/*============================================================================================
+                                            8
+============================================================================================*/
+Analysis
+	Output:
+		First 100 prime numbers
+	Procedure:
+		Print sum of two preceding numbers starting from 1
+
+Pseudo code
+	VARIABLES
+		Integer : a,b,temp
+	START
+		a=1 // First Element
+		b=1 // Second Element
+		WRITE a
+		WRITE b
+		FOR (i=1;i<99;i++)
+			temp <-- a+b //Adding two preceding numbers
+			WRITE temp 
+			a <-- b //Swapping values
+			b <-- temp		//Swapping values
+		ENDFOR
+	END
+	
+/*============================================================================================
+                                            11
+============================================================================================*/
+Analysis
+	Input:
+		The three real values
+	Output:
+		The total rate of gas consumption in litres per 100 kilometers
+	Procedure:
+		Getting litres used
+		Checking litres not less than -1
+		Getting kilometers traveled
+		Printing rate of gas consumption
+		Calculate total rate of gas consumption in litres per 100 kilometers and printing the same
+
+Pseudo code	
+	VARIABLES
+		Real : litres, totalLitres, gasRate 
+		Integer : distance, totalDistance, terminate
+		
+	START
+		totalLitres = 0.0
+		terminate = false
+		totalRefills = 0
+		
+		REPEAT
+			WRITE "Enter the number of litres used (-1 to terminate)"
+			READ litres //Reading litres used
+			
+			IF (litres == -1.0) THEN //Checking litres not less than -1
+				terminate = true
+			ENDIF
+			
+			WRITE "Enter the number of kilometers traveled:" 
+			READ distance //Reading kilometers traveled
+			
+			WRITE "The rate of gas consumption in litres per kilometersfor this gas refill is ", litres/distance*100 //Printing rate of gas consumption
+			
+			totalLitres += litres
+			totalDistance += distance
+		WHILE (!terminate)
+		
+		IF (totalGasRate <> 0) THEN
+			WRITE "The total rate of gas consumption in litres per 100 kilometers is ", totalLitres/totalDistance*100 //Calculate total rate of gas consumption in litres per 100 kilometers and printing the same
+		ENDIF
+		
+	END
+/*============================================================================================
+                                            13
+============================================================================================*/
+Analysis
+	Input : 
+		An integer (binaryNumber)
+		
+	Output :
+		An integer (decimalNumber)
+		
+	Procedure :
+		First, read the binary number from the user.
+		Assign, 0 to exponent and decimalNumber.
+		Use a repeat loop, to divide the binanyNumber by 10 again and again till we get 0.
+		Inside the loop, take the first digit every time, multiple it by the exponent 2 with the existing exponent number.
+		Add the above with the decimalNumber again and again and store it in decimalNumber only.
+		Increment the exponent.
+		Write the result.
+		
+PseudoCode
+	VARIABLES
+		Integer : binanyNumber, decimalNumber, exponent //Initialization of all the variables
+	
+	START
+		WRITE "Enter a binary number (0's and 1's)"
+		READ binanyNumber //Reading Binary number
+		
+		exponent = 0
+		decimalNumber = 0
+		
+		REPEAT
+			decimalNumber += (binanyNumber % 10)*2^exponent //Convertion of binary to decimalNumber
+			exponent++
+			
+			binanyNumber = binaryNumber / 10 //Removing Last digit
+			
+		WHILE (binanyNumber /10 == 0) //Checking the condition 
+		
+		WRITE "Decimal equivalent of the entered binary number is : ", decimalNumber 
+	END
+/*============================================================================================
+                                            14
+============================================================================================*/
+Analysis
+	Input : 
+		An integer (number)
+		
+	Output :
+		An integer (factorial)
+		
+	Procedure :
+		First, assign 1 to factorial.
+		Use a for loop for repeated multiplication, starting from n to 1.
+		Multiply the factorial with the loop counter, to get a series such that n*(n-1)*(n-2).....
+		Write the result in the given format.
+
+PseudoCode
+	VARIABLES
+		Integer : number, i, factorial  //Initialization of all the variables
+	
+	START 
+		WRITE "Enter a number for factorial calculation"
+		READ number //Inputting the number for factorial calculation		
+		factorial = 1
+		
+		WRITE number, "! = " // Formatting output in factorial format
+		
+		FOR (i = number; i > 0; i--)
+			IF (i == 1)
+				WRITE i
+			ELSE
+				factorial = factorial * i //Calculating factorial
+				WRITE number, "*"
+			ENDIF
+		ENDFOR
+		
+		WRITE " = ", factorial //Printing factorial
+	END
+/*============================================================================================
+                                            15
+============================================================================================*/
+Analysis
+	Input : 
+		An integer (number)
+		
+	Output :
+		An integer (sum)
+		
+	Procedure :
+		First, assign 0 to sum.
+		Write a for loop, starting from 1 to number, with increment of 2
+		Add (sum + i) and store it the sum, inside the loop.
+		When the loops terminates, the sum that we obtain is the final result.
+		
+PseudoCode
+
+	VARIABLES
+		Integer : number, sum
+		
+	START
+		WRITE "Enter a number for calculating sum of all natural odd numbers till the same number"
+		READ number
+		
+		sum = 0 ; //assign sum to zero
+		
+		FOR (i = 1 ; i < number; i += 2) //Increment odd number by two
+			sum += i  //calculating sum
+		ENDFOR
+		
+		WRITE "The sum of all odd numbers between 1 and ", number, " : ", sum //Printing Sum
+	END
+/*============================================================================================
+                                            16
+============================================================================================*/
+Analysis
+	Input : 
+		Three integer numbers (b, e, n)
+		
+	Output :
+		An integer number (result) such that ( = b^e(mod n))
+		
+	Procedure :
+		First take the 3 numbers as input from the user.
+		Assing result to 1.
+		Find result such that, result is equal to b(mod n).
+		Multiply above (b(mod n)) with result 'e' times, using a for loop, and keep storing it in the result.
+		Finally, compute result(mod n) as the final answer.
+		
+PseudoCode
+	VARIABLES
+		Integer : b, e, n, i, result
+
+	START
+		WRITE "Enter 3 numbers, b, e and n respectively, such that, (b^e)mod n" //Getting input
+		READ b, e, n		
+		result = 1
+		
+		FOR (i = 0 ; i < e; i++)
+			result = result * ( b % n ) 
+		ENDFOR
+		
+		result = result%n // Calculating  mod operation
+		WRITE "the answer is : ", result
+	END
+	

@@ -1,0 +1,85 @@
+Analysis
+	Input:
+		The Lower Limi and Upper Limit
+	Output:
+		The sum of the integers between Lower Limi and Upper Limit
+	Procedure:
+		Add up the integers that between Lower Limi and Upper Limit
+
+Pseudo code
+	VARIABLES 
+		Integer : lowerLimi,upperLimit	// (Input) The Lower Limi and Upper Limit
+		Integer : sum	// (Output) Accumulator for the sum
+		Integer : numberCounter		// (Internal) Counter of the numbers
+	START
+		sum = 0		// Initialization of the accumulator
+		numberCounter = 1 	// Initialization of the counter
+		REPEAT
+			WRITE “Enter an integer: ”
+			READ number
+			sum = sum + number			// Accumulator
+			numberCounter = numberCounter + 1 // Counter
+		WHILE (numberCounter <= 10 
+		WRITE “The sum of the 10 integers is: ”, sum
+	END
+	
+	
+	
+============================================================================================
+                                            3
+============================================================================================
+Analysis
+	Input:
+		The integer
+	Output:
+		Is the given number is prime or not
+	Procedure:
+		Add up the integers that between Lower Limi and Upper Limit
+
+Pseudo code
+	VARIABLES 
+		Integer : inputNumber,i,flag // (Input) The Lower Limi and Upper Limit
+		Integer : sum	// (Output) Accumulator for the sum
+	START
+		WRITE "Plaese Enter the number"
+		READ inputNumber
+		FOR (i <-- 2; i < (upperLimit/2); i++)
+			IF (inputNumber%i==0)
+				flag <-- 1
+			ELSE
+				flag <-- 0
+			WRITE "The sum of the integers between Lower Limi and Upper Limit is "
+			ENDIF
+		ENDFOR
+		
+	END
+	
+	
+	
+/*============================================================================================
+                                            6
+============================================================================================*/
+Analysis
+	Input:
+		1000 integer value
+	Output:
+		Largest and smallestnumbers among the 1000 inputs
+	Procedure:
+		Ask to input 1000 Values by the user 
+		check each time with the values in the largest and smallest numbers 
+		Print the values of largest and smallest numbers at the end
+
+Pseudo code
+	VARIABLES
+		Integer : input, larNumber, smaNumber
+
+	START
+		
+		FOR (i=1;i<=1000;i++)
+			WRITE "Enter the ",i,"th number"
+			READ input
+			IF (input)
+		ENDFOR
+		averageOfNumbers = sum/1000
+		WRITE "The average Grade of 1000 grades are ",averageOfNumbers
+	END

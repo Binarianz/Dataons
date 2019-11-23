@@ -1,0 +1,73 @@
+VARIABLES
+	Natural : n
+	Integer : i, j
+	Real : r, s, t
+	Boolean : b, c
+	String : s
+	Array Real : staticArray[5]
+	Array Integer : dynamicArray[]
+	
+START
+	WRITE s
+	WRITE r, s, t
+	WRITE "Hello"
+	WRITE "Real value: ", r
+	
+	
+	READ n
+	READ i
+	READ s
+	
+	
+	REDIM dynamicArray[10]
+	
+	
+	n <-- 48
+	r <-- s
+	r <-- (s + t) / 2
+	staticArray[0] <-- 75 / 2
+	dynamicArray[n] <-- i
+	
+	
+	IF (r > s) THEN
+		<procedure>
+	ENDIF
+	
+	
+	IF (r > s OR s == t) THEN
+		<procedure>
+	ELSE
+		<procedure>
+	ENDIF
+	
+	
+	IF (NOT b) THEN
+		<procedure>
+	ELSEIF (b AND c AND i <> j)
+		<procedure>
+	ELSEIF (n > 5)
+		<procedure>
+	ELSE
+		<procedure>
+	ENDIF
+	
+	
+	FOR i <-- 0 TO 9 JUMP 1
+		<procedure>
+	ENDFOR
+	
+	
+	FOR (i <-- 0; i < 10; i++)
+		<procedure>
+	ENDFOR
+	
+	
+	WHILE (b OR n > 0)
+		<procedure>
+	ENDWHILE
+	
+	
+	REPEAT
+		<procedure>
+	WHILE (r >= s AND s <= 12)
+END
