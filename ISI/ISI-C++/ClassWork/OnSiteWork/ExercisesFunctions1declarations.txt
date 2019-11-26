@@ -1,0 +1,20 @@
+1)
+int sum(int a, int b);
+2)
+float volume(float a,float b,float h);
+3)
+int largest(int a, int b);
+4)
+int sum(int min, int max);
+5)
+int validation(int value);
+6)
+int inputVal(int number, int min,int max);
+7)
+float largest(float a, int b);
+8)
+void largest(int height);
+9)
+float powerOfA(float a,unsigned int n);
+10)
+bool prime(int value)
