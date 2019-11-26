@@ -11,7 +11,7 @@ int main()
 {
     int age = getValidInput("please enter your age : ", "Invalid age,Please enter your age : ", 0, 120);
     int month = getValidInput("Please enter your month of birth : ", "Invalid month ,Please enter your month : ", 1, 12);
-    int day = getValidInput("Please enteryour day of birth : ", "Invalid day ,Please enter your day : ", 1, 7);
+    int day = getValidInput("Please enter your day of birth : ", "Invalid day ,Please enter your day : ", 1, 7);
     cout << "\n\n    Age : " << age << " Month : " << month << " Day : " << day;
 }
 int getValidInput(string msg, string emsg, int min, int max)
