@@ -8,12 +8,10 @@ int main()
     number1 = number2;
     number2 = number3;
     number3 = number1;
-    cout << number1 << endl
+    cout << "\n\n\nThe changed values are : \n"
+         << number1 << endl
          << number2 << endl
          << number3 << endl;
-    //cout << "Result = " << result;
-
     system("pause");
-
     return 0;
 }

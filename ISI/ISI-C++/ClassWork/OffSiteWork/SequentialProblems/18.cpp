@@ -6,10 +6,10 @@ int main()
     cout << "Enter two numbers\n";
     cin >> number1 >> number2;
     if ((number1 % number2) == 0)
-        cout << "The second number a multiple of first number \n";
+        cout << "The first number is a multiple of second number \n";
     else
     {
-        cout << "The second number not multiple of first number \n";
+        cout << "The first number not multiple of second number \n";
     }
 
     system("pause");
