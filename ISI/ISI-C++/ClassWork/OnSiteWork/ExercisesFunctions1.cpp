@@ -68,7 +68,7 @@ int inputVal()
     int min = 0, max = 0, number = 0;
     min = getValidInput("\nEnter min value : ", "\nWrong min value, Enter : ", 0, 1000);
     max = getValidInput("\nEnter max value : ", "\nWrong max value, Enter : ", min, 1000);
-    number = getValidInput("\nEnter integer value : ", "\nWrong integer value, Enter : ", min, max);
+    number = getValidInput("\nEnter integer value : ", "\nWrong integer value, Enter : ", 0, 1000);
     number >= min &&number <= max ? cout << "Inside the range\n" : cout << "Not in the range\n";
     return 0;
 }
