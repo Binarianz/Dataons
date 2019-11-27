@@ -5,7 +5,7 @@ int main()
     int quantity;
     float gst = .07, qst = .075;
     float unitPrice = 0, amountgst = 0, amountqst = 0, totalprice = 0;
-    cout << "Enter unit price and quantity\n";
+    cout << "Enter unit price and quantity"<<endl;
     cin >> unitPrice >> quantity;
     amountgst = (unitPrice * quantity) * gst;
     amountqst = (amountgst + (unitPrice * quantity)) * qst;
