@@ -1,0 +1,67 @@
+html {
+	margin: 0;
+	padding: 0;
+	background: white;
+}
+
+body {
+	padding:0 25px;
+	background: white;
+    width: 1200px;
+    /* No need to precise height*/
+    /* height: 750px; */
+    margin: 0 auto;
+}
+
+section{
+    /* Notation to declaring the custom property */
+    --best-bg-clr: midnightblue;
+    --para-bg-clr:black;
+}
+
+header {
+	/* Using the custom property (also called CSS variable) **/
+    background-color: var(--best-bg-clr);
+    padding: 20px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: var(--my-fnt);
+    color: white;
+}
+
+img {
+    /*  width: 480px;
+    height: 320px; */
+    width: 320px;
+    height: 210px;
+    margin: var(--im-mgn);
+    border: var(--im-bdr);
+}
+
+p {
+    font-size: 24px;
+    color: white;
+    background: var(--para-bg-clr);
+}
+
+/* Declaring a variable for the whole document */
+:root{
+    --my-fnt: sans-serif;
+    --im-bdr: 2px solid black;
+    --im-mgn: 10px 0px 0px 55px;
+    /* --my-pd: 0 25px; */
+    --mn-bk-clr: #DFDEE8;
+    --para-bg-clr:green;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    background: var(--oth-bk-clr);
+  }
+
+}
+
+/* Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */

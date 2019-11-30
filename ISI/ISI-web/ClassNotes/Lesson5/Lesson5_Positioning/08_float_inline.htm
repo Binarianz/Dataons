@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>Les float en CSS</title>
+<style>
+h1, h2, h3, h4, p,  {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: maroon;
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 720px;
+	margin: 0 auto;
+	font: 90%/1.6 Arial, Helvetica, sans-serif;
+	background: beige;
+	padding: 25px;
+}
+
+
+header h1 {
+	font-size: 2em;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1.2;
+}
+    
+article h2, article h3, article h4 {
+	font-family: Georgia, Times, serif;
+	font-weight: normal;
+}
+
+article h2 {
+	font-size: 1.8em;
+	margin: 1em 0 .4em;
+}
+article h3 {
+	font-size: 1.4em;
+	margin: 1.2em 0 .2em;
+}
+article p {
+	margin-bottom: 1em;
+}
+
+/*les float pour les images ici*/
+.textWrap img {
+	float: left;
+	border: 1px solid black;
+	margin: 0 1em 1em 0;
+}
+.textWrap h3 {
+	clear: both;
+}
+
+
+/*
+div du bas
+*/
+
+    div{
+        height:210px;
+            width:720px;
+        background:darkseagreen;
+       
+    }
+    
+    div img{
+        float:left;
+        border: 1px solid black;
+        margin-right: 10px;
+    }
+    
+    div p{
+        padding: 10px;
+    }
+    .plus{
+        background:black;
+        color:white;
+        width: 200px;
+        float: right;
+        text-align:center;
+        line-height: 45px;
+        margin-right: 20px;
+        margin-top: -10px;
+        border: 1px solid black;
+        border-radius: 7px;
+        text-transform: uppercase;
+        
+
+    }
+/*
+    .cf{
+        clear:both;
+    }
+    
+*/
+    
+</style>
+</head>
+    
+<body>
+<header>
+<h1>La propriété float sur un élément inline</h1>
+</header>
+<article>
+<h2> Qu'est-ce qu'un text wrap?</h2>
+<section class="textWrap">
+<p><img src="_images/tall.jpg" width="268" height="367" alt="Tall image">La propriété float indique qu'un élément doit être retiré du flux normal et doit être placé sur le côté droit ou sur le côté gauche de son conteneur. <em>Le texte et les autres éléments en ligne (inline) entoureront alors l'élément flottant.</em></p>
+<p>Sachant qu'une image est un élément de type inline, des effets intéressants peuvent être créés tel qu'un effet text wrap (le texte semble entourer l'image). L'effet change selon la taille de l'image: si les éléments flottants sont verticalement plus courts que le texte sur lequel ils flottent. <a href="https://developer.mozilla.org/fr/docs/Web/CSS/float#Le_positionnement_des_éléments_flottants" title="reference MDN" target="_blank">Voir MDN.</a></p>
+<h3>Ici la propriété clear.</h3>
+<p>Le texte continu...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi orci, dictum id luctus nec, blandit sit amet justo. Aliquam pulvinar nunc nec venenatis consectetur. Donec et diam nibh. Sed ultrices pellentesque velit, quis fermentum nulla ultrices ut. Sed posuere porta orci quis convallis. Sed quis aliquet diam. Proin at ipsum pharetra, tempor libero nec, dictum leo. Pellentesque pretium neque non lectus interdum, hendrerit mollis erat consequat. Etiam tincidunt accumsan dui, sit amet volutpat lectus.</p>
+</section>
+    <div>
+    <p><img src="_images/nyc.jpg" width="150" height="150" alt="New York New York">Êtes-vous à la recherche d’un voyage organisé en autocar de luxe à New York? Vous voulez partir en famille visiter les incontournables de la ville, avec vos amis faire du magasinage, ou encore en amoureux passer un week-end inoubliable? Choisissez un circuit bien pensé par Tours Amérique! </p>
+        <p class="plus">Plus d'informations</p>
+<!--        <p class="cf"> </p>-->
+    </div>
+    
+</article>
+</body>
+</html>

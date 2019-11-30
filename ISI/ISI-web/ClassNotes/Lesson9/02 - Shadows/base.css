@@ -1,0 +1,36 @@
+.container{
+	/* Box shadows
+	-> horizontal shadow (required)
+	-> vertical shadow (required)
+	-> blur (optional)
+	-> size of the shadow (optional)
+	-> color (optional -black by default-)
+	-> type of shadow (inset = inner) (optional)
+	*/
+    /* box shadows accept up to 6 parameters */
+    box-shadow: 10px 10px 10px 0;
+    /* Check in Google Chrome Inspector */
+
+  /* We can add shadows to the text as well
+  	-> horizontal shadow (required)
+  	-> vertical shadow (required)
+  	-> blur (optional)
+  	-> color (optional)
+  	*/
+	text-shadow: 1px 2px 5px #CCC;
+
+	border-radius: 15px;
+	background-color: lightcoral;
+	padding-top: 80px;
+	margin: 100px auto;
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	font-weight: bold;
+}
+
+p{
+    margin: 0px;
+    font-size: 20px;
+    font-family: fantasy;
+}

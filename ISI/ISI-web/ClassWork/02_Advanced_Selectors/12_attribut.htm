@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>Les sélecteurs d'attributs.</title>
+    
+<style>
+   
+body {
+	font-family: Georgia;
+	font-size: 100%; 
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 1em 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+/*Attributs*/
+    
+    /* tous les éléments qui ont des classes */
+    [class]{
+        border:solid red 1px;
+    }
+    /* tous les  balises a qui comprennent l'attribut title */
+    a[title]{
+        font-variant:small-caps;
+        font-size:1.5em;
+    }
+    /* qui comprend un attribut title= visitez about us */
+     a[title="visitez about us"]{
+        color:lightcoral;
+    }
+    
+    /* = qui contient le mot rouge seulement (correspond exactement) */
+    p[class="rouge"]{
+        background:yellow;
+    }
+    
+    /* ~= qui contient le mot rouge (entre autres) */
+    p[class~="rouge"]{
+        color:indianred;
+    }
+    
+    /*Attributs (String matching)*/
+    
+    /* ^= qui commence par"http://" (prefixe) */
+    a[href^="http://"]{
+        color:yellowgreen;
+    }
+    
+     /* $= qui fini par"pdf" (suffixe) */
+    a[href$="pdf"]{
+        color:rebeccapurple;
+    }
+    
+     /* *= qui comprend erni dans la chaine de caractères (string) */
+    p[class*="erni"]{
+        background:green;
+        font-family: cursive;
+        font-size: 3em;
+    }
+    
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="http://www.facebook.com" title="visit facebook.com">Ceci est un lien absolu</a></li>
+  <li><a href="about.htm" title="visitez about us">Ceci est un lien relatif</a></li>
+  <li><a href="_docs/plan.pdf" title="téléchargez le plan">Ceci est un lien vers un fichier .pdf</a></li>
+</ul>
+<p class="rouge bleu vert">Ce paragraphe a les classes rouge bleu vert.</p>
+<p class="rouge vert">Ce paragraphe a les classes rouge et vert.</p>
+<p class="rouge bleu">Ce paragraphe a les classes rouge et bleu.</p>
+<p class="rouge">Ce paragraphe a la classe rouge</p>
+<p class="dernierdelagang">Ce paragraphe est le dernier exemple</p>
+</body>
+</html>

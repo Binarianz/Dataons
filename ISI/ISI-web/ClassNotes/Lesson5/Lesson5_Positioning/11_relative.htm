@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>Position relative</title>
+
+<style>
+
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: #ccc;
+}
+body {
+	width: 600px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 2em;
+}
+    
+    p{
+        margin-bottom: 20px;
+    }
+    
+/*position relative*/
+div {
+	width: 485px;
+	height: 175px;
+	border: 1px solid #ccc;
+}
+    
+    .yellow{
+        background:yellow;
+    }
+   
+    .red{
+        background:red;
+   
+        position:relative;
+        /* top: 10px; */
+        left: 20px;
+    
+    }
+    
+    .blue{
+        background:blue;
+    }
+    
+
+</style>
+</head>
+<body>
+    <h1>Un élément positionné de façon relative</h1>
+    <p>Ce mot-clé dispose tous les éléments comme s'ils n'étaient pas positionnés puis ajuste la position de l'élément, sans modifier la présentation (et laisse ainsi un espace où l'élément aurait du être s'il n'avait pas été positionné). <a href="https://developer.mozilla.org/fr/docs/Web/CSS/position#Positionnement_relatif" title="reference MDN" target="_blank">MDN</a></p>
+<div class="yellow"><p>div1</p></div>
+<div class="red"><p>div2</p></div>
+<div class="blue"><p>div3</p></div>
+</div>
+</body>
+</html>

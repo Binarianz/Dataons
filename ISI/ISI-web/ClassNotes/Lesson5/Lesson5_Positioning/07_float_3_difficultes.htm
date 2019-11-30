@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>Les float en CSS</title>
+<style>
+
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: #ccc;
+    width: 100%;
+}
+    
+body {
+	background: #fff;
+    width:80%;
+    margin:0 auto;
+}
+    nav{
+        background: grey;
+        height:100px;
+    }
+    
+    
+  /* float dans un element contenant*/ 
+
+    
+    div{
+        box-sizing: border-box;
+        padding:2%;
+    }
+    
+    .texte{
+        background:pink;
+        width:50%;
+    }
+    
+    .contenant{
+        background:darkgreen;
+   height: 400px;     /*  le contenant ne "voit pas le contenu" et comprends pas sa hauteur à cause de float, donc il faut en     specifier une.*/
+    /* display:flex;*/ /* nouvelle fonctionnalité CSS qui offre de nouvelles possiblilités!*/
+    }
+    
+    .one { 
+    width:50%;
+    float:left;
+    color:cornsilk;
+    font-family: sans-serif;
+    line-height:1.5;
+    text-align:justify;
+	
+}
+    .two { 
+    width:50%;
+    float:right;	
+}
+    
+    img{
+        border: 2px solid white;
+        -webkit-box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+        box-shadow: 0 3px 7px rgba(0,0,0,0.75);
+    }
+    
+    footer{
+        background: grey;
+        height:100px;
+        clear:both;
+    }
+    
+</style>
+</head>
+<body>
+<nav> la navigation</nav>
+    <div class="texte"><p>Plus j'ai de texte, plus je serai grand.</p></div>
+    
+<div class="contenant">
+    <div class="one">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet id urna laoreet suscipit. Integer commodo commodo sem, elementum blandit arcu congue vitae. Nunc varius erat sem, sit amet consequat leo fringilla id. Mauris nec arcu at orci condimentum consectetur ac ut quam. Pellentesque a mauris hendrerit leo gravida pulvinar at ac dolor. Nullam orci odio, consequat ac laoreet eget, malesuada a lorem. Vestibulum mollis velit lacus, consectetur cursus elit tristique at. Vivamus nec sagittis dolor. Mauris ornare dapibus sapien. Ut fringilla ac sapien eu vulputate.
+        </p>
+    </div>
+    <div class="two"> 
+        <img src="_images/singe.png">
+    </div> 
+ </div>   
+<footer> copyright </footer>
+</body>
+</html>

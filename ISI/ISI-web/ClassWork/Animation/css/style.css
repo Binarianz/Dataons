@@ -1,0 +1,73 @@
+@keyframes text{
+   0%{margin-left: 50%;} 
+   100%{margin-right: 0%;}
+   from {background-color: red;}
+  to {background-color: yellow;}
+  from{font-size: 10px;}
+  to{font-size: 40px}
+}
+.text
+{
+    animation-name: text;
+    animation-duration: 4s;
+    font-size: 40px;
+    animation-iteration-count: 310;
+}
+.ball
+{
+    border-radius: 50px;
+    animation-name: balling;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    
+    height: 100px;
+    width: 100px;
+    background-color: firebrick;
+    background: linear-gradient(firebrick,gray);
+    margin-left: 300px;
+  
+}
+@keyframes balling
+{
+  
+  
+    0%{margin-left: 50%;} 
+    100%{margin-right: 0%;}
+    from {background-color: red;}
+   to {background-color: yellow;}
+   from{font-size: 10px;}
+   to{font-size: 40px;bottom: 100px;}
+   
+
+
+}
+.polling_message {
+    color: white;
+    float: left;
+    margin-right: 2%;
+  }
+  
+  .view_port {
+    background-color: black;
+    height: 25px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .cylon_eye {
+    background-color: green;
+    background-image: linear-gradient(to right,
+        rgba(0, 0, 0, .9) 25%,
+        rgba(0, 0, 0, .1) 50%,
+        rgba(0, 0, 0, .9) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+  
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+            animation: 4s linear 0s infinite alternate move_eye;
+  }
+  
+  @-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+          @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+  

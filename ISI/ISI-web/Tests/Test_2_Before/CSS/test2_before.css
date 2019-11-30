@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+	#container {
+		position: absolute;
+		box-sizing: border-box;
+		background: #E5E5E5;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 146px;
+		left: 0px;
+		top: 0px;
+        background-color: rgba(25,140,122,1);
+	}
+
+	.logo {
+		position: absolute;
+		overflow: visible;
+		width: 174px;
+		height: 144px;
+		left: 223px;
+		top: 0px;
+        background-color: rgba(112,112,112,1);
+	}
+	
+	.imagen {
+		position: absolute;
+		overflow: visible;
+		left: 397px;
+		top: 247px;
+        background-color: gray;
+        filter: drop-shadow(2px 5px 6px rgba(0, 0, 0, 0.161));
+	}
+
+	.paragraph {
+		position: absolute;
+		overflow: visible;
+		width: 517px;
+		height: 388px;
+		left: 1007px;
+		top: 247px;
+        background-color: rgba(64,223,101,1);
+        border-color: rgba(0,0,0,1);
+        border-style: solid;
+        border-width: thin;
+	}
+
+	.asd {
+		position: absolute;
+		overflow: visible;
+		width: 1127px;
+		height: 168px;
+		left: 397px;
+		top: 737px;
+        background-color: rgba(153,98,98,1);
+        border-color: rgba(112,112,112,1);
+        border-style: solid;
+        border-width: thin;
+	}
+
+	#eggs {
+		position: absolute;
+		left: 1064.5px;
+		top: 297.5px;
+		overflow: hidden;
+		width: 417px;
+		height: 288px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(4,0,0,1);
+	}
+
+	.rectangle_6 {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 81px;
+		left: 1007px;
+		top: 34px;
+        background-color: rgba(255,255,255,1);
+        border-color: rgba(112,112,112,1);
+        border-style: solid;
+        border-width: thin;
+	}
+
+	.rectangle_10 {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 81px;
+		left: 1280px;
+		top: 34px;
+        background-color: rgba(255,255,255,1);
+        border-color: rgba(112,112,112,1);
+        border-style: solid;
+        border-width: thin;
+	}
+	.rectangle_11 {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 81px;
+		left: 1553px;
+		top: 34px;
+        background-color: rgba(255,255,255,1);
+        border-color: rgba(112,112,112,1);
+        border-style: solid;
+        border-width: thin;
+	}
+	#include {
+		position: absolute;
+		left: 618px;
+		top: 798px;
+		overflow: visible;
+		width: 686px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: DejaVu Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(255,255,255,1);
+	}
+
+	#some {
+		position: absolute;
+		left: 397px;
+		top: 995px;
+		overflow: hidden;
+		width: 518px;
+		height: 39px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,238,238,1);
+	}
+
+	#privacy_policy {
+		position: absolute;
+		left: 1007px;
+		top: 995px;
+		overflow: hidden;
+		width: 193px;
+		height: 40px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,238,238,1);
+	}
+
+	#terms_and_conditions {
+		position: absolute;
+		left: 1231px;
+		top: 998px;
+		overflow: hidden;
+		width: 323px;
+		height: 33px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,238,238,1);
+	}
+
+	#eggtime {
+		position: absolute;
+		left: 1064.5px;
+		top: 44.5px;
+		overflow: hidden;
+		width: 139px;
+		height: 61px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(4,0,0,1);
+	}
+
+	#nutrition {
+		position: absolute;
+		left: 1332.5px;
+		top: 44.5px;
+		overflow: hidden;
+		width: 149px;
+		height: 61px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(4,0,0,1);
+	}
+
+	#q_a {
+		position: absolute;
+		left: 1636.5px;
+		top: 44.5px;
+		overflow: hidden;
+		width: 87px;
+		height: 61px;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 36px;
+		color: rgba(4,0,0,1);
+	}
+    
+    .Footer {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 131px;
+		left: 0px;
+		top: 949px;
+        background-color: rgba(48,169,88,1);
+        border-color: rgba(112,112,112,1);
+        border-style: solid;
+        border-width: thin;
+	}

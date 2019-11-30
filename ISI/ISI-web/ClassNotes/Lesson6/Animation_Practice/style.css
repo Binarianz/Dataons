@@ -1,0 +1,67 @@
+
+.text{
+     animation-name: from-left-to-right;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    font-size: 40px;
+}
+
+
+@keyframes from-left-to-right {
+	  /* the property goes between the brackets */
+    0% { margin-left: 50%;}
+	100% { margin-left: 0%;}
+}
+
+
+/* Alternative you can use this */
+
+.container{
+    background-color: bisque;
+    height: 800px;
+    width: 800px;
+}
+
+.man {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    animation-name: ballMoves;
+    animation-duration: 4s;
+    animation-iteration-count: 4;
+    animation-delay: 2000ms;
+    margin-left: 350px;
+    position:absolute;
+}
+
+.woman{
+    height: 100px;
+    width: 100px;
+    margin-left: 350px;
+    background-color: deeppink;
+    border-radius: 50px;
+}
+
+@keyframes ballMoves{
+    0% {
+        filter: brightness(1);
+        top: 500px;
+        height: 200px;
+        width: 200px;
+        border-radius: 50px;
+    };
+    50% {
+        filter: brightness(1);
+        bottom: 200px;
+        border-radius: 50px;
+        height: 100px;
+        width: 100px;
+    };
+	100% {
+        filter:           brightness(0.3);
+        bottom: 100px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px;
+    }
+}

@@ -1,0 +1,18 @@
+.success {
+  border: solid;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer; }
+
+.fail {
+  border: solid;
+  background-color: orangered;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer; }
+
+p {
+  font-size: 40px; }
+
+/*# sourceMappingURL=style.css.map */

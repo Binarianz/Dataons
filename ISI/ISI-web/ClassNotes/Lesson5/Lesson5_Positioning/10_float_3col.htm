@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>Les float en CSS</title>
+<style>
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+    
+html {
+	background: rgb(123, 121, 143);
+}
+    
+body {
+	width: 960px;
+	background: white;
+	margin: 0 auto 2em;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+}
+    
+header {
+	background: rgb(76, 67, 65);
+	margin-bottom: 20px;
+}
+    
+header h1 {
+	font: normal 2em Arial, Helvetica, sans-serif;
+	color: white;
+	text-align: center;
+	line-height: 4em;
+	text-transform: uppercase;
+	letter-spacing:.1em;
+	margin: 0;
+}
+    
+article {
+	float: left;
+	width: 634px;
+}
+    
+aside {
+	float: right;
+	width: 266px;
+	height: 500px;
+    padding:20px;
+	background: rgb(173, 169, 130);
+}
+    
+.col1 {
+	background: rgb(237, 228, 214);
+	height: 500px;
+	float: left;
+	padding: 20px;
+	width: 266px;
+}
+    
+.col2 {
+	background: rgb(219,126,64);
+	height: 500px;
+	float: right;
+	padding: 20px;
+	width: 266px;
+}
+      
+    
+li {
+    background: darkgreen;
+    margin-bottom: 1px;
+    }
+    
+li:hover {
+background: darkslategray;    
+    }
+   
+ ul {
+    list-style-type: none;
+    padding:0;
+    }
+    
+a:link, a:visited {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 5px 10px;
+	text-align: center;
+	text-transform: uppercase;	
+    }
+    
+ 
+footer {
+	background: rgb(100, 98, 102);
+	line-height: 3em;
+	font-size: 1em;
+	color: white;
+	padding: 0 2em;
+	clear: both;
+    }
+</style>
+</head>
+<body>
+<header>
+<h1>Nom et logo de compagnie</h1>
+</header>
+<article>
+    <section class="col1">
+        <p>Des choses importantes</p>
+    </section>
+    <section class="col2">
+        <p>D'autres choses importantes</p>
+    </section>
+</article>
+<aside>
+    <p>Des nouvelles de la semaine</p>
+    <ul class="premier">
+      <li><a href="products.htm" title="products">Products</a></li>
+      <li><a href="about.htm" title="about us">About</a></li>
+      <li><a href="contact.htm" title="contact us">Contact</a></li>
+      <li><a href="register.htm" title="sign up!">Register</a></li>
+    </ul>
+</aside>
+<footer>Un pied de page avec le Copyright etc...</footer>
+</body>
+</html>

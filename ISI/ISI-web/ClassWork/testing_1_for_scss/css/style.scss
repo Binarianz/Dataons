@@ -1,0 +1,92 @@
+/* How to use variables */
+/* Declare variable and add add properties to it*/
+$font-var: cursive;
+$font-sty:'Times New Roman', Times, serif;
+$ft-sz : 24px;
+$bc-clr: rgb(10, 197, 25);
+$bc-clr2: rebeccapurple;
+$clr: aliceblue;
+$btnBg:red;
+$ulBg:green;
+/* if you change the variable, you change it everywhere,
+which makes it easier to maintain the CSS */
+nav
+{
+    ul
+    {
+        display: flex;  
+        list-style-type: none; 
+        padding: 30;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
+    }
+    li
+    {
+        background: $btnBg;
+        font-family: $font-var;
+    }
+}
+th {
+    /* Use the variable here */
+    font-family: $font-var;
+    font-family: $font-sty;
+    font-size: $ft-sz;
+    background-color: $bc-clr2;
+    color: $clr;
+}
+
+
+td{ 
+    /* Another example, we are using the second variable here */
+    font-family: $font-var;
+    background-color: $bc-clr;
+    font-size: $ft-sz;
+}
+// button
+// {
+// background:$btnBg;
+// }
+.success
+{
+    border:solid;
+    background:$btnBg;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fail
+{
+    border:solid;
+    background:$btnBg;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+}
+p
+{
+    font-size: 40px;
+}
+section
+{
+    h1
+    {
+        color: brown;
+    }
+    article
+    {
+        h2
+        {
+            color: green;
+        }
+        aside
+        {
+            #asd-art
+            {
+                color: yellow;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+    }
+}

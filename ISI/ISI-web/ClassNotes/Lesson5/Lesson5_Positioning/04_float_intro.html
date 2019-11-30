@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>floats in CSS</title>
+<style>
+
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: lightgray;
+    width: 100%;
+}
+    
+body {
+	background: white;
+    width:80%;
+    margin:0 auto;
+}
+    nav{
+        background: gray;
+        height:100px;
+    }
+    
+    
+  /* tester float*/ 
+/*
+    div{
+        box-sizing: border-box;
+    }
+*/ /* on calcule la largeur totale autrement avec border-box*/
+
+    
+    .one { 
+    width:50%;
+    height:300px;
+    background: pink;
+/*    float:left;*/
+	
+}
+    .two { 
+    width:50%;
+    height:300px;
+    background: lightblue;
+/*        float:right;*/
+        /*  border: 2px solid black;*/ /* la boite devient trop large*/
+	
+}
+    footer{
+        background: gray;
+        height:100px;
+/*        clear:both;*/
+    }
+</style>
+</head>
+<body>
+<nav> la navigation</nav>
+
+<div class="one">
+    <p>div1</p>
+</div>
+    
+<div class="two"> 
+    <p>div2</p>
+</div> 
+    
+<footer> copyright </footer>
+</body>
+</html>

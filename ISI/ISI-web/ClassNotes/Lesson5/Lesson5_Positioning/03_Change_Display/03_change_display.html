@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>The display property</title>
+
+<style>
+
+html {
+	background: lightgray;
+}
+body {
+	margin: 0 auto;
+	width: 920px;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	background: white;
+	padding: 25px;
+}
+pre {
+	padding: 20px;
+	background: seashell;
+	width: 600px;
+	margin: 1em 0;
+	font-size: 1.2em;
+	overflow: auto;
+	line-height: 2;
+}
+h1, h2, h3, h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 1em;
+}
+h1 {
+	font-size: 1.6em;
+}
+h2 {
+	font-size: 1.4em;
+}
+h3, h4 {
+	font-size: 1.2em;
+}
+h4 {
+	padding: 10px;
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	background: papayawhip;
+}
+.hide {
+	background: sandybrown;
+	color: white;
+	font-weight: normal;
+	padding: 0 25px;
+	font-size: 1.8em;
+	line-height: 1.8;
+}
+	
+
+/*
+li {
+	display: inline;
+}
+img {
+	display: block;
+	margin-bottom: 1em;
+}
+.inlineB {
+	display: inline-block;
+	margin-right: 1em;
+}
+.grand {
+	height: 200px;
+}
+.hide {
+	display: none;
+}
+*/
+</style>
+</head>
+<body>
+<section class="intro">
+<h1>The display property</h1>
+<p>You can control the way in which elements are rendered by using the <strong>display</strong> property. These are some available values:</p>
+<pre>inline | block | inline-block | none </pre>
+</section>
+<section class="exemples">
+<h2>Examples:</h2>
+<ul>
+<li>Render this list</li>
+<li>as inline elements</li>
+<li>and you will get</li>
+<li>one line of text.</li>
+</ul>
+<h3>Render these images as block elements:</h3>
+<img src=https://picsum.photos/299/200 alt="random-image">
+<img src=https://picsum.photos/300/200 alt="random-image">
+<img src=https://picsum.photos/299/199 alt="random-image">
+</section>
+<h3>Inline block:</h3>
+<p>this property lets you treat inline elements and keep the <em>box model</em> properties. Try it here.</p>
+<h4 class="inlineB">1st heading</h4><h4 class="inlineB">2nd heading</h4><h4 class="inlineB grand">3rd heading</h4>
+<h3 class="hide">A value of display:"none" indicates that the given element and its children will not be rendered.</h3>
+</body>
+</html>

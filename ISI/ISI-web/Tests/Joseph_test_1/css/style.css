@@ -1,0 +1,133 @@
+html, body{  
+    margin: 0px;
+    padding-top: 0px;
+  }
+ul {
+    display: flex;
+    /* background: rgb(187, 96, 96); */
+    list-style-type: none; 
+    padding: 30;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    margin: 0px;
+  
+    height: 200;
+    background: black;
+  }
+  li
+  {
+      color: white;
+  }
+  a
+  {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    height: 20px;
+    text-decoration: none;
+    color: white
+  }
+  div.brwimg
+  {
+
+  }
+  .column {
+    float: left;
+    /* height: 40px;
+    width: 40px; */
+    /* width: 33.33%;
+    padding: 5px; */
+  }
+  
+  /* Clearfix (clear floats) */
+  .row{
+    display: block;
+    margin-left: 50%;
+    margin-right: 0%;
+    width: 50%;
+  }
+  .im1
+  {
+      height: 40px;
+    width: 40px;
+  }
+
+  .column {
+    float: center;
+    width: 50%; 
+    padding: 10px; 
+  }
+  
+  .column img {
+    /* margin-top: 12px; */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+#test1
+{
+    float:left;
+    width:200px;
+    height:200px;
+}
+#test2
+{
+    float:right;
+    width:200px;
+    height:200px;
+}
+#ucb
+{
+    width:40px;
+    height:40px;
+}
+/* #a{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 150px;
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+} */
+#p2
+{
+    margin: 20px;
+    padding: 20px;
+}
+#p1
+{
+    margin: 20px;
+    padding: 20px;
+}
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: pink;
+  }
+  .navbar ul{
+      background: pink;
+  }
+
+  .textWrap img {
+	float: left;
+	border: 1px solid black;
+    margin: 0 1em 1em 0;
+  }
+  .textWrap2 img {
+	float: right;
+	border: 1px solid black;
+    margin: 0 1em 1em 0;
+  }
+.wrapper
+{
+        display: grid;
+    grid-template-columns: 200px 50px 100px;
+    grid-template-rows: 50px 50px;
+}

@@ -1,0 +1,66 @@
+.main-head {
+  grid-area: header;
+  background-color: #8CA0FF;
+}
+.content {
+  grid-area: content;
+  background-color: #FFA08C;
+}
+.main-nav {
+  grid-area: nav;
+    background-color: #CAB0E8;
+    
+}
+.side {
+  grid-area: sidebar;
+  background-color: #CAE8B0;  
+}
+.ad {
+  grid-area: ad;
+  background-color: #FFE9C2;
+}
+.main-footer {
+  grid-area: footer;
+  background-color: #CFFBFF;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer";
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+      "header header  header"
+      "nav    content sidebar"
+      "nav    content ad"
+      "footer footer  footer"
+   }
+   nav ul {
+     flex-direction: column;
+   }
+}
