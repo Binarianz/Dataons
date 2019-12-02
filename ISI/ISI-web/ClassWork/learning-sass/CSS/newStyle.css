@@ -1,0 +1,19 @@
+/* How to use variables */
+/* Declare variable and add add properties to it*/
+/* if you change the variable, you change it everywhere,
+which makes it easier to maintain the CSS */
+th {
+  /* Use the variable here */
+  font-family: cursive;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  background-color: rebeccapurple;
+  color: aliceblue; }
+
+td {
+  /* Another example, we are using the second variable here */
+  font-family: cursive;
+  background-color: #0ac519;
+  font-size: 24px; }
+
+/*# sourceMappingURL=newStyle.css.map */

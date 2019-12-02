@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Box-model review</title>
+
+<style>
+
+html {
+	background: lightgray;
+}
+
+div, p {
+	margin: 0;
+	padding:0;
+}
+    
+body{
+    width:700px;
+    height: 400px;
+    margin: 0 auto;
+    background: white;
+}
+
+.blue {
+	width: 520px;
+	height: 360px;
+	margin: 0 auto;
+	background: lightblue;
+	padding: 1px;
+    border: 2px dashed navy;
+}
+    
+.inside{
+    padding:25px;
+    width:400px;
+    background: brown;
+    margin: 0 auto;
+    border: 1px dashed navy;
+}
+    
+p {
+	background: orange;
+	height: 100%;
+    padding: 20px;
+    border: 0.5px dashed red;
+    font-size: 22px
+}
+
+.tooltip1{
+    position: relative;
+    /* display: block; */
+    border-bottom: 1px dotted black;
+}
+
+.tooltip1 .tooltiptext1 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+    
+.tooltip1:hover .tooltiptext1 {
+  visibility: visible;
+}
+    
+.tooltip1{
+    position: relative;
+    /* display: block; */
+    border-bottom: 1px dotted black;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+    
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
+    
+.tooltip2{
+    position: relative;
+    /* display: block; */
+    border-bottom: 1px dotted black;
+}
+
+.tooltip3 .tooltiptext3 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+    
+.tooltip3:hover .tooltiptext3 {
+  visibility: visible;
+}
+    
+.tooltip3{
+    position: relative;
+    /* display: block; */
+    border-bottom: 1px dotted black;
+}
+
+.tooltip4 .tooltiptext4 {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+    
+.tooltip4:hover .tooltiptext4 {
+  visibility: visible;
+}
+
+</style>
+
+</head>
+
+<body class="tooltip1"><span class="tooltiptext1">The white color represents the margin</span>
+    <div class="blue tooltip2"><span class="tooltiptext2">The blue color represents the border</span>
+        <div class="inside tooltip3">
+            <span class="tooltiptext3">The brown color represents the padding</span>
+            <p class="tooltip4">When laying out a document, the browser's rendering engine represents each element as a rectangular box according to the standard CSS basic box model. CSS determines the size, position, and properties (color, background, border size, etc.) of these boxes.<span class="tooltiptext4">This is the content area</span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>Z-index</title>
+<style>
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: gray;
+}
+body {
+	width: 700px;
+	background: white;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+	padding: 25px;
+}
+div {
+	margin-bottom: 25px;
+	width: 50px;
+	height: 50px;
+	padding: 25px;
+}
+
+/*add styles here*/
+.container {
+	background: rgb(237,228,214);
+	padding: 25px;
+	height: 100px;
+	position: relative;
+	margin-top: 25px;
+	border: 1px solid black;
+}
+.element1 {
+	background: rgb(211, 206, 61);
+	position: absolute;
+	left: -50px;
+	top: -10px;
+	z-index: -1;
+}
+.element2 {
+	background: rgb(85, 66, 54);
+	position: absolute;
+	left: 25px;
+	top: 50px;
+/*	z-index: 3;*/
+}
+.element3 {
+	background: rgb(247,120,37);
+	position: absolute;
+	left: 100px;
+	top: 100px;
+/*	z-index: 2;*/
+}
+</style>
+</head>
+<body>
+<h1>Z-index</h1>
+<p>La propriété z-index définit le « z-order » (NdT : « ordre z » n'est pas usité) d'un élément et de ses éléments fils. Lorsque des éléments se chevauchent, le z-order détermine l'ordre des différentes couches que formeront les éléments. Généralement, un élément couvrira un autre élément si sa valeur de  z-index est supérieure à celle du deuxième élément. <a href="https://developer.mozilla.org/fr/docs/Web/CSS/z-index" title="reference MDN" target="_blank">MDN</a>.</p>
+
+<section class="container">
+<div class="element1">Un</div>
+<div class="element2">Deux</div>
+<div class="element3">Trois</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>Les float en CSS: introduction</title>
+<style>
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: grey;
+}
+body {
+	width: 600px;
+	background: ghostwhite;
+	margin: 2em auto 2em;
+}
+div {
+	margin-bottom: 1em;
+	width: 100px; /*dépend de l'espace disponible, ex: tester augmenter la largeur à 200px*/
+	height: 100px;
+}
+/*trois elements en float*/
+.element1 {
+	background: orange;
+/*    float:right;*/
+/*
+    float:left;
+    margin-right: 10px;
+*/
+}
+.element2 {
+	background: blue;
+/*
+    float:left;
+    margin-right: 10px;
+*/
+}
+.element3 {
+	background: olive;
+/*
+    float:left;
+    margin-right: 10px;
+*/
+}
+</style>
+</head>
+<body>
+<p>La propriété float a quatre valeurs possible: left | right | none | inherit  <p>
+<p>La propriété float indique qu'un élément doit être retiré du flux normal (<em>normal flow</em>) et doit être placé sur le côté droit ou sur le côté gauche de son conteneur. De plus, puisque l'élément est retiré du flux normal, les éléments qui se trouvent en dessous seront affectés.
+    <a href="https://developer.mozilla.org/fr/docs/Web/CSS/float" title="reference MDN" target="_blank">Voir MDN.</a></p>
+<div class="element1"></div>
+<div class="element2"></div>
+<div class="element3"></div>
+</body>
+</html>

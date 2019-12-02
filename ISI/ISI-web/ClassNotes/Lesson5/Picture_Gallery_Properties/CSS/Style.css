@@ -1,0 +1,121 @@
+html {
+	margin: 0;
+	padding: 0;
+	background: darkgray;
+}
+
+body {
+	padding:0 25px;
+	background: white;
+    width: 1200px;
+    /* No need to precise height*/
+    /* height: 750px; */
+    margin: 0 auto;
+}
+
+header {
+	padding: 20px 25px;
+    background: midnightblue;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    color: white;
+}
+
+article {
+    /* Flexbox reminder */
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+}
+
+img {
+    /*  width: 480px;
+    height: 320px; */
+    width: 320px;
+    height: 210px;
+    margin: 10px 0px 0px 55px;
+    border: 2px solid white;
+}
+/*image properties*/
+#pic1
+{
+    border-radius: 12px;
+}
+#pic2
+{
+   opacity: 0.9;
+}
+#pic3
+{
+   filter: sepia(70%);
+}
+#pic4
+{
+    filter:brightness(150%);
+}
+#pic5
+{
+     filter: grayscale(100%);
+}
+#pic6
+{
+    filter: sepia(100%);
+}
+
+:hover#pic1
+{
+   transform: scaleX(-1);
+}
+:hover#pic2
+{
+    filter:brightness(300%);
+}
+:hover#pic3
+{
+   filter: saturate(7);
+}
+:hover#pic4
+{
+    filter: drop-shadow(8px 8px 10px red);
+}
+:hover#pic5
+{
+     filter: invert(10%);
+}
+
+:hover#pic6
+{
+     filter:brightness(200%);
+}
+
+
+p {
+    font-size: 24px;
+}
+
+.responsive
+{
+    widows: 40px;
+    height: 30px;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    background: lightblue;
+  }
+  article {
+    /* Flexbox reminder */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  body {
+    background: pink;
+  }
+}

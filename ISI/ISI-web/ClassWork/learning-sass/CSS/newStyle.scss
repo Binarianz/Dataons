@@ -1,0 +1,31 @@
+/* How to use variables */
+/* Declare variable and add add properties to it*/
+$font-var: cursive;
+$font-sty:'Times New Roman', Times, serif;
+$ft-sz : 24px;
+$bc-clr: rgb(10, 197, 25);
+$bc-clr2: rebeccapurple;
+$clr: aliceblue;
+/* if you change the variable, you change it everywhere,
+which makes it easier to maintain the CSS */
+
+th {
+    /* Use the variable here */
+    font-family: $font-var;
+    font-family: $font-sty;
+    font-size: $ft-sz;
+    background-color: $bc-clr2;
+    color: $clr;
+}
+
+
+td{ 
+    /* Another example, we are using the second variable here */
+    font-family: $font-var;
+    background-color: $bc-clr;
+    font-size: $ft-sz;
+}
+button
+{
+background: red;
+}

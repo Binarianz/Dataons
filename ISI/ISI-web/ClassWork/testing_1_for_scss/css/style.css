@@ -1,0 +1,56 @@
+/* How to use variables */
+/* Declare variable and add add properties to it*/
+/* if you change the variable, you change it everywhere,
+which makes it easier to maintain the CSS */
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 30;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around; }
+nav li {
+  background: red;
+  font-family: cursive; }
+
+th {
+  /* Use the variable here */
+  font-family: cursive;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  background-color: rebeccapurple;
+  color: aliceblue; }
+
+td {
+  /* Another example, we are using the second variable here */
+  font-family: cursive;
+  background-color: #0ac519;
+  font-size: 24px; }
+
+.success {
+  border: solid;
+  background: red;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer; }
+
+.fail {
+  border: solid;
+  background: red;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer; }
+
+p {
+  font-size: 40px; }
+
+section h1 {
+  color: brown; }
+section article h2 {
+  color: green; }
+section article aside #asd-art {
+  color: yellow;
+  font-family: 'Times New Roman', Times, serif; }
+
+/*# sourceMappingURL=style.css.map */

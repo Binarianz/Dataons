@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menus</title>
+    
+<style>
+
+.dropdown-button {
+  background-color: blue;
+  color: white;
+  min-width: 140px;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: papayawhip;
+  min-width: 160px;
+}
+
+.sub-menu a {
+  color: black;
+  font-size: 18px;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .sub-menu {
+    display: block;
+}
+
+.dropdown-button:hover {
+    background-color: mediumaquamarine;
+}
+
+.sub-menu a:hover {
+    background-color: lightblue;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="dropdown">
+       
+        <button class="dropdown-button">Menu</button>
+        <div class="sub-menu">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 2</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

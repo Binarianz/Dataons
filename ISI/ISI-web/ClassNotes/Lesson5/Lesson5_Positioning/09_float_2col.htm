@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>CSS floats</title>
+<style>
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: rgb(123, 121, 143);
+}
+body {
+	width: 960px;
+	background: white;
+	margin: 0 auto 2em;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+}
+header {
+	background: rgb(76, 67, 65);
+	margin-bottom: 20px;
+}
+header h1 {
+	font: normal 2em Arial, Helvetica, sans-serif;
+	color: white;
+	text-align: center;
+	line-height: 4em;
+	text-transform: uppercase;
+	letter-spacing:.1em;
+	margin: 0;
+}
+.col1 {
+	background: rgb(237, 228, 214);
+	height: 500px;
+	float: left;
+	padding: 20px;
+	width: 600px;/*	padding + largeur = 640px*/
+    margin-bottom: 20px; 
+}
+.col2 {
+	background: rgb(173, 169, 130);
+	height: 500px;
+	float: right;
+	padding: 20px;
+	width: 260px;/*	padding + largeur = 300px*/
+	margin-bottom: 20px;
+}
+footer {
+	background: rgb(100, 98, 102);
+	line-height: 3em;
+	font-size: .6em;
+	color: white;
+	padding: 0 2em;
+	clear: both;
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Name and logo of the company</h1>
+    </header>
+    <section class="col1">
+        Des choses importantes (important things)
+    </section>
+    <aside class="col2">
+        Des nouvelles de la semaine (news of the week)
+    </aside>
+    <footer>Un pied de page avec le Copyright etc... (a footer with the Copyright, etc)</footer>
+</body>
+
+</html>

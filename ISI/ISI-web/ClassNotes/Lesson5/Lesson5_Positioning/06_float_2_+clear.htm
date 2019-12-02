@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>Les float en CSS: introduction</title>
+<style>
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: gray;
+}
+body {
+	width: 600px;
+	background: white;
+	margin: 2em auto 2em;
+	font: 100% Arial, Helvetica, sans-serif;
+}
+    
+/*
+    .cf:after{
+        content:"";
+        display:block;
+        clear:both;
+    }
+*/
+    
+div {
+	margin-bottom: 1em;
+	margin-right: 2em;
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	padding: 25px;
+	float: left;
+}
+/*Les floats. Hormis les couleurs, tous les div sont identiques. J'aimerais avoir 2 rangées de trois...*/
+.element1 {
+	background: darkkhaki;
+}
+.element2 {
+	background: darkorchid;
+}
+.element3 {
+	background: darkolivegreen;
+}
+.element4 {
+	background: darkorange;
+/*    clear:both;*/
+}
+.element5 {
+	background: crimson;
+}
+.element6 {
+	background: cornflowerblue;
+}
+/*    p{clear: both;}*/
+</style>
+</head>
+<body>
+<!--    <section class="cf">-->
+<p>La propriété clear a cinq valeurs possible: left | right | both | inherit | none<p>
+<p>La propriété clear indique si un élément peut être situé à côté d'éléments flottants qui le précèdent ou s'il doit être déplacé vers le bas pour être en dessous de ces éléments. La propriété clear s'applique aux éléments flottants comme aux éléments non-flottants.<a href="https://developer.mozilla.org/fr/docs/Web/CSS/clear" title="reference MDN" target="_blank">Voir MDN.</a></p>
+<div class="element1">un</div>
+<div class="element2">deux</div>
+<div class="element3">trois</div>
+<div class="element4">quatre</div>
+<div class="element5">cinq</div>
+<div class="element6">six</div>
+<!--        </section>-->
+<!--    <p> </p>-->
+</body>
+</html>

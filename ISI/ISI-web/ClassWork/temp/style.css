@@ -1,0 +1,31 @@
+h1
+{
+    background-color: rgb(255, 212, 212);
+    font-family: cursive;
+    color: rgb(0, 117, 10);
+    width: 60;
+    height: 30;
+}
+h2
+{
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+    color: white
+}
+img
+{
+float: right;
+position: relative;
+top: 0;
+right: 0;
+
+}
+body
+{
+    background: grey;
+}
+h4
+{
+    color: brown;
+    background-color: aquamarine
+}

@@ -1,0 +1,42 @@
+/* add a selector here to color ALL the background */
+body
+{
+    background-color: #ACD8FF;
+}
+
+/* add a selector here to color the first div */
+.container
+{
+    background-color: #999462;
+    width: 600px;
+    height: 800px;
+}
+
+/* add a selector here to change the h1 */
+h1
+{
+    background-color: #FFC83D;
+    font-family: cursive;
+    color: #0000C7;
+}
+
+/* add a selector here to change ALL the paragraphs */
+p
+{
+    background-color: #ACD8FF;
+    color: #242424;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+/* add a selector here to color the second div */
+div
+{
+    background-color: #1DA8CC;
+}
+
+/* add a selector here to change the h2 */
+h2
+{
+    font-family: cursive;
+}

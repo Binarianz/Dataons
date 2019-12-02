@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>Pseudo-classes</title>
+    
+<style>
+body {
+	font-family: Arial;
+	font-size: 100%;
+	margin: 50px 0 0 50px;
+}
+
+ul {
+	list-style: none;
+	margin: 0 0 50px;
+	padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	width: 175px;
+}
+    /*Exemple 2 de pseudo-classe (structure ex= :first-child) */
+    
+    li:nth-child(odd){
+        background: maroon;
+    }
+    li:nth-child(even){
+        background: saddlebrown;
+    }
+    
+    /*li:first-of-type{
+        background:blue;
+    }*/
+    
+    /*Exemple 2 de pseudo-classe (dynamique= interaction avec utilisateur). Ajouter styles pour hover et active. l'ordre lvha -love, hate- est important*/
+    
+a:link, a:visited{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 5px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+}
+    
+    a:hover{
+        background: ;
+    }
+    
+    a:active{
+        background: ;
+    }
+    
+
+    
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="products.htm" title="products">Products</a></li>
+  <li><a href="about.htm" title="about us">About</a></li>
+  <li><a href="contact.htm" title="contact us">Contact</a></li>
+  <li><a href="register.htm" title="sign up!">Register</a></li>
+</ul>
+
+</body>
+</html>

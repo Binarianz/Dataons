@@ -1,0 +1,177 @@
+/* No Javascript was used for this example */
+
+.container {height: 680px; width: 600px;}
+
+.ciel{
+    
+    height: 400px;
+    width:600px;
+    background-color: #525252;
+    animation-name: ciel;
+	animation-duration: 10000ms;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;	
+	animation-direction: normal;
+	animation-delay: 200ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes ciel {
+	  0% {background-color: #525258;}
+     12% {background-color: #525252;}
+	 24% {background-color: #6293E5;}
+     50% {background-color: #6293E5;}
+	 72% {background-color: #6293E5;}
+     90% {background-color: #525252;}
+	100% {background-color: #525252;}
+}
+
+.soleil{
+    width: 80px;
+    height: 80px;
+    margin-left: 260px;
+    border-radius: 50px; /* This property makes the sun round */
+    background-color: yellow;
+    animation-name: BougirSoleil;
+    animation-duration: 10000ms;
+    animation-delay: 500ms; /* to start later */
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+    position:absolute;
+}
+
+@keyframes BougirSoleil {
+	0%{top: 500px;
+       background: yellow;
+    }
+    120% {
+		bottom: 250px;
+		background: yellow;
+	}
+	24% {
+		bottom: 150px;
+		background: #ffd630;
+	}
+	50% {
+		top: 40px;
+		background: #ffd630;
+	}
+    62%{
+        top: 40px;
+        background: orangered;
+    }
+    74% {
+		bottom: 250px;
+		background: red;
+	}
+    100% {
+		top: 500px;
+		background: red;
+	}
+}
+
+.lune{
+    width: 80px;
+    height: 80px;
+    margin-left: 260px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 yellow;
+    animation-name: BougirLune;
+    animation-duration: 10000ms;
+    animation-delay: 10100ms;
+    animation-iteration-count: 1;
+    /* the last property is kept */
+    animation-fill-mode: backwards;
+    position:absolute;
+}
+
+@keyframes BougirLune {
+	0%{top: 500px;
+       background: #525252;
+       transform: scale(0.3);
+    }
+	50% {
+		top: 40px;
+		background: #525252;
+        transform: scale(1);
+	}
+    100% {
+		top: 500px;
+		background: #525252;
+        transform: scale(0.4);
+	}
+}
+
+.mer{
+    height: 200px;
+    background: linear-gradient(blue, darkblue);
+    position: relative;
+    animation-name: mer;
+	animation-duration: 10000ms;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;	
+	animation-direction: normal;
+	animation-delay: 200ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes mer {
+	  0% {background: linear-gradient(blue, darkblue);}
+	 72% {background: linear-gradient(blue);}
+    100% {background: linear-gradient(blue, darkblue);}
+}
+
+.bateau{
+    width: 80px;
+    height: 80px;
+    margin-top: -240px;        
+    margin-left: 30px;
+    position: absolute;
+    animation-name: bateau;
+    animation-duration: 10000ms;
+    animation-delay: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+
+@keyframes bateau {
+	0% {
+    left: 10px;
+    filter: brightness(1);      
+    }
+    40% {
+    left: 450px;
+    filter: brightness(1);
+    }
+    50% {
+    filter: blur(0.5);
+    }
+    90% {
+    left: 200px;
+    filter: brightness(0.3);
+    }
+    100% {
+    left: 10px;
+    filter: brightness(0.3);
+    }
+}
+
+.plage{
+    height: 80px;
+    background: linear-gradient(#6C5299, #6C5228);
+    position: relative;
+    animation-name: plage;
+	animation-duration: 10000ms;
+	animation-timing-function: ease;
+	animation-iteration-count: 1;	
+	animation-direction: normal;
+	animation-delay: 200ms;
+	animation-fill-mode: forwards;
+}
+
+	
+@keyframes plage {
+    0%{opacity: 1;}
+    72%{opacity: 0.5;}
+    100%{opacity: 1}
+}

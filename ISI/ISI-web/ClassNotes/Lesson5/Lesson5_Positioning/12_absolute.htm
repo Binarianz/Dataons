@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Une page pour explorer le langage CSS">
+<title>Absolute Positioning</title>
+
+<style>
+
+div, p {
+	margin: 0;
+	padding:0;
+}
+html {
+	background: #ccc;
+}
+body {
+	width: 600px;
+	margin: 0 auto;
+	background: #fff;
+	padding: 2em;
+}
+    p{
+        margin-bottom: 20px;
+    }
+/*position absolue*/
+div {
+	width: 485px;
+	height: 175px;
+	margin: 0 auto 2em;
+	border: 1px solid #000;
+}
+    figure{
+    margin: 0;
+	padding:0;
+     position:relative;  /*  we have to specify a position for the parent element (its closest positioned ancestor) */
+    }
+    .caption{
+
+    position:absolute;
+    bottom:0px;
+
+    /* There are four ways of using colors in CSS: 1) The name of the color, the #hex code, rgb and hsla (hue, saturation, lightness, alpha) */
+    background: hsla(120,100%,100%,0.5);
+    font-size: 24px;
+    }
+
+</style>
+</head>
+<body>
+    <h1>Absolute Positioning</h1>
+    <p>Elements positioned in an absolute manner are removed from the normal flow and do not take more space when it comes to positioning the rest of the elements. An element positioned in an absolute way is placed with respect to its closest positioned ancestor. If there isn't an ancestor, the initial container will be used.<a href="https://developer.mozilla.org/fr/docs/Web/CSS/position#CSS_2" title="reference MDN" target="_blank">MDN</a></p>
+<div><figure><img src="_images/sm_nyc_banner.jpg"><p class="caption">This is a description of this image</p></figure></div>
+
+</body>
+</html>

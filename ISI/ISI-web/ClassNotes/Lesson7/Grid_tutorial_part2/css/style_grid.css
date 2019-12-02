@@ -1,0 +1,69 @@
+.wrapper{
+    font-family: cursive;
+    color: white;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    
+    /* Change columns to 1 fraction wide */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-rows: 100px 100px; */
+    
+    /* give 2 fractions to second column */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-rows: 100px 100px; */
+    
+    /* To vary the number of columns with the width of the container. Step 1 */
+    /* grid-template-columns: repeat(3, 200px); */
+                    /* # of columns, their width */
+    /* grid-template-rows: repeat(2, 200px); */
+                    /* # of columns, their heigth */
+    
+    /* To vary the number of columns with the width of the container. Step 2 */
+    /* grid-gap: 5px; /* new */
+    /* grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(2, 100px); */
+    
+    /* To vary the number of columns with the width of the container. Step 3 */
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px); */
+}
+
+/*
+.wrapper > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+*/
+
+.d1{
+    background-color: lightseagreen;
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+
+.d2{
+    background: bisque;
+}
+
+.d3{
+    background-color: lightblue;
+    /* grid-row-start: 2;
+    grid-row-end: 4; */
+}
+
+.d4{
+    background-color: plum;
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+}
+
+.d5{
+    background-color: darkturquoise;
+}
+
+.d6{
+    background-color: pink;
+}

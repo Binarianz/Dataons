@@ -1,0 +1,20 @@
+A. Install Ruby first 
+
+	1. Download ruby from: https://rubyinstaller.org/downloads/ (WITH DEVKIT)
+	2. Install
+	3. Download Development Kit (DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe)
+	4. Create a new Folder (c:devkit)
+	5. Install devkit there
+
+B. Install SASS
+	1. Go to all programs, Ruby, start command prompt with Ruby
+	2. C:\devKit>ruby dk.rb install
+	3. C:\devKit>ruby dk.rb init
+	4. C:\devKit>gem install sass
+
+C. Check version
+	sass -v
+    Example:
+
+    * The SCSS has to be in WAMP64\WWW 
+    C:\wamp64\www\learning-sass\CSS>sass --update newStyle.scss
