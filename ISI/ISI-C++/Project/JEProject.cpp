@@ -110,7 +110,7 @@ string guessCheck(string masterWord, string guessWord, string currrentWord)
     return currrentWord;
 }
 
-/*////////////////////////////////error counting function///////////////////////////////////*/
+/*////////////////////////////////error counting function////////////////////////*/
 
 int countError(int chances)
 {
