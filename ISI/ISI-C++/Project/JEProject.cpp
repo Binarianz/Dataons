@@ -7,9 +7,10 @@ using namespace std;
 void hangmanAscii(int height);
 string getMasterWord();
 string guessCheck(string masterWord, string guessWord, string currrentWord);
+int countError(int chances);
 int main()
 {
-    int choice;
+    int choice, errorCounter;
     string masterWord;
     string guess;
     hangmanAscii(7);
@@ -107,4 +108,10 @@ string guessCheck(string masterWord, string guessWord, string currrentWord)
         currrentWord = masterWord;
     }
     return currrentWord;
+}
+
+/*////////////////////////////////error counting function///////////////////////////////////*/
+
+int countError(int chances)
+{
 }
