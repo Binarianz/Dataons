@@ -26,11 +26,13 @@ int main()
     {
     case 1:
         hangmanAscii(1);
+        errorCounter = 5;
         cout << "\n\n";
         cout << currentWord << endl;
         cout << "enter your guess : ";
         cin >> guess;
         cout << guessCheck(masterWord, guess, currentWord);
+        hangmanAscii(errorCounter);
         break;
 
     default:
