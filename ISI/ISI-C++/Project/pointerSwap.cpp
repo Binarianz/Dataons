@@ -10,6 +10,7 @@ int main()
     swap(&x, &y);
     cout << x << endl
          << y;
+    system("pause");
 }
 void swap(int *a, int *b)
 {
