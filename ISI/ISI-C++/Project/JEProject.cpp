@@ -114,4 +114,5 @@ string guessCheck(string masterWord, string guessWord, string currrentWord)
 
 int countError(int chances)
 {
+    int i, j;
 }
