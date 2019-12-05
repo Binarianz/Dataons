@@ -11,8 +11,10 @@ int countError(int chances);
 int main()
 {
     int choice, errorCounter;
+    string temp1, temp2;
     string masterWord;
     string guess;
+    bool fail = false;
     hangmanAscii(7);
     cout << "\n\n\n";
     masterWord = getMasterWord();
@@ -25,14 +27,26 @@ int main()
     switch (choice)
     {
     case 1:
-        hangmanAscii(1);
-        errorCounter = 5;
+        hangmanAscii(0);
+        errorCounter = 0;
         cout << "\n\n";
         cout << currentWord << endl;
-        cout << "enter your guess : ";
-        cin >> guess;
-        cout << guessCheck(masterWord, guess, currentWord);
-        hangmanAscii(errorCounter);
+
+        while (errorCounter < 7 && masterWord != currentWord)
+        {
+            temp1 = currentWord;
+            cout << "enter your guess : ";
+            cin >> guess;
+            currentWord = guessCheck(masterWord, guess, currentWord);
+            temp2 = currentWord;
+            cout << temp2 << endl
+                 << endl;
+            if (temp1.compare(temp2) == 0)
+                errorCounter++;
+
+            hangmanAscii(errorCounter);
+        }
+
         break;
 
     default:
@@ -45,7 +59,7 @@ int main()
 void hangmanAscii(int height)
 {
     string hangManAscii[19];
-    hangManAscii[0] = "|         |\n";
+    hangManAscii[0] = "|=========|\n";
     hangManAscii[1] = "|         0\n";
     hangManAscii[2] = "|        /";
     hangManAscii[3] = "|";
@@ -56,6 +70,7 @@ void hangmanAscii(int height)
     {
         cout << hangManAscii[i];
     }
+    cout << "\n\n";
 }
 
 /*//////////////////////getting master word function/////////////////////*/
