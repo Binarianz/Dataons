@@ -3,14 +3,16 @@
 #include <string>
 #include <time.h>
 #include <algorithm>
+//#include <xstring>
 using namespace std;
+string erroeword;
 void hangmanAscii(int height);
 string getMasterWord();
 string guessCheck(string masterWord, string guessWord, string currrentWord);
-int countError(int chances);
+//int countError(int chances);
 int main()
 {
-    int choice, errorCounter;
+    int choice, errorCounter = 0;
     string temp1, temp2;
     string masterWord;
     string guess;
@@ -19,7 +21,6 @@ int main()
     cout << "\n\n\n";
     masterWord = getMasterWord();
     string currentWord(masterWord.length(), '_');
-
     cout << masterWord << endl;
     cout << "1.Play\n2.Exit\n"
          << "Enter your choice : ";
@@ -30,6 +31,7 @@ int main()
         hangmanAscii(0);
         errorCounter = 0;
         cout << "\n\n";
+        system("CLS");
         cout << currentWord << endl;
 
         while (errorCounter < 7 && masterWord != currentWord)
@@ -43,7 +45,6 @@ int main()
                  << endl;
             if (temp1.compare(temp2) == 0)
                 errorCounter++;
-
             hangmanAscii(errorCounter);
         }
 
@@ -51,6 +52,88 @@ int main()
 
     default:
         break;
+    }
+    if (masterWord == guess || masterWord == currentWord)
+    {
+        system("CLS");
+        erroeword = "";
+        cout << "you won and the correct answer is : " << masterWord << endl;
+        hangmanAscii(7);
+        cout << "\n\n\n";
+        masterWord = getMasterWord();
+        string currentWord(masterWord.length(), '_');
+        cout << masterWord << endl;
+        cout << "1.Play\n2.Exit\n"
+             << "Enter your choice : ";
+        cin >> choice;
+        switch (choice)
+        {
+        case 1:
+            hangmanAscii(0);
+            errorCounter = 0;
+            cout << "\n\n";
+            cout << currentWord << endl;
+
+            while (errorCounter < 7 && masterWord != currentWord)
+            {
+                temp1 = currentWord;
+                cout << "enter your guess : ";
+                cin >> guess;
+                currentWord = guessCheck(masterWord, guess, currentWord);
+                temp2 = currentWord;
+                cout << temp2 << endl
+                     << endl;
+                if (temp1.compare(temp2) == 0)
+                    errorCounter++;
+                hangmanAscii(errorCounter);
+            }
+
+            break;
+
+        default:
+            break;
+        }
+    }
+    if (errorCounter == 7)
+    {
+        erroeword = "";
+        cout << "you failed and the correct answer is : " << masterWord << endl;
+        hangmanAscii(7);
+        cout << "\n\n\n";
+        masterWord = getMasterWord();
+        string currentWord(masterWord.length(), '_');
+        cout << masterWord << endl;
+        cout << "1.Play\n2.Exit\n"
+             << "Enter your choice : ";
+        cin >> choice;
+        switch (choice)
+        {
+        case 1:
+            hangmanAscii(0);
+            errorCounter = 0;
+            cout << "\n\n";
+            cout << currentWord << endl;
+
+            while (errorCounter < 7 && masterWord != currentWord)
+            {
+                temp1 = currentWord;
+                cout << "enter your guess : ";
+                cin >> guess;
+                //system("CLS");
+                currentWord = guessCheck(masterWord, guess, currentWord);
+                temp2 = currentWord;
+                cout << temp2 << endl
+                     << endl;
+                if (temp1.compare(temp2) == 0)
+                    errorCounter++;
+                hangmanAscii(errorCounter);
+            }
+
+            break;
+
+        default:
+            break;
+        }
     }
     system("pause");
 }
@@ -70,6 +153,8 @@ void hangmanAscii(int height)
     {
         cout << hangManAscii[i];
     }
+    cout << endl
+         << "Error word is : " << erroeword << endl;
     cout << "\n\n";
 }
 
@@ -101,6 +186,7 @@ string getMasterWord()
 /*/////////////////////////////////////guesscheck function/////////////////////////*/
 string guessCheck(string masterWord, string guessWord, string currrentWord)
 {
+    bool flag = false;
 
     if (guessWord.length() == 1)
     {
@@ -110,6 +196,7 @@ string guessCheck(string masterWord, string guessWord, string currrentWord)
             if (masterWord[i] == guessWord[0])
             {
                 currrentWord[i] = guessWord[0];
+                flag = true;
             }
             else
             {
@@ -119,17 +206,20 @@ string guessCheck(string masterWord, string guessWord, string currrentWord)
                 }
             }
         }
+        if (flag == false)
+            erroeword += guessWord[0];
+        erroeword += " ";
     }
     else if (masterWord.compare(guessWord) == 0)
     {
         currrentWord = masterWord;
     }
+    else
+    {
+        erroeword += guessWord + " ";
+    }
+
     return currrentWord;
 }
 
 /*////////////////////////////////error counting function////////////////////////*/
-
-int countError(int chances)
-{
-    int i, j;
-}
