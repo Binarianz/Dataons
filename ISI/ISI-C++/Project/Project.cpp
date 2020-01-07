@@ -1,51 +1,166 @@
 #include <iostream>
-#include<fstream>
-#include<string>
-#include<time.h>
+#include <fstream>
+#include <string>
+#include <time.h>
+#include <algorithm>
+#include<xstring>
 using namespace std;
-string line;
-
-int validationInput(int);
-void printUnderScore(int);
-int lineLength();
-void stringComp(string);
-int main() 
+string erroeword;
+void hangmanAscii(int height);
+string getMasterWord();
+string guessCheck(string masterWord, string guessWord, string currrentWord);
+//int countError(int chances);
+int main()
 {
-	int guess=7;
-	printUnderScore(lineLength());
-	while (guess != 0)
+	int choice, errorCounter=0;
+	string temp1, temp2;
+	string masterWord;
+	string guess;
+	bool fail = false;
+	hangmanAscii(7);
+	cout << "\n\n\n";
+	masterWord = getMasterWord();
+	string currentWord(masterWord.length(), '_');
+	cout << masterWord << endl;
+	cout << "1.Play\n2.Exit\n"
+		<< "Enter your choice : ";
+	cin >> choice;	
+	switch (choice)
 	{
-		stringComp(line);
+	case 1:
+		hangmanAscii(0);
+		errorCounter = 0;
+		cout << "\n\n";
+		system("CLS");
+		cout << currentWord << endl;
+
+		while (errorCounter < 7 && masterWord != currentWord)
+		{			
+			temp1 = currentWord;
+			cout << "enter your guess : ";
+			cin >> guess;
+			currentWord = guessCheck(masterWord, guess, currentWord);
+			temp2 = currentWord;
+			cout << temp2 << endl
+				<< endl;
+			if (temp1.compare(temp2) == 0)
+				errorCounter++;
+			hangmanAscii(errorCounter);
+		}
+
+		break;
+
+	default:
+		break;
+	}
+	if (masterWord==guess || masterWord==currentWord)
+	{
+		system("CLS");
+		erroeword = "";
+		cout << "you won and the correct answer is : " << masterWord << endl;
+		hangmanAscii(7);
+		cout << "\n\n\n";
+		masterWord = getMasterWord();
+		string currentWord(masterWord.length(), '_');
+		cout << masterWord << endl;
+		cout << "1.Play\n2.Exit\n"
+			<< "Enter your choice : ";
+		cin >> choice;
+		switch (choice)
+		{
+		case 1:
+			hangmanAscii(0);
+			errorCounter = 0;
+			cout << "\n\n";
+			cout << currentWord << endl;
+
+			while (errorCounter < 7 && masterWord != currentWord)
+			{
+				temp1 = currentWord;
+				cout << "enter your guess : ";
+				cin >> guess;
+				currentWord = guessCheck(masterWord, guess, currentWord);
+				temp2 = currentWord;
+				cout << temp2 << endl
+					<< endl;
+				if (temp1.compare(temp2) == 0)
+					errorCounter++;
+				hangmanAscii(errorCounter);
+			}
+
+			break;
+
+		default:
+			break;
+		}
+	}
+	if (errorCounter==7)
+	{		
+		erroeword = "";
+		cout << "you failed and the correct answer is : " << masterWord << endl;
+		hangmanAscii(7);
+		cout << "\n\n\n";
+		masterWord = getMasterWord();
+		string currentWord(masterWord.length(), '_');
+		cout << masterWord << endl;
+		cout << "1.Play\n2.Exit\n"
+			<< "Enter your choice : ";
+		cin >> choice;
+		switch (choice)
+		{
+		case 1:
+			hangmanAscii(0);
+			errorCounter = 0;
+			cout << "\n\n";
+			cout << currentWord << endl;
+
+			while (errorCounter < 7 && masterWord != currentWord)
+			{
+				temp1 = currentWord;
+				cout << "enter your guess : ";
+				cin >> guess;
+				//system("CLS");
+				currentWord = guessCheck(masterWord, guess, currentWord);
+				temp2 = currentWord;
+				cout << temp2 << endl
+					<< endl;
+				if (temp1.compare(temp2) == 0)
+					errorCounter++;
+				hangmanAscii(errorCounter);
+			}
+
+			break;
+
+		default:
+			break;
+		}
 	}
 	system("pause");
-	
-	return 0;
 }
 
-int validationInput(int value)
+/*//////////////////////hangman printing function/////////////////////*/
+void hangmanAscii(int height)
 {
-	//int value;
-	while (cin.fail() || cin.peek() != '\n')
+	string hangManAscii[19];
+	hangManAscii[0] = "|=========|\n";
+	hangManAscii[1] = "|         0\n";
+	hangManAscii[2] = "|        /";
+	hangManAscii[3] = "|";
+	hangManAscii[4] = "\\  \n";
+	hangManAscii[5] = "|        /";
+	hangManAscii[6] = " \\  \n";
+	for (int i = 0; i <= height; i++)
 	{
-		cin.clear();
-		cin.ignore(512, '\n');
-		cout << "Warning - please enter a valid value !: ";
-		cin >> value;
+		cout << hangManAscii[i];
 	}
-	return value;
+	cout << endl << "Error word is : " << erroeword << endl;
+	cout << "\n\n";
 }
 
-void printUnderScore(int number)
+/*//////////////////////getting master word function/////////////////////*/
+string getMasterWord()
 {
-	for (int i = 0; i < number; i++)
-	{
-		cout << " _ ";
-	}
-	cout << endl;
-}
-int lineLength()
-{
-	//string line;
+	string line;
 	int randomNumber, rLine = 0, stringLength = 0;
 	srand(time(NULL));
 	randomNumber = rand() % 20;
@@ -55,39 +170,57 @@ int lineLength()
 		while (getline(myfile, line))
 		{
 			++rLine;
-			if (randomNumber == rLine) {
-				return line.size();
+			if (randomNumber == rLine)
+			{
+				return line;
 			}
 		}
 		myfile.close();
-
 	}
 
-	else cout << "Unable to open file";
+	else
+		cout << "Unable to open file";
+	return line;
 }
-void stringComp(string a)
+/*/////////////////////////////////////guesscheck function/////////////////////////*/
+string guessCheck(string masterWord, string guessWord, string currrentWord)
 {
-	int i,j=0;
-	int length = a.size();
-	char guess;
-	char* p=new char[length] ;
-	
-	cout << "\n Enter your Guess ; ";
-	cin >> guess;
-	guess = validationInput(guess);
-	for ( i = 0; i < length; i++)
+	bool flag=false;
+
+	if (guessWord.length() == 1)
 	{
-		if (line[i]==guess)
+		for (int i = 0; i < masterWord.size(); i++)
 		{
-			p[i] = a[i];
-			j++;
+
+			if (masterWord[i] == guessWord[0])
+			{
+				currrentWord[i] = guessWord[0];
+				flag = true;
+			}
+			else
+			{
+				if (currrentWord[i] == '_')
+				{
+					currrentWord[i] = '_';
+				}
+			}
 		}
-		else
-		{
-			p[i] = '_';
-			j++;
-		}
-		cout << p;
+		if (flag == false)
+			erroeword += guessWord[0];
+		    erroeword += " ";
+
 	}
-	delete[] p;
+	else if (masterWord.compare(guessWord) == 0)
+	{
+		currrentWord = masterWord;
+	}
+	else
+	{
+		erroeword += guessWord + " ";
+	}
+
+	return currrentWord;
+
 }
+
+/*////////////////////////////////error counting function////////////////////////*/

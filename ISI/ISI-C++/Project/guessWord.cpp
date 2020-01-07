@@ -14,11 +14,11 @@ int main()
     j = 7;
     string guesssWord = "alexander";
     string flase = "";
-    cout << "\nEnter your guess : ";
-    cin >> ch;
-
+    
     for (i = 0; i < guesssWord.size(); i++)
     {
+        cout << "\nEnter your guess : ";
+    cin >> ch;
 
         if (guesssWord[i] == ch)
         {
