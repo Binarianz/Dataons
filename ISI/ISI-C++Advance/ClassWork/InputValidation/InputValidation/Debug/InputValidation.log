@@ -1,2 +1,4 @@
 ﻿  Main.cpp
+c:\users\jemmanue\documents\dataons\isi\isi-c++advance\classwork\inputvalidation\inputvalidation\main.cpp(232): warning C4715: 'readInt': not all control paths return a value
+c:\users\jemmanue\documents\dataons\isi\isi-c++advance\classwork\inputvalidation\inputvalidation\main.cpp(243): warning C4715: 'readDouble': not all control paths return a value
   InputValidation.vcxproj -> C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\InputValidation\Debug\InputValidation.exe

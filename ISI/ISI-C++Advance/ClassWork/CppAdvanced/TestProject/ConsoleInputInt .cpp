@@ -81,7 +81,7 @@ void sortThreeInts(int* a, int* b, int* c)
 	arr[2] = c;
 	for (int i = 0; i < sizeof(arr); i++)
 	{
-		for (int i = 0; i < sizeof(arr); i++)
+		for (int i = 0; i < 2; i++)
 		{
 			if (*arr[i] < *arr[i + 1])
 				swapInts(arr[i], arr[i + 1]);
