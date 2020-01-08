@@ -49,8 +49,8 @@ int main()
 	testReadInt(20, 100);
 	//testReadDouble(20.5, 100.2);
 	//cout << "the returned value is : "<<bp << endl;
-	double j = readDouble(20.5, 100.2);
-	cout << "the returned value is : " << j << endl;
+	//double j = readDouble(20.5, 100.2);
+	//cout << "the returned value is : " << j << endl;
 	system("pause");
 	//cin.get();
 
@@ -246,7 +246,8 @@ double readDouble(double min, double max){
 	cout << message;	return readDouble(min, max);}void testReadChar(char options[], int optionsCount){
 	cout<<readChar("Enter the value : ",options, optionsCount);}void testReadInt(int min, int max)
 {
-	cout<<readInt("Enter the value : ", min, max);
+	int k=readInt("Enter the value : ", min, max);
+	cout << endl << k;
 }
 void testReadDouble(double min, double max)
 {
