@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://moodlen.isimtl.local/mod/page/view.php?id=16520 -->
+<html dir="ltr" lang="en" xml:lang="en" class="yui3-js-enabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>D03-C++-Web1909B- J. Chevalier: Simple inheritance</title>
+    <link rel="shortcut icon" href="http://moodlen.isimtl.local/theme/image.php/boost/theme/1575941704/favicon">
+    
+<meta name="keywords" content="moodle, D03-C++-Web1909B- J. Chevalier: Simple inheritance">
+<link rel="stylesheet" type="text/css" href="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/combo"><script charset="utf-8" id="yui_3_17_2_1_1578522342379_8" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/combo(1)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1578522342379_19" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/combo(2)" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/styles.php">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/moodlen.isimtl.local","sesskey":"PoyUzATrdo","themerev":"1575941704","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1575941704","admin":"admin","svgicons":true,"usertimezone":"America\/Toronto","contextid":23770,"developerdebug":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":true,"base":"http:\/\/moodlen.isimtl.local\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/moodlen.isimtl.local\/theme\/yui_combo.php?","combine":true,"filter":"RAW","insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/moodlen.isimtl.local\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/moodlen.isimtl.local\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/moodlen.isimtl.local\/theme\/yui_combo.php?m\/1575941704\/","combine":true,"comboBase":"http:\/\/moodlen.isimtl.local\/theme\/yui_combo.php?","ext":false,"root":"m\/1575941704\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":"DEBUG","modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/moodlen.isimtl.local\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/moodlen.isimtl.local\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1575941704\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/moodlen.isimtl.local\/lib\/javascript.php\/1575941704\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"http:\/\/moodlen.isimtl.local\/lib\/javascript.php\/1575941704\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/requirejs.php"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/javascript.php"></script></head>
+
+<body id="page-mod-page-view" class="format-topics path-mod path-mod-page safari dir-ltr lang-en yui-skin-sam yui3-skin-sam moodlen-isimtl-local pagelayout-incourse course-375 context-23770 cmid-16520 category-12 drawer-open-left jsenabled">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="http://moodlen.isimtl.local/mod/page/view.php?id=16520#maincontent">Skip to main content</a>
+</div><script type="text/javascript" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/combo(3)"></script><script type="text/javascript" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/javascript(1).php"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button aria-expanded="true" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true" aria-label=""></i><span class="sr-only">Side panel</span></button>
+            </div>
+    
+            <a href="http://moodlen.isimtl.local/" class="navbar-brand 
+                    hidden-sm-down
+                    ">
+                <span class="site-name hidden-sm-down">ISI</span>
+            </a>
+    
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <div class="dropdown d-inline">
+    <a href="http://moodlen.isimtl.local/mod/page/view.php?id=16520#" class=" dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">Joseph Emmanuel</span><span class="avatars"><span class="avatar current"><img src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/f2.png" alt="Picture of Joseph Emmanuel" title="Picture of Joseph Emmanuel" class="userpicture defaultuserpic" width="35" height="35" role="presentation"></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+            <a href="http://moodlen.isimtl.local/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><i class="icon fa fa-tachometer fa-fw " aria-hidden="true" title="Dashboard" aria-label="Dashboard"></i><span class="menu-action-text" id="actionmenuaction-1">Dashboard</span></a><div class="dropdown-divider"></div><a href="http://moodlen.isimtl.local/user/profile.php?id=1163" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><i class="icon fa fa-user fa-fw " aria-hidden="true" title="Profile" aria-label="Profile"></i><span class="menu-action-text" id="actionmenuaction-2">Profile</span></a><a href="http://moodlen.isimtl.local/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><i class="icon fa fa-table fa-fw " aria-hidden="true" title="Grades" aria-label="Grades"></i><span class="menu-action-text" id="actionmenuaction-3">Grades</span></a><a href="http://moodlen.isimtl.local/message/index.php" class="dropdown-item menu-action" role="menuitem" data-title="messages,message" aria-labelledby="actionmenuaction-4"><i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Messages" aria-label="Messages"></i><span class="menu-action-text" id="actionmenuaction-4">Messages</span></a><a href="http://moodlen.isimtl.local/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-5"><i class="icon fa fa-wrench fa-fw " aria-hidden="true" title="Preferences" aria-label="Preferences"></i><span class="menu-action-text" id="actionmenuaction-5">Preferences</span></a><div class="dropdown-divider"></div><a href="http://moodlen.isimtl.local/login/logout.php?sesskey=PoyUzATrdo" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-6"><i class="icon fa fa-sign-out fa-fw " aria-hidden="true" title="Log out" aria-label="Log out"></i><span class="menu-action-text" id="actionmenuaction-6">Log out</span></a>
+        </div>
+</div>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-messages" id="nav-message-popover-container" data-userid="1163" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-5e1656e5dea635e1656e5dab2110" aria-haspopup="true" aria-label="Show message window with no new messages" tabindex="0">
+                <i class="icon fa fa-comment fa-fw " aria-hidden="true" title="Toggle messages menu" aria-label="Toggle messages menu"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div id="popover-region-container-5e1656e5dea635e1656e5dab2110" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Messages</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <div class="newmessage-link">
+            <a href="http://moodlen.isimtl.local/message/index.php?contactsfirst=1">New message
+            </a>
+        </div>
+        <a class="mark-all-read-button" href="http://moodlen.isimtl.local/mod/page/view.php?id=16520#" role="button" title="Mark all as read" data-action="mark-all-read">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/loading.gif"></span>
+        </a>
+        <a href="http://moodlen.isimtl.local/message/edit.php?id=1163" title="Message preferences">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Message preferences" aria-label="Message preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="messages" data-region="messages" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" data-region="empty-message" tabindex="0">No messages</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="http://moodlen.isimtl.local/message/index.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div><div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="1163" data-region="popover-region">
+    <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" aria-role="button" aria-controls="popover-region-container-5e1656e5e01695e1656e5dab2111" aria-haspopup="true" aria-label="Show notification window with no new notifications" tabindex="0">
+                <i class="icon fa fa-bell fa-fw " aria-hidden="true" title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container">0</div>
+
+    </div>
+    <div id="popover-region-container-5e1656e5e01695e1656e5dab2111" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Notification window" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="http://moodlen.isimtl.local/mod/page/view.php?id=16520#" title="Mark all as read" data-action="mark-all-read" role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/loading.gif"></span>
+        </a>
+        <a href="http://moodlen.isimtl.local/message/notificationpreferences.php?userid=1163" title="Notification preferences">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Notification preferences" aria-label="Notification preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Loading" title="Loading" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/loading.gif"></span>
+        </div>
+                <a class="see-all-link" href="http://moodlen.isimtl.local/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">See all</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+            
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- custom_menu -->
+                
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row"><div class="col-xs-12 p-a-1"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="pull-xs-left"><div class="page-context-header"><div class="page-header-headings"><h1>D03-C++-Web1909B- J. Chevalier</h1></div></div></div><div class="clearfix w-100 pull-xs-left" id="page-navbar"><div class="breadcrumb-nav"><nav role="navigation">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="http://moodlen.isimtl.local/my/">Dashboard</a></li>
+                <li class="breadcrumb-item">My courses</li>
+                <li class="breadcrumb-item"><a href="http://moodlen.isimtl.local/course/view.php?id=375" title="D03-C++-Web1909B- J. Chevalier">D03-C++-Web1909B- J. Chevalier</a></li>
+                <li class="breadcrumb-item"><a href="http://moodlen.isimtl.local/course/view.php?id=375#section-8">Presentations / Notes</a></li>
+                <li class="breadcrumb-item"><a href="http://moodlen.isimtl.local/mod/page/view.php?id=16520" title="Page">Simple inheritance</a></li>
+    </ol>
+</nav></div><div class="breadcrumb-button pull-xs-right"></div></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <section id="region-main">
+                    <div class="card card-block" id="yui_3_17_2_1_1578522342379_20">
+                    <span class="notifications" id="user-notifications"></span>
+                    <div role="main" id="yui_3_17_2_1_1578522342379_21"><span id="maincontent"></span><h2>Simple inheritance</h2><div class="box generalbox center clearfix p-y-1" id="yui_3_17_2_1_1578522342379_24"><div class="no-overflow" id="yui_3_17_2_1_1578522342379_23"><p></p><p>So far, OOP has simply been presented as a different structural style of programming from procedural programming. It has perhaps seemed a little more natural or intuitive (once you understood how to use it), but that's probably about it. With <b>inheritance</b>, we will see an objective advantage of OOP: <b>reusability</b> of code. This is not to say that procedural programming does not allow for the reuse of code; it certainly does. But we will see with inheritance that reuse of code will be much easier and will save development time and lines of code, which amounts to a lot of energy.&nbsp;</p><p>The principle is simple: a class (called a <b>child</b> class or a <b>derived</b> class) can inherit the attributes and methods of another class (called the <b>base</b> class or the <b>parent</b> class), and also add attributes and methods for itself.</p><p>For example, imagine a <b>Mammal </b>class, with the attributes of mammals (like the various body parts shared by all mammals, like lungs), as well as methods representing vital functions shared by all mammals (like breathing, etc.). We can then imagine a <b>Dog </b>class with its attributes (lungs, four legs, etc.), and its methods (breathing, barking, etc.), as well as as many other classes derived from <b>Mammal </b>as desired.</p><p>The advantage is that, rather than re-declaring the <b>lungs </b>attribute in the <b>Dog</b>, <b>Dolphin</b>, <b>Horse</b>, <b>Cat</b>, etc. classes, and re-defining the <b>breathing </b>method across all these classes as well, we can merely define them in the mammalian base class and then indicate that the other classes inherit from this mammalian class (and thus inherit attributes like the lungs and methods like breathing). In this way, methods and attributes that are common to all the derived classes are only defined once, in the base class, and not copied for every child class.</p><p><br></p><p><strong>Mechanism of inheritance</strong></p><p>Consider a <b>Dog </b>class, containing an integer data member called <b>age</b>, as well as three methods (to get the age, to set the age, and to display the task that the dog can perform):</p><p>```</p><p>class Dog {</p><p>private:</p><p><span style="white-space:pre">	</span>int age;</p><p>public:</p><p><span style="white-space:pre">	</span>void setAge(int age);</p><p><span style="white-space:pre">	</span>int getAge();</p><p><span style="white-space:pre">	</span>void run();</p><p><span style="white-space:pre">	</span>void display();</p><p>};</p><p><br></p><p>void Dog::setAge(int age) {</p><p><span style="white-space:pre">	</span>this-&gt;age = age;</p><p>}</p><p><br></p><p>int Dog::getAge() {</p><p><span style="white-space:pre">	</span>return this-&gt;age;</p><p>}</p><p><br></p><p>void Dog::run() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "The dog runs in the park!" &lt;&lt; endl;</p><p>}</p><p><br></p><p>void Dog::display() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Age: " &lt;&lt; this-&gt;age &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>this-&gt;run();</p><p>}</p><p>```</p><p>Now let's create a <b>B</b><b>ird </b>class containing the same attribute and the same methods, in addition to another integer attribute, and a method that initializes the two attributes (the one inherited from the base class, and the one that belongs to the derived class), and a method that displays these attributes.</p><p><br></p><p>```</p><p>class Bird {</p><p><span style="white-space:pre">	</span>int age;</p><p><span style="white-space:pre">	</span>int wingspan;</p><p>public:</p><p><span style="white-space:pre">	</span>void setAge(int age);</p><p><span style="white-space:pre">	</span>int getAge();</p><p><span style="white-space:pre">	</span>void setWingspan(int wingspan);</p><p><span style="white-space:pre">	</span>int getWingspan();</p><p><span style="white-space:pre">	</span>void fly();</p><p><span style="white-space:pre">	</span>void display();</p><p>};</p><p><br></p><p>void Bird::setAge(int age) {</p><p><span style="white-space:pre">	</span>this-&gt;age = age;</p><p>}</p><p><br></p><p>int Bird::getAge() {</p><p><span style="white-space:pre">	</span>return this-&gt;age;</p><p>}</p><p><br></p><p>void Bird::setWingspan(int wingspan) {</p><p><span style="white-space:pre">	</span>this-&gt;wingspan = wingspan;</p><p>}</p><p><br></p><p>int Bird::getWingspan() {</p><p><span style="white-space:pre">	</span>return this-&gt;wingspan;</p><p>}</p><p><br></p><p>void Bird::fly() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "The bird flies in the sky!" &lt;&lt; endl;</p><p>}</p><p><br></p><p>void Bird::display() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Age : " &lt;&lt; this-&gt;age &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Wingspan: " &lt;&lt; this-&gt;wingspan &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>this-&gt;fly();</p><p>}</p><p>```</p><p><br></p><p>We can see how there is inefficient code duplication, specifically for the <b>age</b>&nbsp;data member and the <b>getAge() </b>and <b>setAge() </b>methods. To avoid this undesired duplication, we can simply define a class that is common to both the <b>Dog</b>&nbsp;and the <b>Bird</b>&nbsp;classes, which contains the <b>age </b>data member, and its getter and setter:</p><p>```</p><p>class Animal {</p><p><span style="white-space:pre">	</span>int age;</p><p>public:</p><p><span style="white-space:pre">	</span>void setAge(int age);</p><p><span style="white-space:pre">	</span>int getAge();</p><p><span style="white-space:pre">	</span>void display();</p><p>};</p><p><br></p><p>void Animal::setAge(int age) {</p><p><span style="white-space:pre">	</span>this-&gt;age = age;</p><p>}</p><p><br></p><p>int Animal::getAge() {</p><p><span style="white-space:pre">	</span>return this-&gt;age;</p><p>}</p><p><br></p><p>void Animal::display() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Age: " &lt;&lt; this-&gt;age &lt;&lt; endl;</p><p>}</p><p><br></p><p>class Dog : public Animal {</p><p>public:</p><p><span style="white-space:pre">	</span>void run();</p><p><span style="white-space:pre">	</span>void display();</p><p>};</p><p><br></p><p>void Dog::run() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "The dog runs in the park!" &lt;&lt; endl;</p><p>}</p><p><br></p><p>void Dog::display() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Age: " &lt;&lt; this-&gt;age &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>this-&gt;run();</p><p>}</p><p><br></p><p>class Bird : public Animal {<span style="white-space:pre">	</span></p><p><span style="white-space:pre">	</span>int wingspan;</p><p>public:<span style="white-space:pre">	</span></p><p><span style="white-space:pre">	</span>void setWingspan(int wingspan);</p><p><span style="white-space:pre">	</span>int getWingspan();</p><p><span style="white-space:pre">	</span>void fly();</p><p><span style="white-space:pre">	</span>void display();</p><p>};</p><p><br></p><p>void Bird::setWingspan(int wingspan) {</p><p><span style="white-space:pre">	</span>this-&gt;wingspan = wingspan;</p><p>}</p><p><br></p><p>int Bird::getWingspan() {</p><p><span style="white-space:pre">	</span>return this-&gt;wingspan;</p><p>}</p><p><br></p><p>void Bird::fly() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "The bird flies in the sky!" &lt;&lt; endl;</p><p>}</p><p><br></p><p>void Bird::display() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Age: " &lt;&lt; this-&gt;age &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Wingspan: " &lt;&lt; this-&gt;wingspan &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>this-&gt;fly();</p><p>}</p><p><br></p><p>```</p><p>With this technique, we no longer need to define the code of the methods inherited from <b>Animal</b>, since they are already defined in the <b>Animal</b>&nbsp;class itself. We only have to define code for the new methods of the derived classes. However, if you try to execute this code, you will get an error, because the <b>age </b>data member is no longer accessible in the <b>display() </b>methods of the <b>Dog </b>and <b>Bird </b>classes.</p><p><br></p><p><img src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/Screenshot_37.png" alt="" role="presentation"></p><p><span style="font-size: 1rem;">Why do we get this error? Because <b>age </b>is a private attribute of the <b>Animal</b>&nbsp;class. Therefore, it is accessible only to the methods of the <b>Animal&nbsp;</b>class, not to the methods of the <b>Dog </b>and <b>Bird</b>&nbsp;classes. This shows us that classes do not have access to the private members of their bases classes, even though they inherit them. The child classes must go through the non-private methods of the <b>Animals </b>class to access inherited private members. This is a bit like someone who inherits an amount in a trust: the money belongs to them, but they can only access it by going through the trust (in this way, they can ensure only a predetermined amount is removed over each fixed period, and prevent all the money from being withdrawn at once).</span><br></p><p>How do we fix this error? By using a <b>public </b>method in the <b>Animal</b>&nbsp;class (which has access to <b>age</b>). The <b>display </b>methods of <b>Dog</b>&nbsp;and <b>Bird</b>&nbsp;will have the following form:</p><p>```</p><p>void Dog::display() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Age: " &lt;&lt; this-&gt;getAge() &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>this-&gt;run();</p><p>}</p><p><br></p><p>void Bird::display() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Age: " &lt;&lt; this-&gt;getAge() &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Wingspan: " &lt;&lt; this-&gt;wingspan &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>this-&gt;fly();</p><p>}</p><p>```</p><p>We can even call the <b>Animal</b>&nbsp;<b>display()</b>&nbsp;method directly like this:</p><p>```</p><p>void Dog::display() {</p><p><span style="white-space:pre">	</span>Animal::display();</p><p><span style="white-space:pre">	</span>this-&gt;run();</p><p>}</p><p><br></p><p>void Bird::display() {</p><p><span style="white-space:pre">	</span>Animal::display();</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Wingspan: " &lt;&lt; this-&gt;wingspan &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>this-&gt;fly();</p><p>}</p><p><br></p><p>```</p><p>If we put this all together, declare an instance of the derived class, and then call its methods, we could have a program that looks like this:</p><p>```</p><p>#include &lt;iostream&gt;</p><p>using namespace std;</p><p><br></p><p>class Animal {</p><p><span style="white-space:pre">	</span>int age;</p><p>public:</p><p><span style="white-space:pre">	</span>void setAge(int age);</p><p><span style="white-space:pre">	</span>int getAge();</p><p><span style="white-space:pre">	</span>void display();</p><p>};</p><p><br></p><p>void Animal::setAge(int age) {</p><p><span style="white-space:pre">	</span>this-&gt;age = age;</p><p>}</p><p><br></p><p>int Animal::getAge() {</p><p><span style="white-space:pre">	</span>return this-&gt;age;</p><p>}</p><p><br></p><p>void Animal::display() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Age: " &lt;&lt; this-&gt;age &lt;&lt; endl;</p><p>}</p><p><br></p><p>class Dog : public Animal {</p><p>public:</p><p><span style="white-space:pre">	</span>void run();</p><p><span style="white-space:pre">	</span>void display();</p><p>};</p><p><br></p><p>void Dog::run() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "The dog runs in the park!" &lt;&lt; endl;</p><p>}</p><p><br></p><p>void Dog::display() {</p><p><span style="white-space:pre">	</span>Animal::display();</p><p><span style="white-space:pre">	</span>this-&gt;run();</p><p>}</p><p><br></p><p>class Bird : public Animal {<span style="white-space:pre">	</span></p><p><span style="white-space:pre">	</span>int wingspan;</p><p>public:<span style="white-space:pre">	</span></p><p><span style="white-space:pre">	</span>void setWingspan(int wingspan);</p><p><span style="white-space:pre">	</span>int getWingspan();</p><p><span style="white-space:pre">	</span>void fly();</p><p><span style="white-space:pre">	</span>void display();</p><p>};</p><p><br></p><p>void Bird::setWingspan(int wingspan) {</p><p><span style="white-space:pre">	</span>this-&gt;wingspan = wingspan;</p><p>}</p><p><br></p><p>int Bird::getWingspan() {</p><p><span style="white-space:pre">	</span>return this-&gt;wingspan;</p><p>}</p><p><br></p><p>void Bird::fly() {</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "The bird flies in the sky!" &lt;&lt; endl;</p><p>}</p><p><br></p><p id="yui_3_17_2_1_1578522342379_22">void Bird::display() {</p><p><span style="white-space:pre">	</span>Animal::display();</p><p><span style="white-space:pre">	</span>cout &lt;&lt; "Wingspan: " &lt;&lt; this-&gt;wingspan &lt;&lt; endl;</p><p><span style="white-space:pre">	</span>this-&gt;fly();</p><p>}</p><p><br></p><p><br></p><p>```</p><br><p></p></div></div><div class="modified">Last modified: Wednesday, 13 March 2019, 6:14 AM</div></div>
+                    <div class="m-t-2 m-b-1">
+<div class="row">
+    <div class="col-md-4">        <div class="pull-left">
+                <a href="http://moodlen.isimtl.local/mod/resource/view.php?id=16519&amp;forceview=1" id="prev-activity-link" class="" classes="btn btn-link" title="Dynamic arrays">◄ Dynamic arrays</a>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="mdl-align">
+            <div class="urlselect">
+    <form method="post" action="http://moodlen.isimtl.local/course/jumpto.php" class="form-inline" id="url_select_f5e1656e5dab2112">
+        <input type="hidden" name="sesskey" value="PoyUzATrdo">
+            <label for="jump-to-activity" class="sr-only">
+                Jump to...
+            </label>
+        <select id="jump-to-activity" class="custom-select urlselect" name="jump">
+                    <option value="" selected="">Jump to...</option>
+                    <option value="/mod/url/view.php?id=16452&amp;forceview=1">Microsoft C++ Language Reference</option>
+                    <option value="/mod/url/view.php?id=16453&amp;forceview=1">C++ Standard Library Reference: cplusplus.com</option>
+                    <option value="/mod/url/view.php?id=16454&amp;forceview=1">ISI email: Outlook Web App</option>
+                    <option value="/mod/url/view.php?id=16455&amp;forceview=1">Free Conference Call</option>
+                    <option value="/mod/resource/view.php?id=16456&amp;forceview=1">D03. Course outline</option>
+                    <option value="/mod/resource/view.php?id=18192&amp;forceview=1">Submission guidelines</option>
+                    <option value="/mod/resource/view.php?id=16457&amp;forceview=1">C++ review</option>
+                    <option value="/mod/resource/view.php?id=16458&amp;forceview=1">Console input validation presentation</option>
+                    <option value="/mod/url/view.php?id=16459&amp;forceview=1">Basic input/output</option>
+                    <option value="/mod/resource/view.php?id=18197&amp;forceview=1">Input validation 1</option>
+                    <option value="/mod/resource/view.php?id=18196&amp;forceview=1">Pointers 1. Intro</option>
+                    <option value="/mod/resource/view.php?id=18188&amp;forceview=1">Pointers 2. Expressions</option>
+                    <option value="/mod/resource/view.php?id=18198&amp;forceview=1">Pointers 3. Functions</option>
+                    <option value="/mod/resource/view.php?id=18200&amp;forceview=1">ConsoleInputInt.cpp</option>
+                    <option value="/mod/resource/view.php?id=18190&amp;forceview=1">StringConversions</option>
+                    <option value="/mod/resource/view.php?id=16501&amp;forceview=1">01 - Pointers</option>
+                    <option value="/mod/resource/view.php?id=16502&amp;forceview=1">Small glossary on pointers</option>
+                    <option value="/mod/resource/view.php?id=16503&amp;forceview=1">02 - Pointers and arrays</option>
+                    <option value="/mod/resource/view.php?id=16504&amp;forceview=1">Optional 1 - Structures</option>
+                    <option value="/mod/resource/view.php?id=16505&amp;forceview=1">BONUS: Character arrays (definitions)</option>
+                    <option value="/mod/resource/view.php?id=16506&amp;forceview=1">03 - OOP</option>
+                    <option value="/mod/resource/view.php?id=16507&amp;forceview=1">04 - Encapsulation</option>
+                    <option value="/mod/resource/view.php?id=16508&amp;forceview=1">Glossary on classes</option>
+                    <option value="/mod/resource/view.php?id=16509&amp;forceview=1">05 - Classes</option>
+                    <option value="/mod/resource/view.php?id=16510&amp;forceview=1">06 - Constructors</option>
+                    <option value="/mod/resource/view.php?id=16511&amp;forceview=1">07 - Objects, arrays, and strings as data members</option>
+                    <option value="/mod/resource/view.php?id=16512&amp;forceview=1">08 - The this pointer</option>
+                    <option value="/mod/resource/view.php?id=16513&amp;forceview=1">Occupying memory - Buyer</option>
+                    <option value="/mod/resource/view.php?id=16514&amp;forceview=1">09 - Introduction to object-oriented programming - const</option>
+                    <option value="/mod/resource/view.php?id=16515&amp;forceview=1">10 - Introduction to object-oriented programming - static</option>
+                    <option value="/mod/resource/view.php?id=16516&amp;forceview=1">11 - Introduction to object-oriented programming - Destructors</option>
+                    <option value="/mod/resource/view.php?id=16517&amp;forceview=1">12 - Dynamic allocation</option>
+                    <option value="/mod/resource/view.php?id=16518&amp;forceview=1">13 - Introduction to object-oriented programming - Instance copying</option>
+                    <option value="/mod/resource/view.php?id=16519&amp;forceview=1">Dynamic arrays</option>
+                    <option value="/mod/page/view.php?id=16521&amp;forceview=1">Access levels</option>
+                    <option value="/mod/page/view.php?id=16522&amp;forceview=1">Constructors, destructors, and inheritance</option>
+                    <option value="/mod/page/view.php?id=16523&amp;forceview=1">Inheritance and parameterized functions</option>
+                    <option value="/mod/page/view.php?id=16524&amp;forceview=1">Public, protected, and private inheritance</option>
+                    <option value="/mod/page/view.php?id=16525&amp;forceview=1">Inheritance versus composition</option>
+                    <option value="/mod/resource/view.php?id=16526&amp;forceview=1">Classes, inheritance, and modifiers</option>
+                    <option value="/mod/page/view.php?id=16527&amp;forceview=1">Simple substitution</option>
+                    <option value="/mod/page/view.php?id=16528&amp;forceview=1">Polymorphism and virtual methods</option>
+        </select>
+            <noscript>
+                <input type="submit" class="btn btn-secondary" value="Go">
+            </noscript>
+    </form>
+</div>
+
+        </div>
+</div>
+    <div class="col-md-4">        <div class="pull-right">
+                <a href="http://moodlen.isimtl.local/mod/page/view.php?id=16521&amp;forceview=1" id="next-activity-link" class="" classes="btn btn-link" title="Access levels">Access levels ►</a>
+
+        </div>
+</div>
+</div>
+</div>
+                    
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex " aria-hidden="false" tabindex="-1">
+        <nav class="list-group">
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/course/view.php?id=375" data-key="coursehome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0">
+                <div class="m-l-0">
+                        D03-C++-Web1909B- J. Chevalier
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/user/index.php?id=375" data-key="participants" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="90" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        Participants
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/badges/view.php?type=2&amp;id=375" data-key="badgesview" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        Badges
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/admin/tool/lp/coursecompetencies.php?courseid=375" data-key="competencies" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        Competencies
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/grade/report/index.php?id=375" data-key="grades" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        Grades
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/course/view.php?id=375#section-0" data-key="4017" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" aria-label=""></i>
+                            </span>
+                            <span class="media-body">General</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/course/view.php?id=375#section-1" data-key="4018" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Documents</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/course/view.php?id=375#section-2" data-key="4019" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Exercises</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/course/view.php?id=375#section-3" data-key="4020" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Code</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/course/view.php?id=375#section-4" data-key="4021" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Submissions</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/course/view.php?id=375#section-5" data-key="4022" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Quizzes</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/course/view.php?id=375#section-6" data-key="4023" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Exam</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/course/view.php?id=375#section-7" data-key="4024" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Practical project</span>
+                        </div>
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action font-weight-bold" href="http://moodlen.isimtl.local/course/view.php?id=375#section-8" data-key="4025" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="30" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" data-parent-key="375">
+                <div class="m-l-0">
+                        <div class="media">
+                            <span class="media-left">
+                                <i class="icon fa fa-folder fa-fw " aria-hidden="true" aria-label=""></i>
+                            </span>
+                            <span class="media-body">Presentations / Notes</span>
+                        </div>
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/my/" data-key="myhome" data-isexpandable="0" data-indent="0" data-showdivider="1" data-type="1" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0">
+                <div class="m-l-0">
+                        Dashboard
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/?redirect=0" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                <div class="m-l-0">
+                        Site home
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/calendar/view.php?view=month&amp;course=375" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                <div class="m-l-0">
+                        Calendar
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/user/files.php" data-key="privatefiles" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0" data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1">
+                <div class="m-l-0">
+                        Private files
+                </div>
+            </a>
+            <div class="list-group-item" data-key="mycourses" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome">
+                <div class="m-l-0">
+                    My courses
+                </div>
+            </div>
+            <a class="list-group-item list-group-item-action " href="http://moodlen.isimtl.local/course/view.php?id=375" data-key="375" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1" data-collapse="0" data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses">
+                <div class="m-l-1">
+                        D03-C++-Web1909B- J. Chevalier
+                </div>
+            </a>
+        </nav>
+    </div>
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+<footer id="page-footer" class="p-y-1 bg-inverse">
+    <div class="container">
+        <div id="course-footer"></div>
+
+
+        <div class="logininfo">You are logged in as <a href="http://moodlen.isimtl.local/user/profile.php?id=1163" title="View profile">Joseph Emmanuel</a> (<a href="http://moodlen.isimtl.local/login/logout.php?sesskey=PoyUzATrdo">Log out</a>)</div>
+        <div class="tool_usertours-resettourcontainer"></div>
+        <div class="homelink"><a href="http://moodlen.isimtl.local/course/view.php?id=375">D03-C++-Web1909B- J. Chevalier</a></div>
+        <nav class="nav navbar-nav hidden-lg-up">
+                <ul class="list-unstyled p-t-1">
+                </ul>
+        </nav>
+        
+        <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'http://moodlen.isimtl.local/lib/requirejs.php/1575941704/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'http://moodlen.isimtl.local/lib/javascript.php/1575941704/lib/jquery/jquery-3.2.1.min',
+        jqueryui: 'http://moodlen.isimtl.local/lib/javascript.php/1575941704/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'http://moodlen.isimtl.local/lib/javascript.php/1575941704/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="./D03-C++-Web1909B- J. Chevalier_ Simple inheritance_files/javascript(2).php"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "http://moodlen.isimtl.local/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("en",{
+ "Audio Player": "Audio Player",
+ "Video Player": "Video Player",
+ "Play": "Play",
+ "Pause": "Pause",
+ "Replay": "Replay",
+ "Current Time": "Current Time",
+ "Duration Time": "Duration Time",
+ "Remaining Time": "Remaining Time",
+ "Stream Type": "Stream Type",
+ "LIVE": "LIVE",
+ "Loaded": "Loaded",
+ "Progress": "Progress",
+ "Progress Bar": "Progress Bar",
+ "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+ "Fullscreen": "Fullscreen",
+ "Non-Fullscreen": "Non-Fullscreen",
+ "Mute": "Mute",
+ "Unmute": "Unmute",
+ "Playback Rate": "Playback Rate",
+ "Subtitles": "Subtitles",
+ "subtitles off": "subtitles off",
+ "Captions": "Captions",
+ "captions off": "captions off",
+ "Chapters": "Chapters",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions off",
+ "Audio Track": "Audio Track",
+ "Volume Level": "Volume Level",
+ "You aborted the media playback": "You aborted the media playback",
+ "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+ "No compatible source was found for this media.": "No compatible source was found for this media.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+ "Play Video": "Play Video",
+ "Close": "Close",
+ "Close Modal Dialog": "Close Modal Dialog",
+ "Modal Window": "Modal Window",
+ "This is a modal window": "This is a modal window",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+ ", opens captions settings dialog": ", opens captions settings dialog",
+ ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+ ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+ ", selected": ", selected",
+ "captions settings": "captions settings",
+ "subtitles settings": "subititles settings",
+ "descriptions settings": "descriptions settings",
+ "Text": "Text",
+ "White": "White",
+ "Black": "Black",
+ "Red": "Red",
+ "Green": "Green",
+ "Blue": "Blue",
+ "Yellow": "Yellow",
+ "Magenta": "Magenta",
+ "Cyan": "Cyan",
+ "Background": "Background",
+ "Window": "Window",
+ "Transparent": "Transparent",
+ "Semi-Transparent": "Semi-Transparent",
+ "Opaque": "Opaque",
+ "Font Size": "Font Size",
+ "Text Edge Style": "Text Edge Style",
+ "None": "None",
+ "Raised": "Raised",
+ "Depressed": "Depressed",
+ "Uniform": "Uniform",
+ "Dropshadow": "Dropshadow",
+ "Font Family": "Font Family",
+ "Proportional Sans-Serif": "Proportional Sans-Serif",
+ "Monospace Sans-Serif": "Monospace Sans-Serif",
+ "Proportional Serif": "Proportional Serif",
+ "Monospace Serif": "Monospace Serif",
+ "Casual": "Casual",
+ "Script": "Script",
+ "Small Caps": "Small Caps",
+ "Reset": "Reset",
+ "restore all settings to the default values": "restore all settings to the default values",
+ "Done": "Done",
+ "Caption Settings Dialog": "Caption Settings Dialog",
+ "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+ "End of dialog window.": "End of dialog window."
+});
+
+    });
+});;
+
+require(['jquery', 'message_popup/message_popover_controller'], function($, controller) {
+    var container = $('#nav-message-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+        require(['jquery'], function($) {
+            $('#jump-to-activity').change(function() {
+                $('#url_select_f5e1656e5dab2112').submit();
+            });
+        });
+    ;
+
+require(['theme_boost/loader']);
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+;
+require(["core/notification"], function(amd) { amd.init(23770, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"trace"}); });
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5e1656e5dab2113'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5e1656e5dab2113'); });
+})();
+//]]>
+</script>
+
+    </div>
+</footer>
+
+
+</body></html>

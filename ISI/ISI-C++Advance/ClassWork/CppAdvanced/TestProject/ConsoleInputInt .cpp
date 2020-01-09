@@ -1,28 +1,5 @@
-#include <iostream>
-#include <string>
+#include"pointerFile.h"
 using namespace std;
-
-int readInt();
-int readInt(int min, int max);
-int readInt(string message);
-int readInt(string message, int min, int max);
-
-void readThreeInts(int* a,int*b,int*c);void swapInts(int *x, int *y);void sortThreeInts(int* a, int*b, int*c);void displayThreeInts(int* a, int*b, int*c);
-
-int main()
-{
-	int number1, number2, number3;
-	readThreeInts(&number1, &number2, &number3);
-	displayThreeInts(&number1, &number2, &number3);
-	sortThreeInts(&number1, &number2, &number3);
-	displayThreeInts(&number1, &number2, &number3);
-	cout << "fdfdfd";
-	cin >> number1;
-}
-
-
-
-
 int readInt()
 {
 	int cinInt;
@@ -83,7 +60,7 @@ void sortThreeInts(int* a, int* b, int* c)
 	{
 		for (int i = 0; i < 2; i++)
 		{
-			if (*arr[i] < *arr[i + 1])
+			if (*arr[i] > *arr[i + 1])
 				swapInts(arr[i], arr[i + 1]);
 		}
 	}
@@ -92,6 +69,7 @@ void sortThreeInts(int* a, int* b, int* c)
 
 void displayThreeInts(int* a, int*b, int*c)
 {
+	cout << endl << endl;
 	cout <<"A = "<< *a << endl;
 	cout << "B = " << *b << endl;
 	cout << "C = " << *c << endl;

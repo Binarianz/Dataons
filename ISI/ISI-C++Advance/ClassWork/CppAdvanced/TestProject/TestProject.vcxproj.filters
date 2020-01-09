@@ -18,5 +18,13 @@
     <ClCompile Include="ConsoleInputInt .cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pointerFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

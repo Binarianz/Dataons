@@ -1,0 +1,4 @@
+﻿  Date.cpp
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\PassportExercise\Date.cpp(150): warning C4715: 'Date::getDaysInMonth': not all control paths return a value
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\PassportExercise\Date.cpp(83): warning C4715: 'Date::getMonthString': not all control paths return a value
+  PassportExercise.vcxproj -> C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\Debug\PassportExercise.exe
