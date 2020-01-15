@@ -46,7 +46,7 @@ int Passport::getAgeInYears()
 	return (now.tm_year+1900) - dateOfBirth.getYear();
 	//time_t  k = time(0);
 	//localtime_s(&k);
-	//return 1900 + k->tm_year -dateOfBirth.getYear();
+	//return 1900 + k->tm_year .getYear();
 }
 
 int Passport::getAgeInMonths()
@@ -71,22 +71,40 @@ int Passport::getAgeInDays()
 
 bool Passport::isYouth()
 {
-	return dateOfBirth.getYear() <= this->LEGAL_ADULT_AGE;
+	struct tm now;
+	time_t nowTime = time(0);
+	localtime_s(&now, &nowTime);
+	Date today = Date(now.tm_year + 1900, now.tm_mon + 1, now.tm_mday);	
+	return ((now.tm_year + 1900) - dateOfBirth.getYear()) <= this->LEGAL_ADULT_AGE;
 }
 
 bool Passport::isWorkingAge()
 {
-	return (dateOfBirth.getYear() >= this->LEGAL_ADULT_AGE && dateOfBirth.getYear()<=this->SENIOR_CITIZEN_AGE);
+	struct tm now;
+	time_t nowTime = time(0);
+	localtime_s(&now, &nowTime);
+	Date today = Date(now.tm_year + 1900, now.tm_mon + 1, now.tm_mday);
+	return ((now.tm_year + 1900) - dateOfBirth.getYear()) >= this->LEGAL_ADULT_AGE && ((now.tm_year + 1900) - dateOfBirth.getYear()) <= this->SENIOR_CITIZEN_AGE;
+	//return (dateOfBirth.getYear()  && dateOfBirth.getYear()<=this->SENIOR_CITIZEN_AGE);
 }
 
 bool Passport::isSeniorCitizen()
 {
-	return dateOfBirth.getYear() >= this->SENIOR_CITIZEN_AGE;
+	struct tm now;
+	time_t nowTime = time(0);
+	localtime_s(&now, &nowTime);
+	Date today = Date(now.tm_year + 1900, now.tm_mon + 1, now.tm_mday);
+	//return ((now.tm_year + 1900) - dateOfBirth.getYear()) <= this->LEGAL_ADULT_AGE;
+	return ((now.tm_year + 1900) - dateOfBirth.getYear()) >= this->SENIOR_CITIZEN_AGE;
 }
 
 bool Passport::canVote()
 {
-	return dateOfBirth.getYear() >= this->LEGAL_ADULT_AGE;
+	struct tm now;
+	time_t nowTime = time(0);
+	localtime_s(&now, &nowTime);
+	Date today = Date(now.tm_year + 1900, now.tm_mon + 1, now.tm_mday);
+	return((now.tm_year + 1900) - dateOfBirth.getYear()) >= this->LEGAL_ADULT_AGE;
 }
 
 double Passport::getHeightDifferenceFromAverage()

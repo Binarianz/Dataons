@@ -101,6 +101,18 @@ int Date::getDaysBetween(Date otherDate){
 	//int year1 = (otherDate.year - this->year - 1) * 365;
 	//int month1 = (otherDate.month - this->month)*30;
 	//return(otherDate.day - this->day)+year1+month1;
+	//int y1 = otherDate.getYear(), y2 = this->getYear(),y3;
+	//int no = 0;
+	//y3 = ((y2 - y1) * 365)-1;
+	//while (y1 <= y2)
+	//{
+	//	if ((y1 % 4 == 0 && y1 % 100 != 0) || (y1 % 400 == 0))
+	//	{
+	//		no++;
+	//	}
+	//	y1++;
+	//}
+	//return no+y3;
 }
 bool Date::isLeapYear()
 {
