@@ -1,0 +1,5 @@
+﻿  ConsoleMenu.cpp
+  Main.cpp
+  Generating Code...
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ConsoleMenu\ConsoleMenu.cpp(80): warning C4715: 'readInt': not all control paths return a value
+  ConsoleMenu.vcxproj -> C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\Debug\ConsoleMenu.exe
