@@ -1,6 +1,0 @@
-﻿  LibraryItem.cpp
-C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\LibraryExercise\LibraryItem.cpp(9,26): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
-  Main.cpp
-  Generating Code...
-C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\LibraryExercise\LibraryItem.cpp(112): warning C4715: 'LibraryItem::getLateFee': not all control paths return a value
-  LibraryExercise.vcxproj -> C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\Debug\LibraryExercise.exe
