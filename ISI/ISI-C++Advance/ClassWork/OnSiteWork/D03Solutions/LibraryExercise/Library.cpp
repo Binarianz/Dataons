@@ -25,20 +25,17 @@ LibraryItem* Library::getItem(int index)
 
 int Library::getItemsCount()
 {
-	cout << "TODO:  Library::getItemsCount()" << endl;
-	return 0;
+	return itemsCount;
 }
 
 int Library::getMaxItemsCount()
 {
-	cout << "TODO:  Library::getMaxItemsCount()" << endl;
-	return 0;
+	return maxItemsCount;
 }
 
 int Library::getBorrowedCount()
 {
-	cout << "TODO:  Library::getBorrowedCount()" << endl;
-	return 0;
+	//return borr;
 }
 
 int Library::getItemIndex(int referenceNumber)
