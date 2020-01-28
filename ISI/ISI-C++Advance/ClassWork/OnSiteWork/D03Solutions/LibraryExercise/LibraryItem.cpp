@@ -15,8 +15,6 @@ LibraryItem::LibraryItem(string title)
 	this->borrowed = 0;
 	this->borrowerName = nullptr;
 	this->dueDate = nullptr;
-
-	//out << "TODO:  LibraryItem(string title) setter constructor" << endl;
 }
 
 LibraryItem::LibraryItem(const LibraryItem& rhs)
@@ -37,7 +35,6 @@ LibraryItem::~LibraryItem()
 		delete[] this->borrowerName;
 	if (this->dueDate)
 		delete[] this->dueDate;
-	//cout << "TODO:  ~LibraryItem() destructor" << endl;
 }
 
 int LibraryItem::getReferenceNumber()
@@ -77,16 +74,7 @@ int LibraryItem::getDaysOverDue()
 }
 bool LibraryItem::isOverdue()
 {
-//if (borrowed)
-//{
-//	Date today = Date::getToday();
-//	int daysOverDue = (*dueDate).getDaysUntil(&today);
-//	return(daysOverDue > 0);
-//}
-//else
-//{
-//	return false;
-//}
+
 	return (borrowed) ? (getDaysOverDue() > 0) : false;
 	//calling static method;
 	//int year = today.getYear();

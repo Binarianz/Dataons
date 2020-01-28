@@ -1,2 +1,8 @@
-﻿  main.cpp
-  testcode.vcxproj -> C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\Debug\testcode.exe
+﻿  BaseClass.cpp
+  ChildClass.cpp
+  main.cpp
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\testcode\main.cpp(15,32): error C2819: type 'ChildClass' does not have an overloaded member 'operator ->'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\testcode\ChildClass.h(3): message : see declaration of 'ChildClass'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\testcode\main.cpp(15,32): message : did you intend to use '.' instead?
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\testcode\main.cpp(15,42): error C2232: '->BaseClass::getidNo': left operand has 'class' type, use '.'
+  Generating Code...

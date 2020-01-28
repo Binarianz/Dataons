@@ -1,0 +1,21 @@
+﻿  Book.cpp
+  CD.cpp
+  City.cpp
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\City.cpp(41,13): error C2082: redefinition of formal parameter 'size'
+  ConsoleMenu.cpp
+  Disc.cpp
+  DVD.cpp
+  Footwear.cpp
+  Heels.cpp
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Heels.cpp(3,22): error C7535: 'Heels::Heels': delegating constructor calls itself
+  Magazine.cpp
+  Main.cpp
+  Merchant.cpp
+  NoteBook.cpp
+  Novel.cpp
+  Product.cpp
+  RunningShoes.cpp
+  Sandal.cpp
+  SportsShoes.cpp
+  WinterShoes.cpp
+  Generating Code...

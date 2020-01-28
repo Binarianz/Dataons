@@ -1,4 +1,16 @@
-﻿  Disk.cpp
+﻿  Book.cpp
+  ConsoleInput.cpp
+  ConsoleMenu.cpp
+  Date.cpp
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\LibraryExercise\Date.cpp(244,12): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\LibraryExercise\Date.cpp(246,10): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  Disk.cpp
+  Library.cpp
+  LibraryController.cpp
+  LibraryItem.cpp
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\LibraryExercise\LibraryItem.cpp(13,26): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
   Main.cpp
+  StringConversions.cpp
   Generating Code...
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\LibraryExercise\LibraryItem.cpp(104): warning C4715: 'LibraryItem::getLateFee': not all control paths return a value
   LibraryExercise.vcxproj -> C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\Debug\LibraryExercise.exe

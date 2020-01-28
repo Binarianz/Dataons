@@ -1,0 +1,5 @@
+﻿  Company.cpp
+  Employee.cpp
+  Generating Code...
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\JosephD03Exam\Employee.cpp(111): warning C4715: 'Employee::getStatusString': not all control paths return a value
+  JosephD03Exam.vcxproj -> C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\Debug\JosephD03Exam.exe

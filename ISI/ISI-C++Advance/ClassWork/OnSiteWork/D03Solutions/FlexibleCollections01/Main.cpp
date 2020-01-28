@@ -4,7 +4,7 @@ int main()
 	FlexibleCollection f;
 	cout<<f.getCapacity()<<endl;
 	cout << f.getSize() << endl;
-	f.add(1);
+	f.add(20);
 	cin.get();
 	cout << f.getSize() << endl;
 	f.add(2);

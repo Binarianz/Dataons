@@ -1,4 +1,5 @@
 #include "FlexibleCollection.h"
+#include "FlexibleCollection.h"
 FlexibleCollection::FlexibleCollection()
 {
 	this->capacity = 4;
@@ -54,6 +55,7 @@ void FlexibleCollection::add(int value)
 		capacity++;
 		size = 0;
 		int** tempArray = new int* [capacity];
+		
 		for (int i = 0; i < capacity; i++)
 		{
 			tempArray[i] = arrayVariables[i];

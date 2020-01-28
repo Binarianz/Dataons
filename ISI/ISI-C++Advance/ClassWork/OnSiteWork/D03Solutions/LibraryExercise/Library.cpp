@@ -35,7 +35,7 @@ int Library::getMaxItemsCount()
 
 int Library::getBorrowedCount()
 {
-	//return borr;
+	return 5;
 }
 
 int Library::getItemIndex(int referenceNumber)

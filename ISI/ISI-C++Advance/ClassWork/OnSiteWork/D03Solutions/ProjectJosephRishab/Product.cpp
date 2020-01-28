@@ -1,28 +1,41 @@
 #include "Product.h"
+using namespace std;
 
-Product::Product(string)
+//Constructor....
+Product::Product() : Product("", 0, 0)
+{}
+
+Product::Product(string title, double buyingPrice, double sellingPrice)
 {
+	this->title = title;
+	this->buyingPrice = buyingPrice;
+	this->sellingPrice = sellingPrice;
 }
 
-string Product::getName()
-{
-	return string();
+//Getter Methods....
+string Product::getTitle() {
+	return title;
 }
 
-double Product::getBuyProduct()
-{
-	return 0.0;
+double Product::getSellingPrice(){
+	return sellingPrice;
 }
 
-double Product::getSellProduct()
-{
-	return 0.0;
+double Product::getBuyingPrice() {
+	return buyingPrice;
 }
 
-void Product::toString()
-{
+// UI methods....
+string Product::toString() {
+	return "";
 }
 
-void Product::display()
+void Product::display() {
+	cout << toString() << endl;
+}
+
+//Destructor....
+Product::~Product()
 {
+	// Delete anything that is allocated dynamically....
 }

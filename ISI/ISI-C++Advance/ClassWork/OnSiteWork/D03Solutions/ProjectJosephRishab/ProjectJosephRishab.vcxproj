@@ -18,6 +18,45 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Book.h" />
+    <ClInclude Include="CD.h" />
+    <ClInclude Include="City.h" />
+    <ClInclude Include="ConsoleMenu.h" />
+    <ClInclude Include="Disc.h" />
+    <ClInclude Include="DVD.h" />
+    <ClInclude Include="Footwear.h" />
+    <ClInclude Include="Heels.h" />
+    <ClInclude Include="Magazine.h" />
+    <ClInclude Include="Merchant.h" />
+    <ClInclude Include="NoteBook.h" />
+    <ClInclude Include="Novel.h" />
+    <ClInclude Include="Product.h" />
+    <ClInclude Include="RunningShoes.h" />
+    <ClInclude Include="Sandal.h" />
+    <ClInclude Include="SportsShoes.h" />
+    <ClInclude Include="WinterShoes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Book.cpp" />
+    <ClCompile Include="CD.cpp" />
+    <ClCompile Include="City.cpp" />
+    <ClCompile Include="ConsoleMenu.cpp" />
+    <ClCompile Include="Disc.cpp" />
+    <ClCompile Include="DVD.cpp" />
+    <ClCompile Include="Footwear.cpp" />
+    <ClCompile Include="Heels.cpp" />
+    <ClCompile Include="Magazine.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Merchant.cpp" />
+    <ClCompile Include="NoteBook.cpp" />
+    <ClCompile Include="Novel.cpp" />
+    <ClCompile Include="Product.cpp" />
+    <ClCompile Include="RunningShoes.cpp" />
+    <ClCompile Include="Sandal.cpp" />
+    <ClCompile Include="SportsShoes.cpp" />
+    <ClCompile Include="WinterShoes.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{B8EA7EF2-FBF6-4D23-9A9C-3D3CB9946608}</ProjectGuid>
@@ -137,14 +176,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="City.cpp" />
-    <ClCompile Include="Product.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="City.h" />
-    <ClInclude Include="Product.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

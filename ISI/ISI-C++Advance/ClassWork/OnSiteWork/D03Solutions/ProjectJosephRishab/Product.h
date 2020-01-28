@@ -2,18 +2,28 @@
 #include<iostream>
 #include<string>
 using namespace std;
+
 class Product
 {
 private:
-	string name;
-	double buyProduct, sellProduct;
+	string title;
+	double buyingPrice, sellingPrice;
+
 public:
-	Product(string);
-	string getName();
-	double getBuyProduct();
-	double getSellProduct();
-	void toString();
+	//Constructor...
+	Product();
+	Product(string, double, double);
+
+	//Getter Methods...
+	string getTitle();
+	double getSellingPrice();
+	double getBuyingPrice();
+
+	// UI methods....
+	string toString();
 	void display();
 
+	//Destructor...
+	~Product();
 };
 
