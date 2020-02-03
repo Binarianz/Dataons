@@ -28,7 +28,8 @@ int Footwear::getYear()
 }
 string Footwear::toString()
 {
-	return string();
+	string productDescription = Product::toString();
+	return productDescription+ " manufacturer : "+this->manufacturer+"Size : " +to_string( this->size) + "Year : " + to_string(this->year);
 }
 
 void Footwear::display()

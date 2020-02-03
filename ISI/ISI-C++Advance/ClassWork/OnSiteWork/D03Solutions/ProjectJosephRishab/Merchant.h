@@ -12,12 +12,14 @@ private:
 	int capacity; // Maximum size of the inventory....
 	double money;
 	bool isCaught;
-	//Product** inventory;
-	int** inventory;
+	Product** merchantInventory;
 	string nameOne, nameTwo;
+	City cityList[5];
+	City currentCity;
 
 public:
 	// Constructor....
+	Merchant();
 	Merchant(double, string, string);
 
 	// Getter methods....
@@ -26,11 +28,14 @@ public:
 	int getItemIndex(int);
 
 	// Action methods....
-	void buy(int);
-	void sell(int);
+	void buy(Product* merchantnventoryItem);
+	void sell(Product* merchantnventoryItem);
+	void moveToNewCity();
 
 	// Other methods....
 	void expandInventory(int newCapacity);
+
+	string getInventory();
 
 	// Destructor....
 	~Merchant();

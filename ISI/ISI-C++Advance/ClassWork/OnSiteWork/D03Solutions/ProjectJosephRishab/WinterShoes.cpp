@@ -11,7 +11,7 @@ WinterShoes::WinterShoes(string  title, double buyingPrice, double sellingPrice,
 }
 string WinterShoes::toString()
 {
-	return string();
+	return Footwear::toString();
 }
 
 void WinterShoes::display()

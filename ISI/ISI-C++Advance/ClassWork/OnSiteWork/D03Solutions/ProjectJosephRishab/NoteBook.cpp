@@ -11,9 +11,10 @@ NoteBook::NoteBook(string  title, double buyingPrice, double sellingPrice, strin
 
 string NoteBook::toString()
 {
-	return string();
+	return Book::toString();
 }
 
 void NoteBook::display()
 {
+	cout << toString() << endl;
 }

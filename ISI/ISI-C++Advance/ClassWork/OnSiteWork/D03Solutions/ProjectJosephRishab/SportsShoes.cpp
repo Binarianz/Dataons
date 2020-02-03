@@ -11,7 +11,7 @@ SportsShoes::SportsShoes(string  title, double buyingPrice, double sellingPrice,
 
 string SportsShoes::toString()
 {
-	return string();
+	return Footwear::toString();
 }
 
 void SportsShoes::display()

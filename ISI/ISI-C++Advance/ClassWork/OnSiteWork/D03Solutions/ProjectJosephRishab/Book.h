@@ -11,7 +11,6 @@ public:
 	string getAuthor();
 	int getYear();
 	int GetPageCount();
-
 	string toString();
 	void display();
 };

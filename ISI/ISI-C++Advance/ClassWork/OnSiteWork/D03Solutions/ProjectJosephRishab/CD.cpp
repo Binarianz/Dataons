@@ -11,7 +11,8 @@ CD::CD(string  title, double buyingPrice, double sellingPrice, string artist, in
 }
 string CD::toString()
 {
-	return string();
+	//return "[ Title : " + this->getTitle() + " Buying Price : " + StringConversions::doubleToCurrencyString(this->getBuyingPrice()) + " Selling Price : " + StringConversions::doubleToCurrencyString(this->getSellingPrice()) + " author : " + this->getAuthor() + " Year : " + to_string(this->getYear()) + " Year : " + to_string(this->GetPageCount())+" ]";
+	return Disc::toString();
 }
 
 void CD::display()

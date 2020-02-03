@@ -14,7 +14,7 @@ Product::Product(string title, double buyingPrice, double sellingPrice)
 
 //Getter Methods....
 string Product::getTitle() {
-	return title;
+	return this->title;
 }
 
 double Product::getSellingPrice(){
@@ -22,12 +22,14 @@ double Product::getSellingPrice(){
 }
 
 double Product::getBuyingPrice() {
-	return buyingPrice;
+	return this->buyingPrice;
 }
 
 // UI methods....
 string Product::toString() {
-	return "";
+	return "[ Title : " + this->getTitle() + " Buying Price : " +
+		StringConversions::doubleToCurrencyString(this->getBuyingPrice()) +
+		" Selling Price : " + StringConversions::doubleToCurrencyString(this->getSellingPrice());
 }
 
 void Product::display() {

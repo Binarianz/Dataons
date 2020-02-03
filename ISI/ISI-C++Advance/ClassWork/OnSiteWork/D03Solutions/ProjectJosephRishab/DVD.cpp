@@ -10,7 +10,7 @@ DVD::DVD(string  title, double buyingPrice, double sellingPrice, string artist, 
 }
 string DVD::toString()
 {
-	return string();
+	return Disc::toString();
 }
 
 void DVD::display()

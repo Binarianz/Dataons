@@ -26,7 +26,8 @@ int Book::GetPageCount()
 
 string Book::toString() 
 {
-	return "";
+	string productDescription = Product::toString();
+	return productDescription+" author : " + this->getAuthor() + " Year : " + to_string(this->getYear()) + " Year : " + to_string(this->GetPageCount())+" ]";
 }
 
 void Book::display() 

@@ -32,9 +32,13 @@
     <ClInclude Include="NoteBook.h" />
     <ClInclude Include="Novel.h" />
     <ClInclude Include="Product.h" />
+    <ClInclude Include="RuledNotebook.h" />
     <ClInclude Include="RunningShoes.h" />
     <ClInclude Include="Sandal.h" />
+    <ClInclude Include="SpecialWinterSportsShoes.h" />
     <ClInclude Include="SportsShoes.h" />
+    <ClInclude Include="StringConversions.h" />
+    <ClInclude Include="UnruledNotebook.h" />
     <ClInclude Include="WinterShoes.h" />
   </ItemGroup>
   <ItemGroup>
@@ -52,9 +56,13 @@
     <ClCompile Include="NoteBook.cpp" />
     <ClCompile Include="Novel.cpp" />
     <ClCompile Include="Product.cpp" />
+    <ClCompile Include="RuledNotebook.cpp" />
     <ClCompile Include="RunningShoes.cpp" />
     <ClCompile Include="Sandal.cpp" />
+    <ClCompile Include="SpecialWinterSportsShoes.cpp" />
     <ClCompile Include="SportsShoes.cpp" />
+    <ClCompile Include="StringConversions.cpp" />
+    <ClCompile Include="UnruledNotebook.cpp" />
     <ClCompile Include="WinterShoes.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

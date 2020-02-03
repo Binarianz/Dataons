@@ -11,9 +11,10 @@ Novel::Novel(string  title, double buyingPrice, double sellingPrice, string auth
 
 string Novel::toString()
 {
-	return string();
+	return Book::toString();
 }
 
 void Novel::display()
 {
+	cout << toString() << endl;
 }

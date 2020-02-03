@@ -2,6 +2,7 @@
 #include<iostream>
 #include<string>
 #include "Product.h"
+#include"Merchant.h"
 using namespace std;
 
 class City
@@ -11,8 +12,10 @@ private:
 	int size;
 	int capacity; //maximum size...
 	int inventory[5]; // Change...
-	Product* cityInventory;
-	//Product** inventory;
+	//Merchant m;
+	//Product* cityInventory;
+	Product** CityInventory;
+	// = new ci{ "Montreal","Victoria,","Halifax" };
 
 public:
 	//Constructor....
@@ -22,11 +25,16 @@ public:
 	// Getter methods....
 	string getName();
 	string getInventory();
-	void setCityInventory(string citiesoption[], int size);
-	
+	int getInventorySize();
+
 	// UI methods....
 	string toString();
 	void display();
+	//void showCityInventory(string);
+	//add and remove from city inventory
+
+	void addCityInvetoryItem(Product* CityInvetoryItem);
+	void removeCityInvetoryItem(Product* CityInvetoryItem);
 
 	// Destructor....
 	~City();

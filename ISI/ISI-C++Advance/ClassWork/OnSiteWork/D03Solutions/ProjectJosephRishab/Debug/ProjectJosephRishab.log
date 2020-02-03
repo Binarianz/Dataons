@@ -1,21 +1,23 @@
-﻿  Book.cpp
-  CD.cpp
-  City.cpp
-C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\City.cpp(41,13): error C2082: redefinition of formal parameter 'size'
-  ConsoleMenu.cpp
-  Disc.cpp
-  DVD.cpp
-  Footwear.cpp
-  Heels.cpp
-C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Heels.cpp(3,22): error C7535: 'Heels::Heels': delegating constructor calls itself
-  Magazine.cpp
+﻿  City.cpp
   Main.cpp
   Merchant.cpp
-  NoteBook.cpp
-  Novel.cpp
-  Product.cpp
-  RunningShoes.cpp
-  Sandal.cpp
-  SportsShoes.cpp
-  WinterShoes.cpp
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\City.h(15,12): error C3646: 'm': unknown override specifier
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\City.h(15,12): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.cpp(20,16): error C2039: 'cityList': is not a member of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.h(8): message : see declaration of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.cpp(21,16): error C2039: 'cityList': is not a member of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.h(8): message : see declaration of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.cpp(22,16): error C2039: 'cityList': is not a member of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.h(8): message : see declaration of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.cpp(23,16): error C2039: 'cityList': is not a member of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.h(8): message : see declaration of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.cpp(24,16): error C2039: 'cityList': is not a member of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.h(8): message : see declaration of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.cpp(26,20): error C2039: 'currentCity': is not a member of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.h(8): message : see declaration of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.cpp(26,36): error C2039: 'cityList': is not a member of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.h(8): message : see declaration of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.cpp(88,2): error C2065: 'currentCity': undeclared identifier
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.cpp(93,52): error C2039: 'currentCity': is not a member of 'Merchant'
+C:\Users\jemmanue\Documents\Dataons\ISI\ISI-C++Advance\ClassWork\OnSiteWork\D03Solutions\ProjectJosephRishab\Merchant.h(8): message : see declaration of 'Merchant'
   Generating Code...

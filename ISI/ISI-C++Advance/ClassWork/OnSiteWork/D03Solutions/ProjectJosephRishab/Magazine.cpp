@@ -11,9 +11,10 @@ Magazine::Magazine(string  title, double buyingPrice, double sellingPrice, strin
 
 string Magazine::toString()
 {
-	return string();
+	return Book::toString();
 }
 
 void Magazine::display()
 {
+	cout << toString() << endl;
 }

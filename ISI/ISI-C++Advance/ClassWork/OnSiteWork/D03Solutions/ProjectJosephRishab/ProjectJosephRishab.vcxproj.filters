@@ -66,6 +66,18 @@
     <ClInclude Include="WinterShoes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SpecialWinterSportsShoes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RuledNotebook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnruledNotebook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StringConversions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="City.cpp">
@@ -120,6 +132,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="WinterShoes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialWinterSportsShoes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RuledNotebook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnruledNotebook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StringConversions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

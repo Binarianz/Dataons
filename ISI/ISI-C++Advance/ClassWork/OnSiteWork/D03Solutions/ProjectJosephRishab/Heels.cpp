@@ -1,6 +1,6 @@
 #include "Heels.h"
 
-Heels::Heels() :Heels()
+Heels::Heels() :Footwear()
 {
 
 }
@@ -11,7 +11,7 @@ Heels::Heels(string  title, double buyingPrice, double sellingPrice, string manu
 }
 string Heels::toString()
 {
-	return string();
+	return Footwear::toString();
 }
 
 void Heels::display()

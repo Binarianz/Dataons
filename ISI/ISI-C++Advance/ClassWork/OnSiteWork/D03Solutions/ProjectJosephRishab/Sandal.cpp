@@ -12,7 +12,7 @@ Sandal::Sandal(string  title, double buyingPrice, double sellingPrice, string ma
 
 string Sandal::toString()
 {
-	return string();
+	return Footwear::toString();
 }
 
 void Sandal::display()

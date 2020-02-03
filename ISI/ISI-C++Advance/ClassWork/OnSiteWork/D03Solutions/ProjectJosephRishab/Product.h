@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include<string>
+#include "StringConversions.h"
 using namespace std;
 
 class Product
@@ -20,7 +21,7 @@ public:
 	double getBuyingPrice();
 
 	// UI methods....
-	string toString();
+	virtual string toString();
 	void display();
 
 	//Destructor...
