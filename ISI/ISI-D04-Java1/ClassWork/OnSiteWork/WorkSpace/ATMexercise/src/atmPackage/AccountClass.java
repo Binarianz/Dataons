@@ -27,7 +27,7 @@ public class AccountClass {
 		setName(name);
 		this.balance=balance;
 		this.totalNumberOfTransaction=0;
-		this.totalAmountOwedInFees=0;
+		this.totalAmountOwedInFees=100;
 		this.totalAmountPaidInFees=0;		
 	}
 	//gettter methods
@@ -93,7 +93,7 @@ public class AccountClass {
 	public boolean depositMoney(double money)
 	{
 		this.setTransactionLimitcount();
-		if(money<=0&&money>=1000)
+		if(money>=0&&money<=1000)
 		{
 			this.setBalance(money);
 			return true;
@@ -106,9 +106,9 @@ public class AccountClass {
 	public boolean withdrawMoney(double money)
 	{
 		this.setTransactionLimitcount();
-		if(money<=0&&money<=this.getBalance())
+		if(money>=0&&money<=this.getBalance())
 		{
-			this.setBalance(this.getBalance()-money);
+			this.setBalance(0-money);
 			return true;
 		}
 		
@@ -118,9 +118,10 @@ public class AccountClass {
 	}
 	public boolean payAmountOfOwedFees(double money)
 	{
-		if(money<=0&&money<=this.getBalance())
+		if(money>=0&&money<=this.getBalance()&&money<=this.getTotalAmountOwedInFees())
 		{
-			this.setBalance(this.getBalance()-money);
+			this.setBalance(this.getTotalAmountOwedInFees()-money);
+			this.setOwnedMoney(money);
 			return true;
 		}
 		
@@ -134,9 +135,9 @@ public class AccountClass {
 	}
 	public String accountDescription() 
 	{
-		return "ID: "+this.id+" Name: "+this.name+"Balance: "+this.balance
-				+"Total Number of Transactions:"+this.totalNumberOfTransaction
-				+"Money owed:"+this.getTotalAmountOwedInFees()+"Money Pid As fee"+
+		return "ID: "+this.id+" Name: "+this.name+" Balance: "+this.balance
+				+" Total Number of Transactions:"+this.totalNumberOfTransaction
+				+" Money owed:"+this.getTotalAmountOwedInFees()+" Money Pid As fee :"+
 				this.getTotalAmountPaidInFees();
 	}
 }

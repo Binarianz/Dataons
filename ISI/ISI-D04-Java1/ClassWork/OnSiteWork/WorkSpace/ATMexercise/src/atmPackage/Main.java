@@ -4,8 +4,9 @@ public class Main
 {
 	public static void main(String[] args)
 	{
-		AccountClass account = new AccountClass("Joseph",3000);
-		ATMView window = new ATMView(account);
+		AccountClass account=new AccountClass("john", 2000);
+		ATMWindow window = new ATMWindow("Atm");
 		window.setVisible(true);
+		//System.out.println(account.accountDescription());
 	}
 }
