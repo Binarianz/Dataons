@@ -12,7 +12,7 @@ public class BasicViewPanel extends JPanel
 {
 	private static final long serialVersionUID = 1L;
 	
-	private JLabel counterTitleLabel;
+		private JLabel counterTitleLabel;
 	private JLabel counterValueLabel;
 	private JProgressBar counterProgressBar;
 	

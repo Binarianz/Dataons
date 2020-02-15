@@ -3,7 +3,7 @@ package com.isi.airplane;
 public class Airplane
 {
 	// Enum type definition
-	public enum AirplaneState { OFF, RUNNING, FLYING, EXPLODED,LANDING_MODE }
+		public enum AirplaneState { OFF, RUNNING, FLYING, EXPLODED,LANDING_MODE }
 	private static int airplaneIdGenerator=0;
 	// Instance constants
 	private double ALTITUDE_CHANGE ;
