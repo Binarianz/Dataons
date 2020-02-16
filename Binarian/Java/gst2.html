@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function gstcalculator(textBox1, textBox2){
+            var x=document.getElementById(textBox1).value;
+            var y=document.getElementById(textBox2).value;
+            var sum=0;
+            sum=Number(x)*Number(y);
+            sum +=sum*0.145;
+            document.getElementById("demo").innerHTML = "The value after calclating GST : "+sum;
+            // alert("Total gst is : " + sum);
+        }
+    </script>
+</head>
+<body>
+    <h2>gst problem</h2>
+    <b>Enter unit price </b><br>
+	<input type="text" id="textIn1"/><br>
+	<b>Enter Quantity: </b><br>
+    <input type="text" id="textIn2"/><br><br>
+    <button type="button" onclick="gstcalculator('textIn1','textIn2')">Calculate Tax</button>
+    <p id="demo"></p>
+</body>
+</html>
