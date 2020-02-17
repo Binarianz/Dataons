@@ -20,8 +20,12 @@ public class FuelPanel extends JPanel  {
 		super();
 		
 		this.setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
-		fuelProgressBar =new JProgressBar();
+		fuelProgressBar =new JProgressBar(0,100);
 		this.add(fuelProgressBar);
 		this.add(Box.createRigidArea(new Dimension(0, 10)));
+	}
+	public void updateFuelValue(int fuelValue)
+	{
+		fuelProgressBar.setValue(fuelValue);
 	}
 }

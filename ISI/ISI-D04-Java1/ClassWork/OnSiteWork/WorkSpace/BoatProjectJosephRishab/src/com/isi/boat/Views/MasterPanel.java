@@ -7,13 +7,16 @@ import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-public class MasterPanel extends JFrame {
+
+import com.isi.boat.Controllers.BoatController;
+import com.isi.boat.interfaces.IBoatListener;
+public class MasterPanel extends JFrame implements IBoatListener{
 	private MessageAreaPanel messageAreaPanel;
 	private StartStopPanel startStopPanel;
 	private NavigationPanel navigationPanel;
 	private FuelPanel fuelPanel;
 	private SpeedRefuelPanel speedRefuelPanel;
-	
+	private BoatController controller;
 	private JPanel contentPane;
 	public MasterPanel()
 	{
@@ -70,6 +73,31 @@ public class MasterPanel extends JFrame {
 		
 		contentPane.add(speedRefuelPanel);
 		contentPane.add(Box.createRigidArea(new Dimension(0, 20)));
+		
+	}
+	public void setcontroller(BoatController controller)
+	{
+		this.controller=controller;
+		this.startStopPanel.setcontroller(controller);
+		this.navigationPanel.setcontroller(controller);
+		this.speedRefuelPanel.setController(controller);
+		//this.fuelPanel.set
+	}
+	
+	//message are updater
+	
+	public void updateMessageText(String message)
+	{
+		messageAreaPanel.updateMessageText(message);
+	}
+	@Override
+	public void updateVelocity(int velocity) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void updateFuelValue(int fuelValue) {
+		speedRefuelPanel.updateFuelValue(fuelValue);
 		
 	}
 }

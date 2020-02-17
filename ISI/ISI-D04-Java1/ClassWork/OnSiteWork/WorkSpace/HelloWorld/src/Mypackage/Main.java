@@ -1,45 +1,39 @@
 package Mypackage;
 
-import java.awt.Dimension;
+import java.awt.Dimension;//from  w ww  .  ja  v a 2s  .  com
+import java.awt.GridLayout;
 
-import javax.swing.Box;
-import javax.swing.JApplet;
-import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import javax.swing.JSlider;
+import javax.swing.border.TitledBorder;
 
-public class Main{
-	private static void c() throws RuntimeException
-	{
-		System.out.println("c() starting");
-		if(true)
-			throw new RuntimeException("Runtime exception test");
-		System.out.println("c () finishg");
-	}
-	private static void b() 
-	{
-		System.out.println("b() starting");
-		try{
-			c();
-		}
-		catch (Exception e) {
-			System.out.println("done handiling");
-		}
-		
-		finally {
-			System.out.println("sfjksjdk");
-		}
-		System.out.println("b () finishg");
-	}
-	private static void a()
-	{
-		System.out.println("a() starting");
-		b();
-		System.out.println("a () finishg");
-	}
-	public static void main(String[] args) {
-		System.out.println("main() starting");
-		a();
-		System.out.println("main () finishg");
-	}
+public class Main extends JPanel {
+  private JProgressBar pb = new JProgressBar();
 
+  private JSlider sb = new JSlider(JSlider.HORIZONTAL, 0, 100, 60);
+
+  public Main() {
+    setLayout(new GridLayout(2, 1));
+    add(pb);
+    sb.setValue(0);
+    sb.setPaintTicks(true);
+    sb.setMajorTickSpacing(20);
+    sb.setMinorTickSpacing(5);
+    sb.setBorder(new TitledBorder("Slide Me"));
+    pb.setModel(sb.getModel()); // Share model
+    add(sb);
+  }
+
+  public static void main(String[] args) {
+    JPanel p = new Main();
+
+    JFrame frame = new JFrame();
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.getContentPane().add(p);
+    frame.setSize(300, 300);
+
+    frame.setVisible(true);
+  }
 }
