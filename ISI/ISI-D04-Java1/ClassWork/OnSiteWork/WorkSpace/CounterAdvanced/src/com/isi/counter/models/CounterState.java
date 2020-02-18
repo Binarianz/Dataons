@@ -1,5 +1,6 @@
 package com.isi.counter.models;
 
-public class CounterState {
+public enum CounterState {
 
+	MINIMUM, INERMEDIATE, MAXIMUM
 }

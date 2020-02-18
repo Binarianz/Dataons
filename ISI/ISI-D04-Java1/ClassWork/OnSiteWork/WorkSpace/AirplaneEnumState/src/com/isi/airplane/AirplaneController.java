@@ -75,7 +75,7 @@ public class AirplaneController
 			airplane.enterLandingMode();
 			break;
 		case 7:
-			airplane.repair();
+			//airplane.repair();
 			break;
 		case 8:
 			exitApplication();
