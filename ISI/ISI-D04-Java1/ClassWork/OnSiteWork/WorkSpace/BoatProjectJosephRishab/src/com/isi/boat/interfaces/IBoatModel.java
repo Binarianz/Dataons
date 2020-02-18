@@ -11,4 +11,5 @@ public interface IBoatModel {
 	boolean changeDirection(BoatDirection direction);
 	boolean refillFuel();
 	void setVelocity(int velocity);
+	void updateFuelValue(int speed);
 }

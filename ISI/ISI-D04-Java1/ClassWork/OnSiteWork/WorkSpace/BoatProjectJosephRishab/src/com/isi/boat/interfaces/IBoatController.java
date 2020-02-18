@@ -5,5 +5,5 @@ public interface IBoatController {
 	void increment();
 	void decrement();
 	void setVelocity(int velocity);
-	void updateFuelValue(int speed);
+	void updateFuelValue(int fuelValue);
 }

@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 
 import com.isi.counter.interfaces.ICounterController;
 import com.isi.counter.interfaces.ICounterListener;
+import com.isi.counter.models.Counter.CounterState;
 
 public class CounterWindow extends JFrame implements ICounterListener
 {
@@ -141,7 +142,7 @@ public class CounterWindow extends JFrame implements ICounterListener
 	}
 	
 	@Override // ICounterListener
-	public void updateCounterValue(int counterValue)
+	public void updateCounterValue(int counterValue,CounterState state)
 	{
 		basicViewPanel.updateCounterValue(counterValue);
 	}
@@ -150,5 +151,6 @@ public class CounterWindow extends JFrame implements ICounterListener
 	public void updateVelocity(int velocity)
 	{
 		advancedViewPanel.updateVelocity(velocity);
+		advancedControlsPanel.upadateVelocity(velocity);
 	}
 }

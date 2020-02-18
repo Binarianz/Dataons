@@ -50,37 +50,39 @@ public class BoatController implements IBoatListener,IBoatController{
 			window.updateMessageText("Boat cannot change direction");
 		}
 	}
+	
+	// User action, coming from slider, going to model
 	public void setVelocity(int velocity)
 	{
 		model.setVelocity(velocity);
 		window.updateMessageText("Boat is setting velocity to "+ velocity);
-		
+		window.updateProgressbar(velocity);
 		//updateVelocity();		// Unnecessary with active model
 	}
 
+	// 
 	@Override
 	public void updateVelocity(int velocity) {
-		// TODO Auto-generated method stub
-		
+		window.updateVelocity(velocity);
 	}
 
 	@Override
 	public void updateFuelValue(int fuelValue) {
-		view.updateFuelValue(fuelValue);
-		// TODO Auto-generated method stub
+		window.updateFuelValue(fuelValue);
+	
 		
 	}
 
 	@Override
 	public void increment() {
 		model.increaseSpeed();
-		// TODO Auto-generated method stub
+	
 		
 	}
 
 	@Override
 	public void decrement() {
-		// TODO Auto-generated method stub
+		model.decreaseSpeed();
 		
 	}
 }

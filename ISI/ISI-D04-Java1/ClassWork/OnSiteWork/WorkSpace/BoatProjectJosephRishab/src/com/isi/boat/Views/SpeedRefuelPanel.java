@@ -41,19 +41,20 @@ public class SpeedRefuelPanel extends JPanel{
 	}
 	public void updateFuelValue(int fuelValue)
 	{
-		controller.setVelocity(fuelValue);
+		controller.updateFuelValue(fuelValue);
 	}
 	
 	private void addListeners()
 	{
 		speedSlider.addChangeListener((ChangeEvent e) ->
 		{
-			controller.updateFuelValue(speedSlider.getValue());
+			controller.setVelocity(speedSlider.getValue());
 		});
 		refuelButton.addActionListener((ActionEvent e) -> 
 		{
-			controller.updateFuelValue(80);
-			speedSlider.setValue(30);
+			//controller.updateFuelValue(80);
+			controller.updateFuelValue(100);
+			speedSlider.setValue(0);
 		});
 		
 	}

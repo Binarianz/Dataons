@@ -3,6 +3,7 @@ package com.isi.counter.controllers;
 import com.isi.counter.interfaces.ICounterController;
 import com.isi.counter.interfaces.ICounterListener;
 import com.isi.counter.models.Counter;
+import com.isi.counter.models.Counter.CounterState;
 
 public class CounterController
 	implements ICounterController, ICounterListener
@@ -14,14 +15,14 @@ public class CounterController
 	{
 		this.counter = counter;
 		this.view = view;
-		updateCounterValue();
+		updateCounterValue(0,CounterState.MINIMUM);
 		updateVelocity();
 	}
 	
 	// Passive model: Controller calls model getter method
 	private void updateCounterValue()
 	{
-		view.updateCounterValue(counter.getCounterValue());
+		view.updateCounterValue(counter.getCounterValue(),counter.getState());
 	}
 	
 	// Passive model: Controller calls model getter method
@@ -35,9 +36,9 @@ public class CounterController
 	
 	// Active model: Model calls this update method
 	@Override // ICounterListener
-	public void updateCounterValue(int counterValue)
+	public void updateCounterValue(int counterValue,CounterState state)
 	{
-		view.updateCounterValue(counterValue);
+		view.updateCounterValue(counterValue,state);
 	}
 	
 	// Active model: Model calls this update method

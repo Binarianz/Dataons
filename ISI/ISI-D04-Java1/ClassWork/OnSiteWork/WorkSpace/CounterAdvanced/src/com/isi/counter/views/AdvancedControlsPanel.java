@@ -43,7 +43,10 @@ public class AdvancedControlsPanel extends JPanel
 		this.controller = controller;
 		addListeners();
 	}
-	
+	public void upadateVelocity(int velocity)
+	{
+		counterVelocitySlider.setValue(velocity);
+	}
 	private void addListeners()
 	{
 		counterVelocitySlider.addChangeListener((ChangeEvent e) ->

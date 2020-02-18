@@ -81,23 +81,26 @@ public class MasterPanel extends JFrame implements IBoatListener{
 		this.startStopPanel.setcontroller(controller);
 		this.navigationPanel.setcontroller(controller);
 		this.speedRefuelPanel.setController(controller);
-		//this.fuelPanel.set
+		this.fuelPanel.setController(controller);
 	}
 	
 	//message are updater
-	
+	public void updateProgressbar(int x)
+	{
+		fuelPanel.updateFuelValue(x);
+	}
 	public void updateMessageText(String message)
 	{
 		messageAreaPanel.updateMessageText(message);
 	}
 	@Override
 	public void updateVelocity(int velocity) {
-		// TODO Auto-generated method stub
-		
+		//	
 	}
 	@Override
 	public void updateFuelValue(int fuelValue) {
-		speedRefuelPanel.updateFuelValue(fuelValue);
+		
+		fuelPanel.updateFuelValue(fuelValue);
 		
 	}
 }

@@ -13,6 +13,7 @@ public class BoatModel implements IBoatModel
 	 public enum BoatState { OFF, RUNNIG, REFILLING_FUEL, CAPSIZED }
 	private int speed;
 	private int distanceToShore;
+	private int fuelTankLevel;
 	private int fuelTankCapacity;
 	
 	private BoatDirection direction;
@@ -22,15 +23,17 @@ public class BoatModel implements IBoatModel
 	private boolean changing;
 	public BoatModel()
 	{
-		setSpeed(0);
+		listeners = new ArrayList<IBoatListener>();
+		fuelTankCapacity = 100;
+		fuelTankLevel = 50;
+		setVelocity(0);
 		setDisanceToShore(0);
 		setBoatDirection(BoatDirection.ORGIN);
 		setBoatState(BoatState.OFF);
-		
-		listeners = new ArrayList<IBoatListener>();
 	}
 	
 	//public getter methods	
+	public int getFuelTankLevel() { return this.fuelTankLevel; }
 	public int getFuelTankCapacity() {return this.fuelTankCapacity;}
 	public int getSpeed() {return this.speed;}
 	public int getDistanceToShore() {return this.distanceToShore;};
@@ -39,8 +42,12 @@ public class BoatModel implements IBoatModel
 	
 	
 	//public setter methods	
-	public void setFuelTankCapacity(int fuelTankCapacity) {this.fuelTankCapacity=fuelTankCapacity;}
-	public void setSpeed(int speed){this.speed=speed;}
+	public void setFuelTankLevel(int fuelTankLevel)
+	{
+		this.fuelTankLevel = fuelTankLevel;
+		for (IBoatListener listener : listeners)
+			listener.updateFuelValue(fuelTankLevel);
+	}
 	public void setDisanceToShore(int disatance) {this.distanceToShore=disatance;}
 	public void setBoatDirection(BoatDirection direction) {this.direction=direction;}
 	public void setBoatState(BoatState state) {this.state=state;}
