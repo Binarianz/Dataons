@@ -1,0 +1,7 @@
+package com.isi.boat.Controllers;
+//import com.isi.boat.interfaces.ICounterController;
+//import com.isi.boat.interfaces.ICounterListener;
+//import com.isi.boat.models.Counter;
+public class BoatController {
+
+}

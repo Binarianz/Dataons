@@ -1,0 +1,12 @@
+package com.isi.counter.interfaces;
+
+import com.isi.counter.models.Counter.CounterState;
+
+public interface ICounter
+{
+	void setCounterValue(int counterValue,CounterState state);
+	void increment();
+	void decrement();
+	void random();
+	void setVelocity(int velocity);
+}

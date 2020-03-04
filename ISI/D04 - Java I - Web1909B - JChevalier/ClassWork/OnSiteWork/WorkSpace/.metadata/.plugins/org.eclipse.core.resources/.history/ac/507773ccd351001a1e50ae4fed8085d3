@@ -1,0 +1,36 @@
+package com.isi;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+
+	private static String path="C:\\Users\\jemmanue\\Desktop\\Testfolder\\MyTextFile.txt";
+	
+	private static void readfile()
+	{
+		try(BufferedReader reader = new BufferedReader(new FileReader(new File(path)))) {
+			
+	} 
+	catch (FileNotFoundException e) {e.printStackTrace();}
+	catch (FileNotFoundException e) {e.printStackTrace();}
+	}
+	private static void writeFile() {
+		try(FileWriter writer=new FileWriter(new File(path),true))
+		{
+			
+			writer.write("This is a line of text\n");
+			writer.write("here is another line \n");
+			writer.flush();
+		} 
+		catch (IOException e) {e.printStackTrace();}
+	}
+	public static void main(String[] args)
+	{
+		writeFile();
+	}
+}

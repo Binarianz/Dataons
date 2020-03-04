@@ -1,0 +1,20 @@
+package com.isi.car.network;
+
+import com.isi.car.interfaces.ICarListener;
+import com.isi.car.models.CarState;
+import com.isi.car.models.GasLevelEvent;
+
+public class CarClient implements ICarListener
+{
+	// Update listener methods
+	// Implementation of ICarListener interface
+	
+	@Override
+	public void updateGasLevel(GasLevelEvent event)
+	{
+		// TODO
+	}
+
+	@Override
+	public void updateCarState(CarState carState) { }	// Do nothing
+}
