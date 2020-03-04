@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;depositeButtonPanel&apos; in &apos;atmPackage.ATMWindow&apos; to &apos;buttonsPanel&apos;&#x0D;&#x0A;- Original project: &apos;ATMexercise&apos;&#x0D;&#x0A;- Original element: &apos;atmPackage.ATMWindow.depositeButtonPanel&apos;&#x0D;&#x0A;- Renamed element: &apos;atmPackage.ATMWindow.buttonsPanel&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;depositeButtonPanel&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;atmPackage{ATMWindow.java[ATMWindow^depositeButtonPanel" name="buttonsPanel" references="true" setter="false" stamp="1581449719849" textual="false" version="1.0"/>
+</session>

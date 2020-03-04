@@ -1,0 +1,50 @@
+package com.isi.boat.Views;
+
+
+import java.awt.Dimension;
+
+import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import javax.swing.JSlider;
+import javax.swing.JToggleButton;
+
+import com.isi.boat.interfaces.IBoatController;
+
+public class SpeedRefuelPanel extends JPanel{
+
+	private JSlider speedSlider;
+	private JButton refuelButton;
+	private IBoatController controller;
+	public SpeedRefuelPanel()
+	{
+		super();
+		
+		this.setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
+		speedSlider=new JSlider(0,100);
+		refuelButton = new JButton("Refuel");
+		this.add(speedSlider);
+		this.add(Box.createRigidArea(new Dimension(0, 10)));
+		this.add(refuelButton);
+		this.add(Box.createRigidArea(new Dimension(0, 10)));
+	}
+	@Override
+	public void increment() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void decrement() {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void setVelocity(int velocity) {
+		// TODO Auto-generated method stub
+		
+	}
+}

@@ -1,0 +1,29 @@
+
+import java.awt.Dimension;
+
+import javax.swing.Box;
+import javax.swing.JApplet;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Main{
+		public static void main(String[] args) {int i = 3;
+		int j = 0;
+		try {
+			System.out.println("result = " + (i / j));
+		} 
+		catch (ArithmeticException e) {
+			System.out.println("getmessage():");
+			System.out.println(e.getMessage());
+			System.out.println(" ");
+			System.out.println("toString():");
+			System.out.println(e.toString());
+			System.out.println(" ");
+			System.out.println("printStackTrace():");
+			e.printStackTrace();
+		} 
+		finally {
+			System.out.println("procedure executed systematically");
+		}
+		}
+	}

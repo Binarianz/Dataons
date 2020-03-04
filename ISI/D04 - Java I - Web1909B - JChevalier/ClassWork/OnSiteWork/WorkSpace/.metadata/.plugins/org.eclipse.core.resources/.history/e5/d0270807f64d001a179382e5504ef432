@@ -1,0 +1,27 @@
+package com.isi.counter.views;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JSlider;
+
+import com.isi.counter.controllers.CounterController;
+
+public class AdvaneControllPanel extends JPanel {
+
+	private JSlider slider;
+	private JButton btnTest;
+	
+	AdvaneControllPanel() {
+		super();
+		this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		slider=new JSlider();
+		btnTest=new JButton("btn");
+		slider.setAlignmentX(0.5f);
+		btnTest.setAlignmentX(0.5f);
+		this.add(slider);
+	}
+}
