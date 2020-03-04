@@ -1,0 +1,39 @@
+package Mypackage;
+
+import java.awt.Dimension;//from  w ww  .  ja  v a 2s  .  com
+import java.awt.GridLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JProgressBar;
+import javax.swing.JSlider;
+import javax.swing.border.TitledBorder;
+
+public class Main extends JPanel {
+  private JProgressBar pb = new JProgressBar();
+
+  private JSlider sb = new JSlider(JSlider.HORIZONTAL, 0, 100, 60);
+
+  public Main() {
+    setLayout(new GridLayout(2, 1));
+    add(pb);
+    sb.setValue(0);
+    sb.setPaintTicks(true);
+    sb.setMajorTickSpacing(20);
+    sb.setMinorTickSpacing(5);
+    sb.setBorder(new TitledBorder("Slide Me"));
+    pb.setModel(sb.getModel()); // Share model
+    add(sb);
+  }
+
+  public static void main(String[] args) {
+    JPanel p = new Main();
+
+    JFrame frame = new JFrame();
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.getContentPane().add(p);
+    frame.setSize(300, 300);
+
+    frame.setVisible(true);
+  }
+}

@@ -1,0 +1,49 @@
+-- Ex PDF 1
+select * 
+from titles
+where title_id like '[MBC]%' 
+go
+
+-- Ex PDF 2
+select * 
+from titles
+where title_id like '[MBC]%' and pub_id = 1389
+go
+
+-- Ex PDF 3
+select * 
+from titles
+where title_id like '[MBC]%' and royalty between 10 and 15
+
+-- Ex PDF 4
+select *
+from authors 
+where phone like '415%' and state = 'CA'
+
+-- Ex PDF 5
+select *
+from authors 
+where phone not like '415%' and state = 'CA'
+
+-- Ex PDF 6
+select *
+from authors 
+where phone like '[^523]%' and state != 'CA'
+
+-- Ex PDF 7
+select * 
+from publishers
+where country = 'USA'
+
+-- Ex PDF 8
+select * 
+from publishers
+where country = 'USA' or country = 'France'
+
+
+
+
+
+
+
+

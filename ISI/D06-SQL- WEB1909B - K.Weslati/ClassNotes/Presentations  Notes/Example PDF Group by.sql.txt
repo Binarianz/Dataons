@@ -1,0 +1,45 @@
+-- Ex PDF 1
+select city, count(*)
+from authors
+group by city
+
+-- Ex PDF 2
+select city, count(*)
+from authors
+group by city
+having count(*) = 2
+
+-- Ex PDF 3
+select type, AVG(price) as 'average price by type'
+from titles
+group by type
+having AVG(price) > 15
+
+-- Ex PDF 4
+select YEAR(pubdate) as 'publication year', 
+	   MIN(royalty) as 'royalty minimum', 
+	   MAX(royalty) as 'royalty maximum'
+from titles
+group by YEAR(pubdate)
+
+-- Ex PDF 5
+select type, count(*) as 'number of books'
+from titles
+where pub_id = 1389
+group by type
+
+-- Ex PDF 6
+select type, count(*) as 'number of books'
+from titles
+where price > 15
+group by type
+
+--Ex PDF 7
+select state, count(*) as 'author number'
+from authors
+where phone like '%9%'
+group by state
+
+
+
+
