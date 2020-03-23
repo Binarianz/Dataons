@@ -1,0 +1,7 @@
+C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\functions\bin\Debug\functions.exe.config
+C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\functions\bin\Debug\functions.exe
+C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\functions\bin\Debug\functions.pdb
+C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\functions\obj\Debug\functions.csprojAssemblyReference.cache
+C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\functions\obj\Debug\functions.csproj.CoreCompileInputs.cache
+C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\functions\obj\Debug\functions.exe
+C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\functions\obj\Debug\functions.pdb
