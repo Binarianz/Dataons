@@ -1,9 +1,0 @@
-package com.isi.boat.Models;
-
-public class BoatModel {
-	 public enum Direction { UP, DOWN, LEFT, RIGHT;}
-	 public enum State { OFF, Runnig, REFILLING_FUEL, CAPSIZED }
-	private int speed;
-	private int distanceToShore;
-	
-}

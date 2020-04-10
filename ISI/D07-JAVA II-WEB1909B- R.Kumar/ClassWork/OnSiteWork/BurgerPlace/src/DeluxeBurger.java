@@ -1,0 +1,10 @@
+
+public class DeluxeBurger extends Burger{
+
+	
+	public DeluxeBurger() {
+		super("Deluxe Burger", 14.21, "White Roll", 2);
+		setToppings(new Topping("Chips", 5.43));
+		setToppings(new Topping("Dips", 5.21));
+	}
+}
