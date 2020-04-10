@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e5349020-fc2e-44fd-9249-6efe64f3e896" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../ClassNotes/Presentations  Notes/.~lock.02. Programming in Java.pptx#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ClassNotes/Presentations  Notes/.~lock.03. OOP in Java.pptx#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ClassNotes/Presentations  Notes/03. OOP in Java.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ClassNotes/Presentations  Notes/03. OOP in Java.pptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OffSiteWork/Workspace/FirstSwingExample/src/sample/FirstSwingExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../OffSiteWork/Workspace/FirstSwingExample/src/sample/FirstSwingExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkSpace/ATMexercise/src/atmPackage/ATMView.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkSpace/ATMexercise/src/atmPackage/ATMWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkSpace/ATMexercise/src/atmPackage/AccountClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkSpace/ATMexercise/src/atmPackage/AccountClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkSpace/ATMexercise/src/atmPackage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkSpace/ATMexercise/src/atmPackage/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkSpace/HelloWorld/src/Mypackage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkSpace/HelloWorld/src/Mypackage/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WorkSpace/listnrerprogram/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../WorkSpace/listnrerprogram/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_ATMexercise/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_ATMexercise/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_ATMexercise/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_ATMexercise/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_ATMexercise/src/atmPackage/ATMView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_ATMexercise/src/atmPackage/AccountClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_ATMexercise/src/atmPackage/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_AirplaneExercise2/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_AirplaneExercise2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_AirplaneExercise2/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_AirplaneExercise2/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_AirplaneExercise2/src/com/isi/airplane/Airplane.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_AirplaneExercise2/src/com/isi/airplane/AirplaneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_AirplaneExercise2/src/com/isi/airplane/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../SubmittedDocs/Joseph_AirplaneExercise2/src/com/isi/utility/ConsoleInput.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\jemmanue\Documents\Dataons\ISI\ISI-D04-Java1\ClassWork\OnSiteWork\IntellijTest\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XdVI4lm6P3HPoCO8QXCnXmAUS0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WorkSpace/ATMexercise" />
+  </component>
+  <component name="RunManager">
+    <configuration name="testcase1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testcase1" />
+      <module name="IntellijTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.testcase1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e5349020-fc2e-44fd-9249-6efe64f3e896" name="Default Changelist" comment="" />
+      <created>1581375875149</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581375875149</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="173" key="FileChooserDialogImpl" timestamp="1581458315988">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="173" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1581458315988" />
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom" timestamp="1581445359149">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1581445359149" />
+    <state width="1493" height="214" key="GridCell.Tab.0.center" timestamp="1581445359149">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1581445359149" />
+    <state width="1493" height="214" key="GridCell.Tab.0.left" timestamp="1581445359149">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1581445359149" />
+    <state width="1493" height="214" key="GridCell.Tab.0.right" timestamp="1581445359149">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1581445359149" />
+  </component>
+</project>

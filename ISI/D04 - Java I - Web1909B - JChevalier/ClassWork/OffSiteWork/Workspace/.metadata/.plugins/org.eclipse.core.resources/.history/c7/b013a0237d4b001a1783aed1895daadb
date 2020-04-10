@@ -1,0 +1,13 @@
+package test;
+
+import javax.swing.JFrame;
+
+public class Gui extends JFrame {
+
+	
+	public Gui() {
+		setLayout(null);
+		setSize(300, 600);
+		setVisible(true);
+	}
+}
