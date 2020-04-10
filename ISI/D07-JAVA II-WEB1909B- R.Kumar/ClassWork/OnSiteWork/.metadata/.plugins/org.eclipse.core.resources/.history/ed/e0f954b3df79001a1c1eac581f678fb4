@@ -1,0 +1,16 @@
+
+public class main {
+	public static void main(String[] args ) {
+		
+		
+    	Burger burger=new Burger("name", 21.1, "roll", "meat",3);
+    	setToppings(new Topping("tommoto", 2.67));
+    	setToppings(new Topping("carrot", 2.67));
+    	setToppings(new Topping("bacon", 2.67));
+    	setToppings(new Topping("tommoto", 2.67));
+		
+		
+		
+	}
+
+}
