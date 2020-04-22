@@ -1,0 +1,40 @@
+/* exo 2 ----------------------------------------------------------------------------------------------- */
+
+body, p, legend, label, input {
+    font: normal 8pt verdana, helvetica, sans-serif;
+    text-align:  center;    
+}
+
+p{
+	text-align: justify;	
+	width: 80%;	
+	margin: 10px auto;
+}
+
+
+nav ul li{
+	display: inline-block;
+	width: 150px;
+	border : 1px solid red;
+	background:  aqua;
+	color: white;
+	margin : 10px;
+	padding:10px;
+	border-radius:10px;	
+	text-align:center;
+}
+
+nav ul li:hover{
+	border : 1px solid orange;
+	border-radius:10px 12px 5px 45px;
+}
+
+nav ul li a{
+	color: white;
+	text-decoration:  none;	
+}
+
+nav ul li a:hover{
+	color: orange;
+	text-decoration:  underline;	
+}
