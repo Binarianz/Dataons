@@ -3,6 +3,7 @@
     pageEncoding="ISO-8859-1"%>
     <%@ page import="java.util.*,java.text.*,hello.hello,hello.datestring,hello.person" %>
     <%@ include file = "hello.jsp"%>
+    <%@ page session="false" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,5 +69,37 @@ out.println("<h1>"+d.getDate()+"</h1>");
 <input type="text" name="rstatus" placeholder="relation status"> <br><br>
 <input type="submit" value="submit"><br/> 
 </form> 
+<%
+    Integer[] numbers = {4, 3, 1, 9};
+%>
+...
+
+<%----------------------This is a JSP Comment --%>
+<span><%= numbers.length %> - 1</span>
+<span><%= numbers[3] %></span>
+<span><%= numbers[2] %></span>
+<%-- This is a JSP Comment --%>
+----------------
+
+<%
+    char[] letters = {'J', 'A', 'V', 'A'};
+%>
+...
+<% if (letters.length > 4) { %>
+<span><%= letters[3] + "pple " + letters[0] + "uice" %></span>
+<% } else { %>
+<span><%= letters%><%= " " + letters[0] + "uice" %></span>
+<% } %>
+
+
+-----------------------------
+
+
+
+
+
+=====================================
+
+
 </body>
 </html>
