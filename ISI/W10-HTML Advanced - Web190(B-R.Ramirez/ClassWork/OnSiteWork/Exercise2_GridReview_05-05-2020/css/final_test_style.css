@@ -7,6 +7,10 @@ body{
     font-family: 'Teko', sans-serif;
 }
 
+#logo{
+  width: 50%;
+  border: 1px solid white;
+}
 .navbar{
 	background-color: #3F51B5;
  	font-size: 34px; 		
@@ -59,7 +63,8 @@ ul{
 
 .side {
   grid-area: aside;
-  background-image: url('../images/home_article_kayak.jpg ');height: 200px;
+  background-color: #CFFBFF;
+  height:300px;
 }
 
 .ad {
@@ -84,16 +89,51 @@ ul{
   padding: 30px;
   font-size: 28px;
 }
-.footer ul
-  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0px;
+
+
+/* =============================================== */
+
+@media (min-width: 1400px) {
+  img.kayk{
+    background-size: cover;
+    background-repeat: no-repeat;
   }
-.navbar ul {
+  img{
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+  .cont h3
+  {
+    font-size: 25px;
+  }
+  .wrapper
+  {
+    grid-template-columns: 2fr 2fr;
+    grid-template-areas: 
+    "cont aside"
+    "article ad";
+  }
+  .cont{
+    background: lawngreen;
+  }
+  .art{
+    background: maroon;
+    font-size: 1em;
+  }
+  .side
+  {
+    background: red;
+    font-size: 1em;
+    
+  }
+  .ad
+  {
+    background: yellow;
+    font-size: 1em;
+  }
+  .navbar ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -110,33 +150,10 @@ ul{
     justify-content: space-around;
     margin: 0px;
   }
-.footer {
-  background-color: #3F51B5;
+  .navbar i
+{
+  visibility: hidden;
 }
 
-.footer ul{
-    /* display: flex; */
-    margin: 0px;
-}
-
-.footer li{
-  color: white;
-  padding: 30px;
-  font-size: 28px;
-}
-
-@media only screen and (min-width: 768px){
-  .wrapper {
-    grid-template-columns: 4fr 1fr;
-    grid-template-areas:
-      "cont aside"
-      "article ad";
-  }
-
-  .cont, .art, .side, .ad{
-    padding: 40px;
-    font-size: 34px;
-    height: 400px;
-  }
 
 }

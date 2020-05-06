@@ -1,7 +1,0 @@
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Properties\bin\Debug\Properties.exe.config
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Properties\bin\Debug\Properties.exe
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Properties\bin\Debug\Properties.pdb
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Properties\obj\Debug\Properties.csprojAssemblyReference.cache
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Properties\obj\Debug\Properties.csproj.CoreCompileInputs.cache
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Properties\obj\Debug\Properties.exe
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Properties\obj\Debug\Properties.pdb

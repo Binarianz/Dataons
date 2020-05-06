@@ -1,7 +1,0 @@
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Exercise_1\bin\Debug\Exercise_1.exe.config
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Exercise_1\bin\Debug\Exercise_1.exe
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Exercise_1\bin\Debug\Exercise_1.pdb
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Exercise_1\obj\Debug\Exercise_1.csprojAssemblyReference.cache
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Exercise_1\obj\Debug\Exercise_1.csproj.CoreCompileInputs.cache
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Exercise_1\obj\Debug\Exercise_1.exe
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\Exercise_1\obj\Debug\Exercise_1.pdb
