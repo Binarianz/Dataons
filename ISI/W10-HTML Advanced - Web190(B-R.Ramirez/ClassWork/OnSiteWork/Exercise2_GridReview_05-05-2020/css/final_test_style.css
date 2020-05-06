@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+
+body{
+    /*width: 600px;*/
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Teko', sans-serif;
+}
+
+.navbar{
+	background-color: #3F51B5;
+ 	font-size: 34px; 		
+	border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    width:100%;
+}
+
+a{
+	color: #fff;
+    text-decoration: none;
+}
+
+.material-icons{
+    padding: 0px 40px;
+}
+
+ul{
+    margin: 15px 10px 0xp 10px;
+    list-style-type: none;
+}
+
+/* == GRID == */
+
+.wrapper {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-areas:
+    "cont"
+    "article"
+    "aside"
+    "ad";
+}
+
+.cont, .art, .side, .ad{
+    padding: 80px;
+    font-size: 30px;
+}
+
+.cont {
+  grid-area: cont;
+  background-color: #FFA08C;
+}
+
+.art {
+  grid-area: article;
+  background-color: #CAE8B0;
+  height: 200px;
+}
+
+.side {
+  grid-area: aside;
+  background-image: url('../images/home_article_kayak.jpg ');height: 200px;
+}
+
+.ad {
+  grid-area: ad;
+  background-color: #E9DE7B;
+  height: 200px;
+}
+
+/* == FLEXBOX == */
+
+.footer {
+  background-color: #3F51B5;
+}
+
+.footer ul{
+    /* display: flex; */
+    margin: 0px;
+}
+
+.footer li{
+  color: white;
+  padding: 30px;
+  font-size: 28px;
+}
+.footer ul
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+  }
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+  }
+  .footer ul
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px;
+  }
+.footer {
+  background-color: #3F51B5;
+}
+
+.footer ul{
+    /* display: flex; */
+    margin: 0px;
+}
+
+.footer li{
+  color: white;
+  padding: 30px;
+  font-size: 28px;
+}
+
+@media only screen and (min-width: 768px){
+  .wrapper {
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+      "cont aside"
+      "article ad";
+  }
+
+  .cont, .art, .side, .ad{
+    padding: 40px;
+    font-size: 34px;
+    height: 400px;
+  }
+
+}
