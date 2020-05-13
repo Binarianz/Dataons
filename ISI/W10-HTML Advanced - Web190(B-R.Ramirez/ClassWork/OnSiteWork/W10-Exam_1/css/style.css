@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 5px;
+
+}
+.container > div{
+    height:200px;
+}
+#one{background-color: antiquewhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: 0.6em;
+    font-weight: 800;
+    padding: 20px;
+    box-sizing: border-box;
+    }
+    #two{background-color: red;}
+    #three{background-color: orange;}
+    #four{background-color: green;}
+    #five{background-color: blue;}
+    #six{background-color: yellow;}
+
+
+
+
+
+
+
+div{
+    background-color: red;
+    
+}
+#one{padding: 40px;}
+#two{padding: 20px;}
+#three{padding: 80px;}
+#four{padding: 40px;}
+#five{padding: 40px;}
+#six{padding: 80px;}
+#seven{padding: 30px;}

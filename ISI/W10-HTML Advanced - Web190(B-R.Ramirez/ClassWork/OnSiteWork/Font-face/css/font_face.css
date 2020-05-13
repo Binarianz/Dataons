@@ -1,0 +1,109 @@
+@font-face{
+    font-family: "p1";
+    src: url("/fonts/berkshireswash-regular.ttf");
+}
+@font-face{
+    font-family: "p2";
+    src:url("/fonts/GreatVibes-Regular.otf")
+}
+@font-face{
+    font-family: "p3";
+    src:url("/fonts/Arizonia-Regular.ttf")
+}
+p{
+    margin-top:3%;
+
+}
+#d28::before{
+    content: "added content";
+}
+p:first-of-type::after{
+    content:"-----------------this comment will apear after the lorem---------------------";
+}
+p:first-of-type::before{
+    content:url("/images/environment.jpg");
+}
+p:first-of-type{
+    font-family: p1;
+    font-size: 20px;
+    border-style: solid;
+    border-color: red;
+    color: aliceblue;
+}
+body{
+    background-image: url("/images/Forest2-background-opacity-70.jpg");
+}
+
+p:last-of-type{
+    font-family: p3;
+    font-size: 20px;
+    border-style: solid;
+    border-color: green;
+    color: aliceblue;
+}
+
+h1,.p2{
+    font-size: 20px;
+    font-family:p2 ;
+    color: aliceblue;
+    
+}
+.p2{
+    border-style: solid;
+    border-color: blue;
+    color: aliceblue;
+}
+
+h1{color: rgb(65, 61, 61);text-shadow: 2px 1px red; margin: 5px 10px; text-align: center;
+  
+    border: 5px solid white;
+}
+#bk{
+    height: 600px;
+    /* width: 100%; */
+    background-image: url("/images/tech-cruve.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:1500px)
+{
+    #bk{
+        height: 300px;
+        width: 100%; 
+        background-image: url("/images/tech-cruve.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    h1,p:first-of-type,p:last-of-type,.p2{
+        font-size: 3em;
+    }
+
+
+}
+@media (max-width:1024px)
+{
+    #bk{
+        height: 200px;
+        /* width: 100%; */
+        background-image: url("/images/animal.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    h1,p:first-of-type,p:last-of-type,.p2{
+        font-size: 2em;
+    }
+}
+@media (max-width:640px)
+{
+    #bk{
+        height: 300px;
+        width: 100%; 
+        background-image: url("/images/student.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    h1,p:first-of-type,p:last-of-type,.p2{
+        font-size: 1em;
+    }
+}
