@@ -1,0 +1,86 @@
+@font-face{
+    font-family: "p1";
+    src: url("/fonts/Arizonia-Regular.ttf");
+}
+@font-face{
+    font-family: "p2";
+    src: url("/fonts/28 days later.ttf");
+}
+@font-face{
+    font-family: "p3";
+    src: url("/fonts/GreatVibes-Regular.otf");
+}
+
+
+h2{
+    font-family: p2;
+    font-size: 30px;
+    /* font-size: 20px;
+    border-style: solid;
+    border-color: red; */
+    color: black;
+}
+h3{
+    font-family: p2;
+    font-size: 25px;
+    /* font-size: 20px;
+    border-style: solid;
+    border-color: red; */
+    color: black;
+}
+p{
+    font-family: p1;
+    font-size: 20px;
+    /* font-size: 20px;
+    border-style: solid;
+    border-color: red; */
+    color: black;
+    
+}
+
+#p1 {
+    background-color: red;
+    border-style: solid;
+    border-color:black;
+}
+#p2 {
+    background-color: blue;
+    border-style: solid;
+    border-color:black;
+}
+.pselector p{
+    background-color: green;
+    border-style: solid;
+    border-color:black;
+}
+
+.pselector2 .aselector1 p{
+
+    background-color: yellow;
+    border-style: solid;
+    border-color:black;
+}
+
+
+.pselector2 .aselector2 p{
+    background-color: grey;
+    border-style: solid;
+    border-color:black;
+}
+
+#p6{
+    background-color: blue;
+    border-style: solid;
+    border-color:black;
+    color: white;
+}
+#p7{
+    background-color: rgb(7, 7, 22);
+    border-style: solid;
+    border-color:black;
+    color: white;
+}
+#p8{
+    border-style: dotted;
+    border-color:black;
+}
