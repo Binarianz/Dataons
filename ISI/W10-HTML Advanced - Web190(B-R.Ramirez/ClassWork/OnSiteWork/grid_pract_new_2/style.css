@@ -1,0 +1,44 @@
+*{font-family: 'Trebuchet MS',sans-serif;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    row-gap: 2%;
+    column-gap:25px;
+    background-color: khaki;
+    padding-bottom: 20px;
+
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: yellowgreen;
+    text-align: center;
+    color: beige;
+}
+.art{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-left: 1px solid black;
+    padding: 0 25px;
+}
+.asd{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-left: 10px;
+}
+@media(max-width:589px)
+{
+    .art{grid-column-start: 1;grid-column-end: 4;
+        grid-row-start: 2;grid-row-end: 2;
+    border-left: 0;
+    border-bottom: 1px solid black;
+}
+    .asd{grid-column-start: 1;grid-column-end: 4;
+        grid-row-start: 3;grid-row-end: 3;}
+
+}
