@@ -1,0 +1,47 @@
+/*  Instructions:
+    
+    Insert a font-face (5 points). 
+    Insert the word navigation inside the nav (using CSS not directly in the html, 5 points).
+    Insert 4 background images (10 points).
+    Use Grid and grid template areas (10 points)
+    Use correctly the 2 media queries provided (10 points each).
+
+    Total: 50points
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer{
+    background-color: #00BFFF;
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+aside:nth-child(1) {
+    background-color: #61FFBC;
+}
+
+article:first-child {
+    background-color: darkcyan;
+}
+
+article:last-child {
+    background-color: #00BFFF;
+}
+
+aside:nth-child(3) {
+    background-color: #61FFBC;
+}
+
+
+@media only screen and (min-width: 640px) and (max-width: 959px){}
+
+@media only screen and (min-width: 320px) and (max-width: 639px){}
