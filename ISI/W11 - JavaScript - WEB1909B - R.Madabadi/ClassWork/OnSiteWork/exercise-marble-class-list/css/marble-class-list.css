@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: papayawhip;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+#container {
+    vertical-align: middle;
+}
+
+.marble {
+    display: inline-block;
+    margin-right: 20px;
+    background-color: lightgrey;
+    width: 25px;
+    height: 25px;
+}
+
+.orange {
+    background-color: orangered;
+}
+
+.purple {
+    background-color: #9a50ff;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.size_x {
+    width: 50px;
+    height: 50px;
+}
+
+.size_xx {
+    width: 100px;
+    height: 100px;
+}
+
+.size_xxx {
+    width: 150px;
+    height: 150px;
+}
+
+.incline {
+    transform: rotate(45deg);
+}
+
+.offset {
+    transform: translateY(150px);
+}
