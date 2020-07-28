@@ -1,0 +1,29 @@
+<?php 
+// option 1 
+echo $_SERVER['PHP_SELF'];
+if(isset($_GET['submit']) && !empty($_GET['submit'])) {
+    
+    print_r($_GET);
+    echo "My first name is ".$_GET['fname']." and my last name is ".$_GET['lname'];
+    echo "<br/>";
+    foreach($_GET as $value) {
+        echo $value;
+        echo "<br/>";
+    }
+    echo "<br/>";
+    echo $_SERVER['REQUEST_METHOD'];
+}
+// option 2
+ echo "<br/>";
+if($_SERVER['REQUEST_METHOD']=='GET') {
+    
+    print_r($_GET);
+    echo "My first name is ".$_GET['fname']." and my last name is ".$_GET['lname'];
+    echo "<br/>";
+    foreach($_GET as $value) {
+        echo $value;
+        echo "<br/>";
+    }
+    echo "<br/>";
+    echo $_SERVER['REQUEST_METHOD'];
+}

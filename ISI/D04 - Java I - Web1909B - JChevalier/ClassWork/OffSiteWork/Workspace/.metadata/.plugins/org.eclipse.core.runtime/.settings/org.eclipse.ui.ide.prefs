@@ -1,5 +1,9 @@
 PROBLEMS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
+<<<<<<< HEAD:ISI/ISI-D04-Java1/ClassWork/OnSiteWork/WorkSpace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs
+platformState=1581063722993
+=======
 platformState=1580237928980
+>>>>>>> master:ISI/D04 - Java I - Web1909B - JChevalier/ClassWork/OffSiteWork/Workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs
 quickStart=false
-tipsAndTricks=true
+tipsAndTricks=false

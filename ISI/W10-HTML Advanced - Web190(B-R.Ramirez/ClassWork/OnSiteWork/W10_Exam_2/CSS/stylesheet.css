@@ -1,0 +1,56 @@
+/* Instructions: Using GRID (grid colums and rows or grid template areas),
+recreate the behaviour shown in the starter file. This behaviour was created
+by using Bootstrap. The following are the sizes of the media queries that
+you need to add. */
+
+/* col-sm >= 576px  col-md >= 768px  col-lg >= 992px  col-xl >= 1200px */
+
+
+
+.mymain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 140px;
+    padding-right:140px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* grid-template-rows:200px 400px; */
+}
+.mymain>div{    
+    text-align: center;
+    color:black;
+    border: 2px red solid;
+}
+@media only screen and (min-width: 768px) and (max-width: 992px){
+    .mymain{        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 100px;
+        padding-right:100px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .full1,.full2{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 767px){
+
+    .mymain{        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 40px;
+        padding-right:40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width:576px)
+{
+    .mymain{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding:10px;
+    }
+}

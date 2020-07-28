@@ -1,0 +1,27 @@
+.main_container{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,300px);
+    gap:10px;
+}
+
+div{
+    background-color: aquamarine;
+    border:2px black double;
+    
+}
+h1{
+    text-align: center;
+}
+body > main > div:nth-child(6){
+    overflow-y: scroll;
+}
+body > main > div:nth-child(6)>h1{
+    text-align: left;
+}
+
+
+
+
+

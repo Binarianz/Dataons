@@ -1,0 +1,19 @@
+console.log(A === B): true 
+
+console.log(A == B) : true
+
+console.log(A === C): false
+
+console.log(A == C) : true
+
+console.log(A < C) : false
+
+console.log(A > C) : false
+
+console.log(A + C == '1010') : true
+
+console.log(A + C === '1010') : true
+
+console.log((A + 1) == (C + 1)) : false
+
+console.log((A - C) == 0) : true

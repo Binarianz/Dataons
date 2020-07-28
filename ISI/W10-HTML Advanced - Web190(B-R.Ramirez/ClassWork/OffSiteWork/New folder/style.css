@@ -1,0 +1,26 @@
+li{
+   float: left;
+}
+
+li a {
+
+  color: #ffffff;
+  background-color: #003300;
+
+  padding-right: 32px;
+  padding-left: 32px;
+  display: block;
+  line-height: 60px;
+  text-decoration: none; 
+
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: #990000;
+}
+
+.face {
+        background: url("http://www.sizzledcore.com/wp-content/themes/SizzledCore-7.0/images/facebook.png") no-repeat 0px -3px;
+    display: block;
+}

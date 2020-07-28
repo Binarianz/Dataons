@@ -1,6 +1,0 @@
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\ReviewExercise\bin\Debug\ReviewExercise.exe.config
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\ReviewExercise\bin\Debug\ReviewExercise.exe
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\ReviewExercise\bin\Debug\ReviewExercise.pdb
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\ReviewExercise\obj\Debug\ReviewExercise.csproj.CoreCompileInputs.cache
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\ReviewExercise\obj\Debug\ReviewExercise.exe
-C:\Users\josep\Documents\Dataons\ISI\D05 – C# - Web1909B - JChevalier\ClassWork\OnSiteWork\D05-C_Sharp\ReviewExercise\obj\Debug\ReviewExercise.pdb
