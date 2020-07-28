@@ -100,7 +100,71 @@
 //   console.log(prices[index]);
 // }
 
-let rainbow = ["Red", "Orange", "Blackberry", "blue"];
-rainbow.splice(2, 1, "yellow", "green");
-rainbow.splice(5, 0, "purple");
-console.log(rainbow);
+// // let rainbow = ["Red", "Orange", "Blackberry", "blue"];
+// // rainbow.splice(2, 1, "yellow", "green");
+// // rainbow.splice(5, 0, "purple");
+// // console.log(rainbow);
+// const addNumber = 100;
+// const divideNumber = 3;
+// let test = [
+//   12,
+//   929,
+//   11,
+//   3,
+//   199,
+//   1000,
+//   7,
+//   1,
+//   24,
+//   37,
+//   4,
+//   19,
+//   300,
+//   3775,
+//   299,
+//   36,
+//   209,
+//   148,
+//   169,
+//   299,
+//   6,
+//   109,
+//   20,
+//   58,
+//   139,
+//   59,
+//   3,
+//   1,
+//   139,
+// ];
+// test.forEach(addedfunction);
+
+// function addedfunction(item, index) {
+//   if (item % divideNumber == 0) {
+//     test[index] += 100;
+//   }
+// }
+
+// console.log(test);
+let bills = [
+  50.23,
+  19.12,
+  34.01,
+  100.11,
+  12.15,
+  9.9,
+  29.11,
+  12.99,
+  10.0,
+  99.22,
+  102.2,
+  100.1,
+  6.77,
+  2.22,
+];
+let newTotalArray = bills.map(function (bill) {
+  bill = bill * 1.15;
+  bill = bill.toFixed(2);
+  return Number(bill);
+});
+console.log(newTotalArray);
