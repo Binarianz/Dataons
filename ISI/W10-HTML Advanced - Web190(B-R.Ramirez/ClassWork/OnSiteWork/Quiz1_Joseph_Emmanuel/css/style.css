@@ -1,0 +1,117 @@
+/*  Instructions:
+    
+    Insert a font-face (5 points). 
+    Insert the word navigation inside the nav (using CSS not directly in the html, 5 points).
+    Insert 4 background images (10 points).
+    Use Grid and grid template areas (10 points)
+    Use correctly the 2 media queries provided (10 points each).
+
+    Total: 50points
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+@font-face{
+    font-family: "font_28_days";
+    src: url("/fonts/28.ttf");
+}
+header,
+footer{
+    font-family: font_28_days;
+    background-color: #00BFFF;
+}
+nav::before{
+    content: "navigation";
+}
+
+nav {
+    background-color: black;
+    font-family: font_28_days;
+    color: red;
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    "mysection mysection"
+    "myaside1 myaside2"
+    ;
+}
+section{
+    grid-area:mysection;
+    font-family: font_28_days;
+}
+aside:nth-child(1) {
+    grid-area: myaside2;
+    background-image: url('../images/k4.jpg') ;
+    background-color: #61FFBC;
+    background-repeat: no-repeat; 
+    background-size:100% 100%;
+    font-family: font_28_days;
+}
+
+article:nth-child(1) {
+    background-image: url('../images/k1.jpg') ;
+    background-color: #61FFBC;
+    background-repeat: no-repeat; 
+    background-size:100% 100%;
+}
+
+article:last-child {
+    background-image: url('../images/k5.jpg') ;
+    background-color: #61FFBC;
+    background-repeat: no-repeat; 
+    background-size:100% 100%;
+    background-color: #00BFFF;
+}
+
+aside:nth-child(3) {
+    grid-area: myaside1;
+    background-image: url('../images/k3.jpg') ;
+    background-color: #61FFBC;
+    background-repeat: no-repeat; 
+    background-size:100% 100%;
+    background-color: #61FFBC;
+    font-family: font_28_days;
+}
+aside:nth-child(1) ,
+    article:nth-child(1),
+    article:last-child,
+    aside:nth-child(3) {
+        height:500px;   
+    }
+
+
+@media only screen and (min-width: 640px) and (max-width: 959px){
+
+    main{
+        display: grid;
+        grid-template-areas: 
+        "myaside1 mysection mysection"
+        "myaside2 mysection mysection"
+        ;
+    }
+    aside:nth-child(1) ,
+    article:nth-child(1),
+    article:last-child,
+    aside:nth-child(3) {
+        height:300px;   
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 680px){
+    main{        
+        display: flex;
+        flex-direction: column;
+    }
+    aside:nth-child(1) ,
+    article:nth-child(1),
+    article:last-child,
+    aside:nth-child(3) {
+        height:250px;   
+    }
+}

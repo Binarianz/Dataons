@@ -1,0 +1,103 @@
+/* Instructions: Using this file as a start, create the same behaviour 
+shown in the images (images/expected_result_size) */
+
+/* Points
+General behavior: 5 (flexbox mandatory)
+Media query 1   : 5 (any technique)
+Media query 2   : 5 (any technique)
+        Total    15 points */
+
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+
+*{
+    font-family: 'Viga', fantasy;
+    margin: 0px;
+}
+
+/* Images are already responsive */
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+p{
+    font-size: 26px;
+}
+
+/* my code */
+header{
+    height: 60px;
+   text-align: center;
+   color: azure;
+   padding:10px;
+   background-color: rgb(37, 22, 253);
+   border-bottom: 2px solid black;
+}
+header>h1{
+    padding-top: 10px;
+}
+body{
+    margin: 10px;
+    border: 2px solid;
+}
+
+
+.flex-container{
+    text-align: justify;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    justify-content: center;
+}
+.ar1,.ar2,.ar3{
+    padding: 20px; 
+    width: 340px;
+}
+.ar1{
+    background-color: greenyellow;
+    margin: 10px;
+}
+.ar2{
+    margin: 10px;
+    background-color: sandybrown;
+}
+.ar3{
+    margin: 10px;
+    background-color: rgb(238, 165, 30);
+}
+
+/* --------- */
+@media only screen and (max-width: 1028px){
+    .flex-container{
+        text-align: justify;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        justify-content: center;
+    }
+    .ar1,.ar2,.ar3{
+        padding: 20px; 
+        margin: auto;
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 600px){   
+    .flex-container{
+        background-color: darkolivegreen;
+        text-align: justify;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        justify-content: center;
+    }
+    .ar1,.ar2,.ar3{
+        padding: 20px; 
+        margin: auto;
+        width: 300px;
+    }
+}

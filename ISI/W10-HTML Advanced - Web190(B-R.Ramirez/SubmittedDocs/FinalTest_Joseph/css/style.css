@@ -1,0 +1,113 @@
+@media only screen and (max-width:700px){
+    body{
+        background-image: url("/assets/images/Capture1.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    section{
+        background-color: orange;
+        height: 370px;
+        width: 600px;
+        opacity: .2;
+    }
+    .exam{
+        position: absolute;
+        top: 0px;
+        margin-top: 11px;
+        border:2px solid black;
+        height: 360px;
+        width: 600px;
+    }
+    .responsive{
+        margin-top: 8px;
+        float: left;
+        padding: 5px;;
+        position: relative;
+        height: 180px;
+        width: 320px;
+        
+        padding-left: 13px;
+    }
+    p{
+        margin-top: 0px;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (min-width:701px) and (max-width:1100px){
+    body{
+        background-image: url("/assets/images/Capture2.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    section{
+        background-color: orange;
+        height: 410px;
+        width: 680px;
+        opacity: .2;
+    }
+    .exam{
+        position: absolute;
+        top: 0px;
+        margin-top: 10px;
+        border:2px solid black;
+        height: 408px;
+        width: 680px;
+    }
+    .responsive{
+        margin-top: 3px;
+        float: left;
+        padding: 5px;
+        padding-left: 12px;
+        position: relative;
+        height: 200px;
+        width: 345px;
+    }
+    p{
+        margin-top: 0px;
+        font-size: 22.2px;
+        
+        line-height: 24px;
+
+    }
+    
+}
+
+@media only screen and (min-width:1101px){
+    body{
+        background-image: url("/assets/images/Capture3_1280.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    section{
+        background-color: orange;
+        height: 380px;
+        width: 1265px;
+        opacity: .2;
+    }
+    .exam{
+        position: absolute;
+        top: 0px;
+        margin-top: 5px;
+        border:2px solid black;
+        height: 380px;
+        width: 1263px;
+    }
+    .responsive{
+        margin-top: 0px;
+        float: left;
+        padding: 10px;
+        padding-left: 5px;
+        position: relative;
+        height: 360px;
+        width: 640px;
+    }
+    p{
+        margin-top: 0px;
+        margin-left: 100px;
+        font-size: 23px;
+        line-height: 27px;
+
+    }  
+}

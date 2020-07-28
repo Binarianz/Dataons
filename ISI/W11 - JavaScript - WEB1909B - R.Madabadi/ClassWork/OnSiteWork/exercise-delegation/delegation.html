@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercise - delegation</title>
+        <script src="js/delegation.js"></script>
+
+        <style>
+            #listContainer {
+                height: 200px;
+                width: 300px;
+                overflow: scroll;
+            }
+
+            #listContainer li {
+                cursor: pointer;
+            }
+
+            #listContainer li:hover {
+                background-color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Very large list with event delegation</h1>
+
+        <ul id="listContainer"></ul>
+
+        <h2>Display selection</h2>
+        <div id="output">The list will be displayed here</div>
+    </body>
+</html>

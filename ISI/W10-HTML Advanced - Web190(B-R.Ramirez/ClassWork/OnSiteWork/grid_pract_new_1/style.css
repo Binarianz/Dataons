@@ -1,0 +1,19 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(300px,500px));
+    grid-template-rows:200px 400px;
+    gap:20px;
+}
+section{
+    background-color: greenyellow;
+    border: 2px black solid;
+}
+h2{
+    text-align: center;
+    color:black;
+}
+section:nth-child(6)>h2{
+    height: 370px;
+    text-align: justify;
+    overflow-y: scroll;
+}

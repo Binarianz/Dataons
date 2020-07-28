@@ -1,0 +1,35 @@
+*{font-family: 'Times New Roman', Times, serif;}
+body{background-color: gold;}
+main{
+    display: grid;
+    grid-template-columns: 500px 200px;
+    padding-bottom: 20px;  
+    background-color: khaki;  
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: yellowgreen;
+    text-align: center;
+    padding-top: 0px;
+    color: beige;
+}
+article{
+    
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+aside{
+    
+    grid-column-start: 2;
+    grid-column-end: 4;
+    border-left: 2px double red;
+    padding-left: 20px;
+    padding-right: 5px;
+    overflow-y: scroll;
+}

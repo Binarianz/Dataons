@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercise - day-week</title>
+        <style>
+            label {
+                width: 100px;
+                display: inline-block;
+            }
+
+            body > div {
+                width: 300px;
+                background-color: #ebec9f;
+                border: 1px solid #9f0000;
+                padding: 4px;
+                font-size: 20px;
+            }
+        </style>
+        <script src="js/day-week.js"></script>
+    </head>
+
+    <body>
+        <h1>Day Week</h1>
+        <div>
+            <div>
+                <label for="language">FR / EN</label>
+                <input type="checkbox" id="language" />
+            </div>
+            <div>
+                <label for="dayNumber">Day Number</label>
+                <input type="range" id="dayNumber" min="0" max="6" value="0" />
+            </div>
+        </div>
+    </body>
+</html>

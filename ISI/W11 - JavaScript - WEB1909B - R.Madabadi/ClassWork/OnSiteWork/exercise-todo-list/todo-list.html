@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercise - todo-list</title>
+        <style>
+            .c1 {
+                font-size: x-large;
+                font-family: "Lucida Console", Monaco, monospace;
+                color: #0000d1;
+            }
+
+            .active {
+                border: 3px solid green;
+            }
+
+            #list {
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <input type="text" id="textBox" />
+        <input type="button" value="Add to list" onclick="addNewLiElement()" />
+
+        <ul id="list"></ul>
+        <input type="button" value="Delete" onclick="deleteLastLiElement()" />
+
+        <script src="js/todo-list.js"></script>
+    </body>
+</html>
