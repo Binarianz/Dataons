@@ -1,0 +1,46 @@
+import java.util.ArrayList;
+
+public class Burger {
+	
+	
+	private String name;
+	private Double price;
+	private String roll;
+	private String meat;
+	private Integer maxToping;
+	private ArrayList <Topping> toppings= new ArrayList<>();
+	
+	public Burger(String _name,Double _price,String _roll,String _meat) {
+		this.name=_name;
+		this.price=_price;
+		this.roll=_roll;
+		this.meat=_meat;
+		//this.maxToping=
+		
+	}
+	
+	public String getName() {
+		return this.name;
+	}
+	public Double getPrice() {
+		return this.price;
+	}
+	public String getRoll() {
+		return this.roll;
+	}
+	public String getMeat() {
+		return this.meat;
+	}
+	public Integer getMaxToppings() {
+		return this.maxToping;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

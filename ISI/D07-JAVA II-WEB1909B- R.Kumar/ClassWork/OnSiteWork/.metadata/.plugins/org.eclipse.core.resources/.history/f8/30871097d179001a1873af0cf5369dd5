@@ -1,0 +1,12 @@
+
+public class Healthy extends Base{
+
+	public Healthy(String _name, Double _cost, int _maxTop) {
+		super(_name, _cost, _maxTop);
+		// TODO Auto-generated constructor stub
+	}
+
+
+
+
+}

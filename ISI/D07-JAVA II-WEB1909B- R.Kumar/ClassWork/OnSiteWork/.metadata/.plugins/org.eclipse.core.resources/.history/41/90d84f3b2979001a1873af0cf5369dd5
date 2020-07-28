@@ -1,0 +1,15 @@
+import com.sun.tools.javac.util.List;
+
+public class Burgers 
+{
+	String name;
+	Double cost;
+	int maxTop;
+	List<Toppings> tp = new ArrayList<Toppings>();
+	 public Burgers(String _name,Double _cost,int _maxTop) {
+		name=_name;
+		cost=_cost;
+		maxTop=_maxTop;
+	}
+
+}
