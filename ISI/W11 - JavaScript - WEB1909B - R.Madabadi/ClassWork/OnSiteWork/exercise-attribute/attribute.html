@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exercise - attribute</title>
+        <style>
+            .costaud {
+                color: #0e199f;
+                font-size: x-large;
+            }
+
+            .jojo {
+                color: #d40747;
+                font-family: "Courier New", Courier, monospace;
+            }
+
+            .active {
+                border: 2px solid #ff9634;
+                background-color: #ffe3a6;
+            }
+
+            #image {
+                position: relative;
+            }
+
+            #image img {
+                position: absolute;
+            }
+
+            #image img:last-of-type {
+                left: 128px;
+            }
+        </style>
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>jQuery Contents</h1>
+            <nav>
+                <ul>
+                    <li><a href="one.html">One</a></li>
+                    <li><a class="active" href="two.html">Two</a></li>
+                    <li><a href="three.html">Three</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h2>Paragraph</h2>
+        <p class="toto">
+            Lorem ipsum dolor sit amet,
+            <strong class="costaud">consectetur adipisicing</strong> elit.
+            Adipisci blanditiis cum debitis,
+            <strong>dolores doloribus ducimus in inventore minus</strong> nisi
+            quisquam. Amet aut <mark>eveniet</mark> id ipsam natus recusandae,
+            repudiandae sequi sit.
+        </p>
+        <p class="toto">
+            Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing
+            elit. Adipisci blanditiis cum debitis,
+            <strong>ducimus in inventore minus</strong> nisi quisquam. Amet aut
+            eveniet id ipsam natus recusandae, repudiandae sequi sit.
+        </p>
+        <p>
+            Lorem ipsum
+            <strong class="costaud"> in inventore minus</strong> dolor sit amet,
+            consectetur adipisicing elit. Adipisci blanditiis cum debitis, nisi
+            quisquam. Amet aut eveniet id ipsam natus recusandae
+            <em class="costaud">repudiandae sequi</em>sit.
+        </p>
+        <h2>Form</h2>
+        <form id="enforme">
+            <label for="jquery">jQuery :</label
+            ><input id="jquery" name="jquery" type="checkbox" /><br />
+            <label for="age">Age :</label
+            ><input type="range" id="age" name="age" min="0" max="199" /><br />
+        </form>
+
+        <h2>Images</h2>
+        <div id="image">
+            <img src="image/smiley-face-1.png" alt="smiley-face-1" />
+            <img src="image/smiley-face-2.png" alt="smiley-face-2" />
+        </div>
+
+        <script src="js/attribute.js"></script>
+    </body>
+</html>
