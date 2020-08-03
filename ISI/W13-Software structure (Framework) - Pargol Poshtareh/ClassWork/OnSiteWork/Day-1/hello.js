@@ -146,25 +146,28 @@
 // }
 
 // console.log(test);
-let bills = [
-  50.23,
-  19.12,
-  34.01,
-  100.11,
-  12.15,
-  9.9,
-  29.11,
-  12.99,
-  10.0,
-  99.22,
-  102.2,
-  100.1,
-  6.77,
-  2.22,
-];
-let newTotalArray = bills.map(function (bill) {
-  bill = bill * 1.15;
-  bill = bill.toFixed(2);
-  return Number(bill);
-});
-console.log(newTotalArray);
+// let bills = [
+//   50.23,
+//   19.12,
+//   34.01,
+//   100.11,
+//   12.15,
+//   9.9,
+//   29.11,
+//   12.99,
+//   10.0,
+//   99.22,
+//   102.2,
+//   100.1,
+//   6.77,
+//   2.22,
+// ];
+// let newTotalArray = bills.map(function (bill) {
+//   bill = bill * 1.15;
+//   bill = bill.toFixed(2);
+//   return Number(bill);
+// });
+// console.log(newTotalArray);
+
+let x = [null, "", undefined, []];
+console.log(x);
