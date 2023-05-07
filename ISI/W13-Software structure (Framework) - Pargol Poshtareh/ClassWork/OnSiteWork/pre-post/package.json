@@ -17,7 +17,7 @@
     "debug": "^4.1.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.22"
   },
   "nodemonConfig": {
     "delay": 2000,
